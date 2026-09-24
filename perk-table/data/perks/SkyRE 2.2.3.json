@@ -1,0 +1,8555 @@
+[
+ {
+  "id": "Armsman00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Сильная рука",
+  "eid": "Armsman00",
+  "formid": "000BABE4",
+  "desc": "Одноручное оружие наносит на 10% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Bladesman30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Мечник",
+  "eid": "Bladesman30",
+  "formid": "0005F56F",
+  "desc": "Атаки мечами имеют 10% шанс нанести 150% критического урона.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "crit"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWVeteran0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Ветеран",
+  "eid": "skyre_LIWVeteran0",
+  "formid": "06000D0A",
+  "desc": "С пустой или творящей заклинания второй рукой одноручные атаки быстрее и имеют дополнительные 5% шанса нанести критический урон.",
+  "lvl": 50,
+  "prereq": "Bladesman30; BoneBreaker30; HackAndSlash30",
+  "ranks": 1,
+  "tags": [
+   "magic",
+   "crit"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWSpellsword0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Воин-маг",
+  "eid": "skyre_LIWSpellsword0",
+  "formid": "06000D30",
+  "desc": "Если во второй руке посох или заклинание, есть 15% шанс полностью избежать урона от врага перед вами.",
+  "lvl": 70,
+  "prereq": "skyre_LIWVeteran0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "staff"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWOpportunist0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Оппортунист",
+  "eid": "skyre_LIWOpportunist0",
+  "formid": "06000D22",
+  "desc": "Атаки второй рукой короткими клинками по пошатнувшимся врагам имеют шанс нанести до 3 раз больше критического урона, но наносят меньше обычного урона.",
+  "lvl": 50,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "crit"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWHornetSting0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Укус шершня",
+  "eid": "skyre_LIWHornetSting0",
+  "formid": "06000D11",
+  "desc": "Атаки танто и кинжалами, направленные в бок или спину врага, наносят до 25% больше урона.",
+  "lvl": 50,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "dagger"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dagger"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWWideSwing0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Широкий размах",
+  "eid": "skyre_LIWWideSwing0",
+  "formid": "06000D4A",
+  "desc": "Боковые мощные атаки широкими мечами и саблями поражают все цели перед вами, наносят на 10% больше урона и их труднее прервать.",
+  "lvl": 70,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "sword"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWHeronLunge0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Выпад цапли",
+  "eid": "skyre_LIWHeronLunge0",
+  "formid": "06000D33",
+  "desc": "Мощные атаки катанами и длинными мечами с места потребляют половину запаса сил и наносят до 200% урона, если не были заблокированы.",
+  "lvl": 70,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "sword"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWMasterfulFencer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Мастер-мечник",
+  "eid": "skyre_LIWMasterfulFencer0",
+  "formid": "06000D3A",
+  "desc": "Своевременные блокирования полноразмерными мечами на 33% эффективнее и сильнее отбрасывают врагов, но ваши атаки наносят меньше урона, если их заблокировали.",
+  "lvl": 60,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "sword"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWSharkBite0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Акулий укус",
+  "eid": "skyre_LIWSharkBite0",
+  "formid": "06000D47",
+  "desc": "Атаки вакидзаси и короткими мечами наносят до 6 дополнительного урона, если ваше здоровье полно и щит не экипирован.",
+  "lvl": 60,
+  "prereq": "Bladesman30",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "shield"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "HackAndSlash30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Рубака",
+  "eid": "HackAndSlash30",
+  "formid": "0003FFFA",
+  "desc": "Незаблокированные атаки боевыми топорами, топориками и короткими копьями наносят дополнительный урон кровотечением.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "axe",
+   "bleed"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "dmg",
+   "dot",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWBloodPrice0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Цена крови",
+  "eid": "skyre_LIWBloodPrice0",
+  "formid": "06000D07",
+  "desc": "Не отбитые атаки топориком и коротким копьём по кровоточащим врагам наносят до 20% больше урона, но могут не нанести урона, если их заблокировали.",
+  "lvl": 50,
+  "prereq": "HackAndSlash30",
+  "ranks": 1,
+  "tags": [
+   "axe"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWOnslaught0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Натиск",
+  "eid": "skyre_LIWOnslaught0",
+  "formid": "06000D3D",
+  "desc": "Атаки боевыми топорами по блокирующим врагам имеют 50% шанс нанести «Прямое попадание».",
+  "lvl": 70,
+  "prereq": "HackAndSlash30",
+  "ranks": 1,
+  "tags": [
+   "axe"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "BoneBreaker30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Костолом",
+  "eid": "BoneBreaker30",
+  "formid": "0005F592",
+  "desc": "Атаки булавами, молотами и дубинами игнорируют 20% брони.",
+  "lvl": 30,
+  "prereq": "Armsman00; skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "mace",
+   "armor"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWKillingSpree0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Череда убийств",
+  "eid": "skyre_LIWKillingSpree0",
+  "formid": "06000D14",
+  "desc": "Убийство врага дубиной увеличивает шанс и урон критического удара на 10% за каждое убийство на 20 секунд.",
+  "lvl": 50,
+  "prereq": "BoneBreaker30",
+  "ranks": 1,
+  "tags": [
+   "crit"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [
+   "crit",
+   "kill"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWDisorient",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Дезориентации",
+  "eid": "skyre_LIWDisorient",
+  "formid": "06000D2D",
+  "desc": "Не отбитые боковые мощные атаки одноручным дробящим оружием имеют до 40% шанса оглушить врага на некоторое время.",
+  "lvl": 70,
+  "prereq": "BoneBreaker30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "physical"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "onehand"
+  ],
+  "condition": [
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DualFlurry30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойной вихрь",
+  "eid": "DualFlurry30",
+  "formid": "00106256",
+  "desc": "Атаки двумя оружиями на 20% быстрее, но наносят меньше урона.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DualSavagery",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойная мясорубка",
+  "eid": "DualSavagery",
+  "formid": "00106258",
+  "desc": "Мощные атаки двумя оружиями наносят 30% дополнительного урона.",
+  "lvl": 50,
+  "prereq": "DualFlurry30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWDualMastery",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Парное мастерство",
+  "eid": "skyre_LIWDualMastery",
+  "formid": "06000D2A",
+  "desc": "Контратаки парным оружием по атакующему врагу снижают входящий урон на 80%.",
+  "lvl": 65,
+  "prereq": "DualSavagery",
+  "ranks": 1,
+  "tags": [
+   "dual"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWExceptionalMastery",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Исключительное мастерство",
+  "eid": "skyre_LIWExceptionalMastery",
+  "formid": "06000D67",
+  "desc": "Контратаки парным оружием снижают входящий урон от всех атакующих врагов в широком секторе.",
+  "lvl": 90,
+  "prereq": "skyre_LIWDualMastery",
+  "ranks": 1,
+  "tags": [
+   "dual"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWSavageStorm",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Яростный шторм",
+  "eid": "skyre_LIWSavageStorm",
+  "formid": "06000D46",
+  "desc": "Мощные атаки парным оружием с места поражают всех врагов перед вами.",
+  "lvl": 70,
+  "prereq": "DualSavagery",
+  "ranks": 1,
+  "tags": [
+   "dual"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWElementalFlurry0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Шквал стихий",
+  "eid": "skyre_LIWElementalFlurry0",
+  "formid": "06000CF7",
+  "desc": "Зачарования стихий на парном оружии на 25% сильнее.",
+  "lvl": 35,
+  "prereq": "DualFlurry30",
+  "ranks": 1,
+  "tags": [
+   "dual"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "CriticalCharge",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Рывок",
+  "eid": "CriticalCharge",
+  "formid": "000CB406",
+  "desc": "Вы можете провести силовую атаку одноручным оружием в спринте, нанеся двойной критический урон.",
+  "lvl": 40,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "crit",
+   "power"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual",
+   "onehand"
+  ],
+  "condition": [
+   "power",
+   "crit",
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "SavageStrike",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Крепкая хватка",
+  "eid": "SavageStrike",
+  "formid": "0003AF81",
+  "desc": "Мощные атаки одноручным оружием с места наносят на 15% больше урона и получают шанс обезглавить врага.\r\nПЕР: Основа боевого мастерства – знать природу каждого оружия. Потому ваше оружие исполнено смертоносной эффективности, равно как и ваши победы.",
+  "lvl": 35,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWBrawler0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Боец",
+  "eid": "skyre_LIWBrawler0",
+  "formid": "06000CE7",
+  "desc": "Рукопашные атаки наносят на 5 больше урона с шансом отбросить противника.",
+  "lvl": 20,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWFistsOfIron",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Железные кулаки",
+  "eid": "skyre_LIWFistsOfIron",
+  "formid": "06000CF9",
+  "desc": "Рукопашные атаки в рукавицах тяжелой брони наносят дополнительный урон.",
+  "lvl": 40,
+  "prereq": "skyre_LIWBrawler0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWMonkeyTrickery",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Обезьяньи уловки",
+  "eid": "skyre_LIWMonkeyTrickery",
+  "formid": "06000D00",
+  "desc": "Позволяет выхватить щит или оружие блокирующего противника в рукопашном бою.",
+  "lvl": 60,
+  "prereq": "skyre_LIWFistsOfIron; skyre_LIWCrushingBlow",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 6,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWSwiftFootwork0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Быстрая работа ног",
+  "eid": "skyre_LIWSwiftFootwork0",
+  "formid": "06000D54",
+  "desc": "Если вы двигаетесь и не носите кирасу, входящая атака имеет до 20% шанса промахнуться и дать вам прилив скорости передвижения.",
+  "lvl": 80,
+  "prereq": "skyre_LIWMonkeyTrickery",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWChargedFist",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Заряженный кулак",
+  "eid": "skyre_LIWChargedFist",
+  "formid": "06000D59",
+  "desc": "Любое входящее стихийное заклинание наполняет ваши кулаки силой своей стихии на срок до 30 секунд.",
+  "lvl": 90,
+  "prereq": "skyre_LIWMonkeyTrickery; skyre_LIWCrushingBlow",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 6,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWCrushingBlow",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Сокрушительный удар",
+  "eid": "skyre_LIWCrushingBlow",
+  "formid": "06000CFC",
+  "desc": "Рукопашные мощные атаки имеют 50% шанс пробить блок без щита и 30% шанс сбить не блокирующего противника с ног.",
+  "lvl": 60,
+  "prereq": "skyre_LIWFistsOfIron; skyre_LIWMonkeyTrickery",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 7,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LIWMovingMountains0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Перемещая горы",
+  "eid": "skyre_LIWMovingMountains0",
+  "formid": "06000D4D",
+  "desc": "Пока здоровье выше 50%, рукопашные атаки по некоторым противникам добавляют 5% от вашего текущего здоровья в качестве урона к следующему удару.",
+  "lvl": 80,
+  "prereq": "skyre_LIWCrushingBlow",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Barbarian00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Варвар",
+  "eid": "Barbarian00",
+  "formid": "000BABE8",
+  "desc": "Двуручное оружие наносит на 15% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ChampionsStance",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Стойка чемпиона",
+  "eid": "ChampionsStance",
+  "formid": "00052D51",
+  "desc": "Силовые атаки двуручным оружием расходуют на 25% меньше сил.",
+  "lvl": 35,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "power"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DevastatingBlow",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Сокрушительный удар",
+  "eid": "DevastatingBlow",
+  "formid": "00052D52",
+  "desc": "Силовые атаки стоя наносят 25% дополнительного урона с некоторым шансом отрубить противнику голову.",
+  "lvl": 50,
+  "prereq": "ChampionsStance",
+  "ranks": 1,
+  "tags": [
+   "power"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power",
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "Warmaster",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Мастер боевых искусств",
+  "eid": "Warmaster",
+  "formid": "0003AFA7",
+  "desc": "Незаблокированные мощные атаки двуручным оружием имеют 30% шанс сбить врага с ног.",
+  "lvl": 100,
+  "prereq": "Sweep",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWOverpower0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Превосходство",
+  "eid": "skyre_HEWOverpower0",
+  "formid": "06000BEA",
+  "desc": "Атаки боевыми молотами и длинными булавами игнорируют до 20% брони врага, но силовые атаки расходуют больше запаса сил.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "mace",
+   "armor",
+   "power"
+  ],
+  "x": 7,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWSupremacy",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Превосходство",
+  "eid": "skyre_HEWSupremacy",
+  "formid": "06000C22",
+  "desc": "Удар навершием боевого молота поражает всех врагов перед вами и может сбить некоторых из них с ног.",
+  "lvl": 70,
+  "prereq": "skyre_HEWOverpower0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWThrash0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Избиение",
+  "eid": "skyre_HEWThrash0",
+  "formid": "06000BF0",
+  "desc": "Силовые атаки длинными булавами и боевыми посохами по блокирующим врагам изматывают их и ослабляют их атаки на 10% на 10 секунд.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "mace",
+   "power"
+  ],
+  "x": 7,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "staff",
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWCollapse0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Ослабленные",
+  "eid": "skyre_HEWCollapse0",
+  "formid": "06000C0B",
+  "desc": "Обычные атаки шестопёром по врагам, на которых действует «Разгром», имеют шанс пробить их блок.",
+  "lvl": 70,
+  "prereq": "skyre_HEWThrash0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWReapersGambit0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Уловка жнеца",
+  "eid": "skyre_HEWReapersGambit0",
+  "formid": "06000BED",
+  "desc": "Силовые атаки глефами и длинными копьями слабее, но расходуют до 20% меньше запаса сил.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "power"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWReapersVerdict0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Вердикт жнеца",
+  "eid": "skyre_HEWReapersVerdict0",
+  "formid": "06000C17",
+  "desc": "Не отбитые мощные атаки глефой по врагам с полным здоровьем могут привести к критическому удару, наносящему на 100% больше урона.",
+  "lvl": 70,
+  "prereq": "skyre_HEWReapersGambit0",
+  "ranks": 1,
+  "tags": [
+   "crit"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWEndeavour0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Усердие",
+  "eid": "skyre_HEWEndeavour0",
+  "formid": "06000BCE",
+  "desc": "Атаки боевыми посохами и боевыми молотами по раненым врагам наносят до 20% больше урона.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 8,
+  "y": 0,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "staff"
+  ],
+  "condition": [
+   "low_hp"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWPillarOfStrength",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Столп силы",
+  "eid": "skyre_HEWPillarOfStrength",
+  "formid": "06000C21",
+  "desc": "Обычные атаки боевым посохом поражают всех врагов перед вами.",
+  "lvl": 80,
+  "prereq": "skyre_HEWEndeavour0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 8,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "staff"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWHeartseeker0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Ищейка сердец",
+  "eid": "skyre_HEWHeartseeker0",
+  "formid": "06000BDA",
+  "desc": "Неотраженные атаки длинными копьями и глефами по кровоточащим врагам отнимают до 5% их максимального здоровья.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWImpale0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Пронзание",
+  "eid": "skyre_HEWImpale0",
+  "formid": "06000C11",
+  "desc": "Мощные атаки длинным копьём вперёд, направленные в бок или спину врага, могут вызвать кровотечение.",
+  "lvl": 70,
+  "prereq": "skyre_HEWHeartseeker0",
+  "ranks": 1,
+  "tags": [
+   "bleed"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWBladeBarrier0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Закрывшись клинком",
+  "eid": "skyre_HEWBladeBarrier0",
+  "formid": "06000BFA",
+  "desc": "Своевременные блоки полуторными и двуручными мечами эффективнее и отнимают до 5% здоровья оглушенных атакующих.",
+  "lvl": 45,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "sword"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "twohand",
+   "shield"
+  ],
+  "condition": [
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWBacklash",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Ответный удар",
+  "eid": "skyre_HEWBacklash",
+  "formid": "06000C06",
+  "desc": "Отражение удара врага своевременным блоком полуторным мечом повышает урон силовых атак на 50% на 3 секунды.",
+  "lvl": 65,
+  "prereq": "skyre_HEWBladeBarrier0",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "power"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "shield"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWJudgement0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Правосудие",
+  "eid": "skyre_HEWJudgement0",
+  "formid": "06000BE4",
+  "desc": "Атаки алебардами и боевыми топорами по врагу, выполняющему силовую атаку, могут сбить его с ног.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "axe",
+   "power"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWExecution0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Казнь",
+  "eid": "skyre_HEWExecution0",
+  "formid": "06000C03",
+  "desc": "Силовые атаки алебардами с места по сбитым с ног врагам наносят на 50% больше урона.",
+  "lvl": 60,
+  "prereq": "skyre_HEWJudgement0",
+  "ranks": 1,
+  "tags": [
+   "power"
+  ],
+  "x": 6,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWButterflyStrikes0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Удары бабочки",
+  "eid": "skyre_HEWButterflyStrikes0",
+  "formid": "06000BC2",
+  "desc": "Неотраженные атаки нодати и полуторными мечами ускоряют обычные атаки, а силовые атаки расходуют до 50% меньше запаса сил.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "power"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWRisingWings0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Растущие крылья",
+  "eid": "skyre_HEWRisingWings0",
+  "formid": "06000C1A",
+  "desc": "Каждый уровень эффекта «Удары бабочки» дополнительно увеличивает скорость передвижения и даёт шанс отразить входящие удары во время атаки.",
+  "lvl": 80,
+  "prereq": "skyre_HEWButterflyStrikes0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWBoilingPoint0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Точка кипения",
+  "eid": "skyre_HEWBoilingPoint0",
+  "formid": "06000BB3",
+  "desc": "С экипированным боевым топором или алебардой неотраженные удары врага могут вызвать Пыл на 15 секунд.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "axe"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWDishearten0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Сломленная воля",
+  "eid": "skyre_HEWDishearten0",
+  "formid": "06000C0E",
+  "desc": "Пока действует «Пыл», атаки боевым топором наносят на 20% больше урона блокирующим врагам и игнорируют 10% брони.",
+  "lvl": 70,
+  "prereq": "skyre_HEWBoilingPoint0; skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "axe",
+   "armor"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWGreatCleave0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Глубокая рана",
+  "eid": "skyre_HEWGreatCleave0",
+  "formid": "06000BD1",
+  "desc": "Неотраженные силовые атаки двуручными мечами и нодати дают до 20% шанса вызвать кровотечение и повторное оглушение на 4 секунды.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "power",
+   "bleed"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dot",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "twohand"
+  ],
+  "condition": [
+   "power",
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HEWScarred",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Покрытый шрамами",
+  "eid": "skyre_HEWScarred",
+  "formid": "06000C1C",
+  "desc": "Обычные атаки по врагам, на которых действует «Великий раскол», наносят на 15% больше урона и увеличивают восстановление запаса сил на 3 секунды.",
+  "lvl": 80,
+  "prereq": "skyre_HEWGreatCleave0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARFocus0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Сосредоточиться",
+  "eid": "skyre_MARFocus0",
+  "formid": "06000D68",
+  "desc": "Наносите на 10% больше урона любым луком. Арбалеты игнорируют на 10% больше брони.",
+  "lvl": -1,
+  "prereq": "skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "bow",
+   "bow",
+   "armor"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "EagleEye30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Орлиный взор",
+  "eid": "EagleEye30",
+  "formid": "00058F61",
+  "desc": "Если нажать клавишу блока при прицеливании, вы приблизите вид цели.",
+  "lvl": 30,
+  "prereq": "skyre_MARFocus0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARPointBlank0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Точка отсчета",
+  "eid": "skyre_MARPointBlank0",
+  "formid": "06000D73",
+  "desc": "Короткие луки наносят тем больше урона, чем ближе цель – вплоть до максимума 15% на расстоянии 15 футов.",
+  "lvl": 25,
+  "prereq": "skyre_MARFocus0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "Ranger",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Подвижность",
+  "eid": "Ranger",
+  "formid": "00058F63",
+  "desc": "Возможность двигаться быстрее с натянутым коротким луком.",
+  "lvl": 40,
+  "prereq": "skyre_MARPointBlank0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARFlanking0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Атака с фланга",
+  "eid": "skyre_MARFlanking0",
+  "formid": "06000D99",
+  "desc": "Атаки коротким луком, направленные в бок или спину врага, наносят на 25% больше урона.",
+  "lvl": 50,
+  "prereq": "Ranger",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARArrowhail0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Град стрел",
+  "eid": "skyre_MARArrowhail0",
+  "formid": "06000DAD",
+  "desc": "Быстрые последовательные атаки коротким луком наносят дополнительные 10% урона за каждый удар по той же цели – вплоть до максимума 30%.",
+  "lvl": 80,
+  "prereq": "skyre_MARFlanking0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARCoupDeGrace0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Удар Милосердия",
+  "eid": "skyre_MARCoupDeGrace0",
+  "formid": "06000DBC",
+  "desc": "Атаки любым луком наносят двойной урон врагам с уровнем здоровья ниже 15%.",
+  "lvl": 100,
+  "prereq": "skyre_MARTakedown0; skyre_MARArrowhail0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "dual"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARProminentFlanker0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Фланкер",
+  "eid": "skyre_MARProminentFlanker0",
+  "formid": "06000DA3",
+  "desc": "Атаки коротким луком, направленные в бок или спину врага, имеют 15% шанс пошатнуть цель.",
+  "lvl": 55,
+  "prereq": "skyre_MARFlanking0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARRangersTrick0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Егерские штучки",
+  "eid": "skyre_MARRangersTrick0",
+  "formid": "06000D9C",
+  "desc": "Удары коротким луком по атакующему врагу имеют 25% шанс обезоружить его.",
+  "lvl": 50,
+  "prereq": "skyre_MARPointBlank0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARKynesLance0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Копьё Кин",
+  "eid": "skyre_MARKynesLance0",
+  "formid": "06000D81",
+  "desc": "Длинные луки наносят тем больше урона, чем дальше цель – вплоть до максимума 30% на расстоянии 100 футов.",
+  "lvl": 25,
+  "prereq": "skyre_MARFocus0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARPowerDraw0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Мощный натяг",
+  "eid": "skyre_MARPowerDraw0",
+  "formid": "06000D76",
+  "desc": "Стоя прямо, натягивайте длинный лук 1.5 секунды суммарно для увеличения урона на 20%.",
+  "lvl": 30,
+  "prereq": "skyre_MARKynesLance0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARBanefulElan0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Некуда бежать",
+  "eid": "skyre_MARBanefulElan0",
+  "formid": "06000D9F",
+  "desc": "Атаки длинным луком имеют 30% шанс пошатнуть движущуюся цель и 45% шанс пошатнуть цель, бегущую спринтом.",
+  "lvl": 55,
+  "prereq": "skyre_MARPowerDraw0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARTakedown0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Снятие",
+  "eid": "skyre_MARTakedown0",
+  "formid": "06000DAA",
+  "desc": "Атаки длинным луком по пошатнувшимся врагам приводят к критическому удару.",
+  "lvl": 75,
+  "prereq": "skyre_MARBanefulElan0",
+  "ranks": 1,
+  "tags": [
+   "bow",
+   "crit"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARPrey0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Жертва",
+  "eid": "skyre_MARPrey0",
+  "formid": "06000DA7",
+  "desc": "Атаки длинным луком, направленные в спину врага, наносят на 50% больше урона.",
+  "lvl": 70,
+  "prereq": "skyre_MARBanefulElan0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 6,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "behind"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARBallistics",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Баллистика",
+  "eid": "skyre_MARBallistics",
+  "formid": "06000D80",
+  "desc": "Вы можете изготавливать арбалеты и болты в кузницах.",
+  "lvl": 30,
+  "prereq": "skyre_MARFocus0",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARCrossbowRecurve",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Усиленное натяжение",
+  "eid": "skyre_MARCrossbowRecurve",
+  "formid": "06000D94",
+  "desc": "Позволяет модифицировать любой арбалет, чтобы создать рекурсивный арбалет с увеличенным уроном.",
+  "lvl": 45,
+  "prereq": "skyre_MARBallistics",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARCrossbowSiege",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Утяжелённая конструкция",
+  "eid": "skyre_MARCrossbowSiege",
+  "formid": "06000D96",
+  "desc": "Позволяет модифицировать любой арбалет, чтобы создать осадный арбалет, наносящий больше урона блокирующим целям.",
+  "lvl": 75,
+  "prereq": "skyre_MARCrossbowRecurve",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARArtificer",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Изобретатель",
+  "eid": "skyre_MARArtificer",
+  "formid": "06000DBF",
+  "desc": "Можно еще сильнее улучшить уже модифицированный арбалет, комбинируя любые два улучшения.",
+  "lvl": 110,
+  "prereq": "skyre_MARCrossbowSiege; skyre_MARCrossbowMuffled",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARCrossbowLight",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Облегченная конструкция",
+  "eid": "skyre_MARCrossbowLight",
+  "formid": "06000D93",
+  "desc": "Позволяет модифицировать любой арбалет, чтобы создать облегчённый арбалет, который легче и быстрее.",
+  "lvl": 45,
+  "prereq": "skyre_MARBallistics",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARCrossbowMuffled",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Упругая тетива",
+  "eid": "skyre_MARCrossbowMuffled",
+  "formid": "06000D95",
+  "desc": "Позволяет модифицировать любой арбалет, чтобы создать бесшумный арбалет, который не издаёт звука и имеет увеличенный урон скрытной атаки.",
+  "lvl": 75,
+  "prereq": "skyre_MARCrossbowLight",
+  "ranks": 1,
+  "tags": [
+   "bow",
+   "sneak"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "crossbow"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_MARAdvancedFletching0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Улучшенное оперение",
+  "eid": "skyre_MARAdvancedFletching0",
+  "formid": "06000D84",
+  "desc": "Позволяет перековывать обычные болты в закалённые и укреплённые в кузницах.",
+  "lvl": 40,
+  "prereq": "skyre_MARBallistics",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ShieldWall00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Защитник",
+  "eid": "ShieldWall00",
+  "formid": "000BCCAE",
+  "desc": "Блокирование эффективнее на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DeadlyBash",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Смертельный удар плашмя",
+  "eid": "DeadlyBash",
+  "formid": "0005F594",
+  "desc": "Удары плашмя наносят впятеро больше урона.",
+  "lvl": 50,
+  "prereq": "PowerBashPerk",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "kill"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_BLCDebilitatingBash",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Ослабляющий удар",
+  "eid": "skyre_BLCDebilitatingBash",
+  "formid": "06000992",
+  "desc": "Удар щитом отменяет регенеративные способности противника на 10 секунд. ",
+  "lvl": 70,
+  "prereq": "DeadlyBash",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DisarmingBash",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Обезоруживание",
+  "eid": "DisarmingBash",
+  "formid": "00058F66",
+  "desc": "Вы можете обезоружить противника силовым ударом плашмя.",
+  "lvl": 90,
+  "prereq": "skyre_BLCDebilitatingBash",
+  "ranks": 1,
+  "tags": [
+   "power"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "ShieldCharge",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Живой молот",
+  "eid": "ShieldCharge",
+  "formid": "00058F6A",
+  "desc": "Спринт с поднятым щитом сбивает с ног большинство противников.",
+  "lvl": 120,
+  "prereq": "DisarmingBash; BlockRunner",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "shield"
+  ],
+  "condition": [
+   "moving",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "QuickReflexes",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Быстрые рефлексы",
+  "eid": "QuickReflexes",
+  "formid": "000D8C33",
+  "desc": "Окно времени для своевременных блокирований увеличено на 0.1 секунды.",
+  "lvl": 30,
+  "prereq": "ShieldWall00",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_BLCDispel0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Очищение цели",
+  "eid": "skyre_BLCDispel0",
+  "formid": "0600098F",
+  "desc": "Своевременные блоки щитом снижают силу получаемых заклинаний и зачарований на 50%.",
+  "lvl": 50,
+  "prereq": "QuickReflexes",
+  "ranks": 1,
+  "tags": [
+   "shield",
+   "magic"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_BLCReplenish0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Восполнение",
+  "eid": "skyre_BLCReplenish0",
+  "formid": "06000987",
+  "desc": "Отражение удара врага своевременным блоком без щита восстанавливает до 50 единиц запаса сил.",
+  "lvl": 40,
+  "prereq": "QuickReflexes",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block",
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_BLCExhaust0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Изнурение",
+  "eid": "skyre_BLCExhaust0",
+  "formid": "0600097A",
+  "desc": "Отражение удара врага своевременным блоком снижает наносимый им урон на 25% в течение 6 секунд.",
+  "lvl": 30,
+  "prereq": "ShieldWall00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DeflectArrows",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Отбивание стрел",
+  "eid": "DeflectArrows",
+  "formid": "00058F68",
+  "desc": "Стрелы и болты, отраженные щитом, с шансом до 25% не наносят урона.",
+  "lvl": 50,
+  "prereq": "skyre_BLCExhaust0",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "crossbow",
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "ElementalProtection",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Защита от стихий",
+  "eid": "ElementalProtection",
+  "formid": "00058F69",
+  "desc": "Блокирование щитом снижает получаемый стихийный урон на 15%.",
+  "lvl": 70,
+  "prereq": "DeflectArrows",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "sneak",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "BlockRunner",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Блок на бегу",
+  "eid": "BlockRunner",
+  "formid": "00106253",
+  "desc": "Вы можете быстрее двигаться, закрывшись щитом.",
+  "lvl": 90,
+  "prereq": "ElementalProtection",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "moving",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DragonArmor",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Драконья ковка",
+  "eid": "DragonArmor",
+  "formid": "00052190",
+  "desc": "Создание и закалка драконьего снаряжения из драконьих пластин и чешуи; полный комплект драконьей брони увеличивает урон огнем и льдом, а также скорость передвижения.\r\nПЕР: С возвращением драконов можно воссоздать легендарное оружие и доспехи. Но лишь истинный мастер может надеяться эффективно работать с такими материалами...",
+  "lvl": 100,
+  "prereq": "GlassSmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 7,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTBlacksmith0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кузнец",
+  "eid": "skyre_SMTBlacksmith0",
+  "formid": "06000EBF",
+  "desc": "Качество закалки оружия и брони улучшено на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 7,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ArcaneBlacksmith",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кузнец-волшебник",
+  "eid": "ArcaneBlacksmith",
+  "formid": "0005218E",
+  "desc": "Улучшение зачарованного оружия и брони.",
+  "lvl": 50,
+  "prereq": "skyre_SMTBlacksmith0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTTradecraft",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Ювелир",
+  "eid": "skyre_SMTTradecraft",
+  "formid": "06000EE0",
+  "desc": "Позволяет создавать украшения и некоторые виды оружия из серебра и золота.",
+  "lvl": 40,
+  "prereq": "skyre_SMTBlacksmith0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTDeepSilver",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Глубокая обработка серебра",
+  "eid": "skyre_SMTDeepSilver",
+  "formid": "06000EE4",
+  "desc": "Позволяет переплавлять любое серебряное оружие у кузнечных горнов, создавая гораздо более прочные аналоги из очищенного серебра.",
+  "lvl": 60,
+  "prereq": "skyre_SMTTradecraft",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTWeavingMill",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Ткацкий станок",
+  "eid": "skyre_SMTWeavingMill",
+  "formid": "06000EE1",
+  "desc": "Позволяет перешить любой предмет одежды в элемент экипировки из ткани сновидений, который резонирует с настоящими доспехами, усиливая их.",
+  "lvl": 50,
+  "prereq": "skyre_SMTTradecraft",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTMeltdown",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Расплав",
+  "eid": "skyre_SMTMeltdown",
+  "formid": "06000EDF",
+  "desc": "Позволяет переплавлять безделушки и экипировку из материала, которым вы владеете, чтобы вернуть часть сырья.",
+  "lvl": 30,
+  "prereq": "skyre_SMTBlacksmith0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 8,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "SteelSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Принципы Кузнечного Дела",
+  "eid": "SteelSmithing",
+  "formid": "000CB40D",
+  "desc": "Создание и закалка стального снаряжения из стали; полный комплект стальной брони лучше защищает от луков и арбалетов.\r\nПЕР: Доброкачественная сталь – истинное испытание для любого начинающего кузнеца, а хорошо выкованный стальной лист может даже защитить от смертоносных арбалетных болтов.",
+  "lvl": 20,
+  "prereq": "skyre_SMTBlacksmith0",
+  "ranks": 1,
+  "tags": [
+   "bow",
+   "bow",
+   "armor",
+   "shield"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "crossbow",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DwarvenSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Двемерская оснастка",
+  "eid": "DwarvenSmithing",
+  "formid": "000CB40E",
+  "desc": "Создание и закалка двемерского снаряжения из двемерского металла; полный комплект двемерской брони защищает как от фалмерского, так и от двемерского оружия.\r\nПЕР: Хотя большинство двемерских искусств утрачено, умелые кузнецы научились обрабатывать залежи двемерского металла, чтобы защищать отважных исследователей подземных руин.",
+  "lvl": 30,
+  "prereq": "SteelSmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "OrcishSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Орочьи принципы",
+  "eid": "OrcishSmithing",
+  "formid": "000CB410",
+  "desc": "Создание и закалка орочьего снаряжения из орихалка; все орочье оружие наносит больше урона при ношении полного комплекта брони из этого материала.\r\nПЕР: Любимый материал орков – труднообрабатываемый орихалк позволяет создавать плотное и тяжёлое оружие и доспехи, которыми можно наносить жестокие удары.",
+  "lvl": 50,
+  "prereq": "DwarvenSmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "EbonySmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Зов Красной горы",
+  "eid": "EbonySmithing",
+  "formid": "000CB412",
+  "desc": "Создание и закалка эбонитового снаряжения из эбонита; сопротивление магии увеличено при ношении полного комплекта брони из этого материала.\r\nПЕР: \\\"Кровь богов\\\" – устойчивый к магии эбонит является одним из самых ценных и сложных материалов, которые только могут встретиться кузнецу за его карьеру.",
+  "lvl": 80,
+  "prereq": "OrcishSmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DaedricSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Даэдрические исследования",
+  "eid": "DaedricSmithing",
+  "formid": "000CB413",
+  "desc": "Создание и закалка даэдрического снаряжения из эбонита и сердец даэдра; полный комплект даэдрической брони поглощает 10% урона и позволяет связывать даэдра на более долгое время.\r\nПЕР: Одни боги знают, где можно этому научиться, но при наличии тёмных знаний и мастерства смертные кузнецы способны ковать даэдрические изделия.",
+  "lvl": 100,
+  "prereq": "EbonySmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 6,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SMTLeathercraft",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кожевенное ремесло",
+  "eid": "skyre_SMTLeathercraft",
+  "formid": "06000EC4",
+  "desc": "Создание и закалка кожаной экипировки из кожи; полный комплект кожаной брони защищает от огня и мороза.",
+  "lvl": 20,
+  "prereq": "skyre_SMTBlacksmith0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 9,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ElvenSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Эльфийские знания",
+  "eid": "ElvenSmithing",
+  "formid": "000CB40F",
+  "desc": "Создание и закалка эльфийского снаряжения из лунного камня; заклинания стоят меньше магии при ношении полного комплекта брони из этого материала.\r\nПЕР: Лёгкие и изящные эльфийские орудия войны – прекрасные творения, идеальные для боевых магов... разумеется, как только будут открыты секреты их изготовления.",
+  "lvl": 30,
+  "prereq": "skyre_SMTLeathercraft",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "magic"
+  ],
+  "x": 10,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "AdvancedArmors",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Традиции нордов",
+  "eid": "AdvancedArmors",
+  "formid": "000CB414",
+  "desc": "Создание и закалка нордского снаряжения из корунда; запас сил и здоровье восстанавливаются быстрее при ношении полного комплекта брони из этого материала.\r\nПЕР: Корунд позволяет создавать на удивление хорошо сидящие доспехи, но прежде чем с ним можно будет безопасно работать, он требует тщательных навыков легирования.",
+  "lvl": 50,
+  "prereq": "ElvenSmithing",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 12,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "GlassSmithing",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Обработка стекла",
+  "eid": "GlassSmithing",
+  "formid": "000CB411",
+  "desc": "Создание и закалка стеклянного снаряжения из малахита; полный комплект стеклянной брони дает шанс поглощать входящие заклинания.\r\nПЕР: Из малахита можно создавать стеклянные изделия непревзойдённой красоты и прочности, даже поглощающие враждебную магию, но кристаллизовать этот редкий минерал крайне сложно.",
+  "lvl": 70,
+  "prereq": "AdvancedArmors",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "magic"
+  ],
+  "x": 12,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Juggernaut00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Джаггернаут",
+  "eid": "Juggernaut00",
+  "formid": "000BCD2A",
+  "desc": "Увеличивает показатель брони для тяжелой брони на 15%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "WellFitted",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Хорошая экипировка",
+  "eid": "WellFitted",
+  "formid": "00058F6F",
+  "desc": "Ношение полного комплекта тяжелой брони увеличивает защиту на 25%.",
+  "lvl": 30,
+  "prereq": "Juggernaut00",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "shield"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "TowerOfStrength",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Титан",
+  "eid": "TowerOfStrength",
+  "formid": "00058F6C",
+  "desc": "Ношение полного комплекта тяжелой брони снижает получаемое ошеломление на 50%.",
+  "lvl": 50,
+  "prereq": "WellFitted",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "MatchingSetHeavy",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Достижение гармонии",
+  "eid": "MatchingSetHeavy",
+  "formid": "00107832",
+  "desc": "Ношение полного подходящего комплекта тяжелой брони увеличивает защиту на 25%.",
+  "lvl": 70,
+  "prereq": "TowerOfStrength",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "shield"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HARStoneWall",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Каменная стена",
+  "eid": "skyre_HARStoneWall",
+  "formid": "06000BB2",
+  "desc": "Ношение полного комплекта тяжелой брони снижает урон от силовых атак врагов на 50%.",
+  "lvl": 130,
+  "prereq": "MatchingSetHeavy",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "power"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HARStalwartDefense0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Оборонительная стойка",
+  "eid": "skyre_HARStalwartDefense0",
+  "formid": "06000BA9",
+  "desc": "Ношение полного комплекта тяжелой брони снижает урон от клинкового оружия и магии электричества до 10%.",
+  "lvl": 30,
+  "prereq": "Juggernaut00",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Conditioning",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Упорная тренировка",
+  "eid": "Conditioning",
+  "formid": "00058F6D",
+  "desc": "Тяжелая броня весит на 25% меньше при ношении.",
+  "lvl": 60,
+  "prereq": "skyre_HARStalwartDefense0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HARThickSkin",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Толстая кожа",
+  "eid": "skyre_HARThickSkin",
+  "formid": "06000BAD",
+  "desc": "Чем больше предметов тяжелой брони надето, тем выше шанс отразить стрелы без получения урона.",
+  "lvl": 80,
+  "prereq": "Conditioning",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 6,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_HARMonolith",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Монолит",
+  "eid": "skyre_HARMonolith",
+  "formid": "06000BAF",
+  "desc": "Ношение полного комплекта тяжелой брони дает 50% шанс оглушить врага, наносящего силовую атаку.",
+  "lvl": 120,
+  "prereq": "skyre_HARThickSkin",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "power"
+  ],
+  "x": 6,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power",
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "AgileDefender00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Ловкость в обороне",
+  "eid": "AgileDefender00",
+  "formid": "000BE123",
+  "desc": "Увеличивает показатель брони для легкой брони на 10%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "CustomFit",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Подгонка по фигуре",
+  "eid": "CustomFit",
+  "formid": "00051B1B",
+  "desc": "Ношение полного комплекта легкой брони дает 15% бонус к броне.",
+  "lvl": 25,
+  "prereq": "AgileDefender00",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARFlexibility",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Гибкость",
+  "eid": "skyre_LARFlexibility",
+  "formid": "06000CD7",
+  "desc": "Ношение полного комплекта легкой брони делает невозможным для атакующих пробить её.",
+  "lvl": 40,
+  "prereq": "CustomFit; skyre_LARWeakSpot0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARBalance0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Баланс",
+  "eid": "skyre_LARBalance0",
+  "formid": "06000CD8",
+  "desc": "Ношение полного комплекта легкой брони снижает затраты запаса сил на мощные атаки на 15%.",
+  "lvl": 60,
+  "prereq": "Unhindered; skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARBattleFervor0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Боевой пыл",
+  "eid": "skyre_LARBattleFervor0",
+  "formid": "06000CDB",
+  "desc": "Если вы не блокируете и носите только легкую броню, входящая мощная атака даёт прилив запаса сил и скорости передвижения.",
+  "lvl": 80,
+  "prereq": "WindWalker; skyre_LARBalance0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DeftMovement",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Ловкий боец",
+  "eid": "DeftMovement",
+  "formid": "00107831",
+  "desc": "Ношение полного комплекта легкой брони дает 10% шанс избежать всего урона.",
+  "lvl": 100,
+  "prereq": "skyre_LARBattleFervor0; skyre_LARSwiftCounter",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARHiddenPower",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Скрытая сила",
+  "eid": "skyre_LARHiddenPower",
+  "formid": "06000CE5",
+  "desc": "Преимущества материала, из которого сделана легкая броня, вдвое сильнее.",
+  "lvl": 120,
+  "prereq": "DeftMovement; skyre_LARBodyTension",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARBodyTension",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Напряжение тела",
+  "eid": "skyre_LARBodyTension",
+  "formid": "06000CE1",
+  "desc": "В течение 2 секунд после окончания «Боевого пыла» вы наносите вдвое больше урона.",
+  "lvl": 110,
+  "prereq": "skyre_LARBattleFervor0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "WindWalker",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Крылья ветра",
+  "eid": "WindWalker",
+  "formid": "00105F22",
+  "desc": "Ношение полного комплекта легкой брони ускоряет восстановление запаса сил на 50%.",
+  "lvl": 60,
+  "prereq": "skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARSwiftCounter",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Противоход",
+  "eid": "skyre_LARSwiftCounter",
+  "formid": "06000CDA",
+  "desc": "Ношение полного комплекта легкой брони даёт 50% шанс полностью избежать урона при своевременном блокировании лёгким щитом.",
+  "lvl": 70,
+  "prereq": "WindWalker",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "shield"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_LARWeakSpot0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Слабое место",
+  "eid": "skyre_LARWeakSpot0",
+  "formid": "06000CD4",
+  "desc": "Атаки по врагам без брони или только в легкой броне наносят на 10% больше урона.",
+  "lvl": 35,
+  "prereq": "AgileDefender00",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Unhindered",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Вторая кожа",
+  "eid": "Unhindered",
+  "formid": "00051B1C",
+  "desc": "Вес легкой брони снижен на 50%.",
+  "lvl": 40,
+  "prereq": "skyre_LARWeakSpot0",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "LightFingers00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Ловкие пальчики",
+  "eid": "LightFingers00",
+  "formid": "000BE124",
+  "desc": "Карманные кражи на 10% легче; вес и стоимость предмета снижают шансы на кражу; взлом на 30% легче.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "lockpick",
+   "pickpocket"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "KeyMaster",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Ключник",
+  "eid": "KeyMaster",
+  "formid": "000D79A0",
+  "desc": "Кража ключей из карманов почти всегда успешна; дает копию ключа от любого вскрытого замка, если таковой имеется.",
+  "lvl": 60,
+  "prereq": "Cutpurse",
+  "ranks": 1,
+  "tags": [
+   "pickpocket"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "passive"
+  ]
+ },
+ {
+  "id": "Locksmith",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Замочный мастер",
+  "eid": "Locksmith",
+  "formid": "00058208",
+  "desc": "Отмычка начинается близко к положению открытия замка, а процесс взлома остается незамеченным.",
+  "lvl": 80,
+  "prereq": "KeyMaster",
+  "ranks": 1,
+  "tags": [
+   "sword",
+   "lockpick"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "GoldenTouch",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Золотоискатель",
+  "eid": "GoldenTouch",
+  "formid": "0005820A",
+  "desc": "Вы находите больше золота в сундуках.",
+  "lvl": 40,
+  "prereq": "LightFingers00",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "TreasureHunter",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Охотник за сокровищами",
+  "eid": "TreasureHunter",
+  "formid": "00105F26",
+  "desc": "Шанс найти особое сокровище увеличен на 5%.",
+  "lvl": 60,
+  "prereq": "GoldenTouch",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ExtraPockets",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Накладные карманы",
+  "eid": "ExtraPockets",
+  "formid": "00096590",
+  "desc": "Переносимый вес увеличен на 100.",
+  "lvl": 50,
+  "prereq": "GoldenTouch",
+  "ranks": 1,
+  "tags": [
+   "pickpocket"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYWanderer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Странник",
+  "eid": "skyre_WAYWanderer0",
+  "formid": "06000F54",
+  "desc": "Вы становитесь на 3% устойчивее к морозу и быстрее передвигаетесь на природе.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYSeasoned0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Закаленный",
+  "eid": "skyre_WAYSeasoned0",
+  "formid": "06000F6D",
+  "desc": "Вы становитесь на 15% устойчивее к болезням и ядам.",
+  "lvl": 25,
+  "prereq": "skyre_WAYWanderer0",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYGatherer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Собиратель",
+  "eid": "skyre_WAYGatherer0",
+  "formid": "06000F9D",
+  "desc": "Собирайте дополнительное мясо, ингредиенты и шкуры с некоторых животных, с шансом получить ценную качественную шкуру.",
+  "lvl": 35,
+  "prereq": "skyre_WAYSeasoned0",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "GreenThumb",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Травник",
+  "eid": "GreenThumb",
+  "formid": "00105F2E",
+  "desc": "Дает 50% шанс собрать дополнительный ингредиент из собираемых источников ингредиентов.",
+  "lvl": 70,
+  "prereq": "skyre_WAYGatherer0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreLesserCreatures",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: Небольшие существа",
+  "eid": "skyre_WAYLoreLesserCreatures",
+  "formid": "06000F74",
+  "desc": "Вы получаете больше знаний об обычной дичи – оленях, лосях, лисах, кроликах, крысах-падальщиках, грязевых крабах и рыбе-убийце.",
+  "lvl": 30,
+  "prereq": "skyre_WAYWanderer0; skyre_WAYChosenFiend2; skyre_WAYChosenFiend0; skyre_WAYChosenFiend1",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLorePredators",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: Хищники",
+  "eid": "skyre_WAYLorePredators",
+  "formid": "06000F75",
+  "desc": "Вы получаете больше знаний обо всех видах волков, саблезубых кошек и медведей – существах, принесших смерть многим исследователям.",
+  "lvl": 45,
+  "prereq": "skyre_WAYLoreLesserCreatures; skyre_WAYChosenFiend2; skyre_WAYChosenFiend0; skyre_WAYChosenFiend1",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYHarmony",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Гармония",
+  "eid": "skyre_WAYHarmony",
+  "formid": "06000FCC",
+  "desc": "Все безмозглые существа, о которых у вас есть знания, больше не враждебны.",
+  "lvl": 80,
+  "prereq": "skyre_WAYLorePredators",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreForcesOfNature",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: Силы природы",
+  "eid": "skyre_WAYLoreForcesOfNature",
+  "formid": "06000F78",
+  "desc": "Вы получаете больше знаний о спригганах, ледяных призраках и троллях – могучих стражах лесов и гор.",
+  "lvl": 80,
+  "prereq": "skyre_WAYLorePredators; skyre_WAYChosenFiend0; skyre_WAYChosenFiend1; skyre_WAYChosenFiend2",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreDragons",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: Драконы",
+  "eid": "skyre_WAYLoreDragons",
+  "formid": "06000F7A",
+  "desc": "Вы получаете больше знаний о драконах – мудрых, но жестоких владыках небес.",
+  "lvl": 120,
+  "prereq": "skyre_WAYLoreForcesOfNature; skyre_WAYChosenFiend1; skyre_WAYChosenFiend2; skyre_WAYChosenFiend0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreHumanoids",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знания: люди и меры",
+  "eid": "skyre_WAYLoreHumanoids",
+  "formid": "06000F79",
+  "desc": "Вы получаете больше знаний обо всех цивилизованных расах Тамриэля.",
+  "lvl": 100,
+  "prereq": "skyre_WAYLoreForcesOfNature; skyre_WAYChosenFiend0; skyre_WAYChosenFiend1; skyre_WAYChosenFiend2",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreCaveDwellers",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: обитатели пещер",
+  "eid": "skyre_WAYLoreCaveDwellers",
+  "formid": "06000F76",
+  "desc": "Вы получаете больше знаний о пауках, чаурусах и фалмерах – коварных обитателях глубин.",
+  "lvl": 60,
+  "prereq": "skyre_WAYLorePredators; skyre_WAYChosenFiend1; skyre_WAYChosenFiend2; skyre_WAYChosenFiend0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLoreGreatLandstriders",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Знание: Крупные существа",
+  "eid": "skyre_WAYLoreGreatLandstriders",
+  "formid": "06000F77",
+  "desc": "Вы получаете больше знаний о великанах и мамонтах – крупнейших существах, бродящих по тундре Скайрима.",
+  "lvl": 70,
+  "prereq": "skyre_WAYLorePredators; skyre_WAYChosenFiend1; skyre_WAYChosenFiend2; skyre_WAYChosenFiend0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYChosenFiend0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Егерь",
+  "eid": "skyre_WAYChosenFiend0",
+  "formid": "06000F9A",
+  "desc": "Вы наносите на 10% больше урона и получаете на 5% меньше урона от любого существа, о котором у вас есть знания.",
+  "lvl": 35,
+  "prereq": "skyre_WAYLoreLesserCreatures",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYTracker0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Наблюдающий",
+  "eid": "skyre_WAYTracker0",
+  "formid": "06000F7B",
+  "desc": "Используйте способность «Выслеживание», чтобы обнаруживать всех известных вам существ в радиусе 100 футов, передвигаясь скрытно и медленно.",
+  "lvl": 30,
+  "prereq": "skyre_WAYLoreLesserCreatures",
+  "ranks": 0,
+  "tags": [
+   "sneak"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [
+   "range"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYOutlander",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Чужеземец",
+  "eid": "skyre_WAYOutlander",
+  "formid": "06000FBD",
+  "desc": "Броня, созданная в чужих землях и различными культурами, обладает дополнительными эффектами.",
+  "lvl": 40,
+  "prereq": "skyre_WAYLoreLesserCreatures",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYAwareness",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Осведомленность",
+  "eid": "skyre_WAYAwareness",
+  "formid": "06000F60",
+  "desc": "Позволяет собирать и расставлять медвежьи капканы и кальтропы.",
+  "lvl": 25,
+  "prereq": "skyre_WAYWanderer0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYHuntingGrounds0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Охотничьи угодья",
+  "eid": "skyre_WAYHuntingGrounds0",
+  "formid": "06000FB8",
+  "desc": "Позволяет создавать медвежьи капканы у кузнечных горнов.",
+  "lvl": 35,
+  "prereq": "skyre_WAYAwareness",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYSilentHunt0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Тихая охота",
+  "eid": "skyre_WAYSilentHunt0",
+  "formid": "06000FC7",
+  "desc": "Кальтропы и медвежьи капканы наносят на 50% больше урона.",
+  "lvl": 50,
+  "prereq": "skyre_WAYHuntingGrounds0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_WAYLegcutter",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Ноголом",
+  "eid": "skyre_WAYLegcutter",
+  "formid": "06000FDC",
+  "desc": "Ловушки игнорируют броню, замедляют жертву и могут вызвать кровотечение.",
+  "lvl": 70,
+  "prereq": "skyre_WAYSilentHunt0",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "bleed"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Stealth00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Скрытность",
+  "eid": "Stealth00",
+  "formid": "000BE126",
+  "desc": "Вас на 10% труднее заметить в скрытности.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "sneak"
+  ],
+  "x": 6,
+  "y": 0,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "Backstab",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Удар в спину",
+  "eid": "Backstab",
+  "formid": "00058210",
+  "desc": "Множитель урона скрытной атаки увеличен на 1 для одноручного оружия и на 0.5 для двуручного оружия.",
+  "lvl": 30,
+  "prereq": "Stealth00",
+  "ranks": 1,
+  "tags": [
+   "sneak"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dagger",
+   "twohand",
+   "onehand"
+  ],
+  "condition": [
+   "sneak",
+   "behind"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKLastBreath",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Последний вздох",
+  "eid": "skyre_SNKLastBreath",
+  "formid": "06000EF7",
+  "desc": "Позволяет мгновенно убить спящего или находящегося без сознания человека любым оружием при взаимодействии с ним.",
+  "lvl": 55,
+  "prereq": "Backstab",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "conditional"
+  ],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKKnockout",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Нокаут",
+  "eid": "skyre_SNKKnockout",
+  "formid": "06000EE9",
+  "desc": "Позволяет оглушить человека одноручным дробящим оружием, подкравшись к нему сзади и взаимодействуя с ним.",
+  "lvl": 45,
+  "prereq": "Backstab",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "physical"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "onehand"
+  ],
+  "condition": [
+   "behind",
+   "staggered"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "LightFoot",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Легкий шаг",
+  "eid": "LightFoot",
+  "formid": "0005820C",
+  "desc": "Нажимные пластины не срабатывают, когда вы наступаете на них.",
+  "lvl": 30,
+  "prereq": "Stealth00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "MuffledMovement",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Приглушенные шаги",
+  "eid": "MuffledMovement",
+  "formid": "00058213",
+  "desc": "Шум от брони снижен на 25%.",
+  "lvl": 40,
+  "prereq": "LightFoot; skyre_SNKIntruder",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "SilentRoll",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Тихий кувырок",
+  "eid": "SilentRoll",
+  "formid": "00105F23",
+  "desc": "При спринте в режиме скрытности происходит бесшумный кувырок вперед.",
+  "lvl": 50,
+  "prereq": "MuffledMovement",
+  "ranks": 1,
+  "tags": [
+   "sneak"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak",
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKAmbush0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Засада",
+  "eid": "skyre_SNKAmbush0",
+  "formid": "06000EFC",
+  "desc": "Успешная скрытная атака кинжалом или танто замедляет время на 25% в течение 2 секунд.",
+  "lvl": 70,
+  "prereq": "SilentRoll",
+  "ranks": 1,
+  "tags": [
+   "dagger",
+   "sneak"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dagger"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKAssassinate",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Устранение",
+  "eid": "skyre_SNKAssassinate",
+  "formid": "06000F07",
+  "desc": "Позволяет мгновенно убить человека кинжалом или танто, подкравшись к нему сзади и взаимодействуя с ним.",
+  "lvl": 130,
+  "prereq": "skyre_SNKAmbush0",
+  "ranks": 1,
+  "tags": [
+   "dagger"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dagger"
+  ],
+  "condition": [
+   "low_hp",
+   "behind"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKSilentWarmonger0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Удар из тени",
+  "eid": "skyre_SNKSilentWarmonger0",
+  "formid": "06000EF9",
+  "desc": "Скрытные атаки оружием наносят на 25% больше урона, если цель насторожена или вовлечена в бой.",
+  "lvl": 60,
+  "prereq": "SilentRoll",
+  "ranks": 1,
+  "tags": [
+   "sneak"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [
+   "conditional"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DeadlyAim",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Верный прицел",
+  "eid": "DeadlyAim",
+  "formid": "001036F0",
+  "desc": "Скрытные атаки из луков имеют 20% шанс игнорировать броню цели и могут случайно нанести больше урона.",
+  "lvl": 60,
+  "prereq": "MuffledMovement; skyre_LARFlexibility",
+  "ranks": 1,
+  "tags": [
+   "bow",
+   "armor",
+   "sneak"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "QuietCasting",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Бесшумные заклинания",
+  "eid": "QuietCasting",
+  "formid": "000581FD",
+  "desc": "Вы творите любые заклинания любой школы магии совершенно бесшумно для других.",
+  "lvl": 50,
+  "prereq": "MuffledMovement",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKArcaneAssassin",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Мистический убийца",
+  "eid": "skyre_SNKArcaneAssassin",
+  "formid": "06000EF8",
+  "desc": "Множитель скрытной атаки для стихийных заклинаний увеличен на 2.5.",
+  "lvl": 60,
+  "prereq": "QuietCasting",
+  "ranks": 1,
+  "tags": [
+   "magic",
+   "sneak"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dagger"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKTouchOfCalamity",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Касание погибели",
+  "eid": "skyre_SNKTouchOfCalamity",
+  "formid": "06000F04",
+  "desc": "Скрытные атаки заклинаниями касания наносят на 40% больше урона.",
+  "lvl": 70,
+  "prereq": "skyre_SNKArcaneAssassin",
+  "ranks": 1,
+  "tags": [
+   "magic",
+   "sneak"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKDeadlyWhispers",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Смертоносный шёпот",
+  "eid": "skyre_SNKDeadlyWhispers",
+  "formid": "06000EFB",
+  "desc": "Ваш Голос становится не Криком, но шепотом.",
+  "lvl": 65,
+  "prereq": "QuietCasting",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SNKIntruder",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Нежеланный",
+  "eid": "skyre_SNKIntruder",
+  "formid": "06000EE8",
+  "desc": "Во время незаконного проникновения вас на 20% труднее обнаружить.",
+  "lvl": 30,
+  "prereq": "Stealth00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Alchemist00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Алхимик",
+  "eid": "Alchemist00",
+  "formid": "000BE127",
+  "desc": "Сваренные вами зелья и яды на 10% сильнее.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "alchemy",
+   "poison"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Physician",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Целитель",
+  "eid": "Physician",
+  "formid": "00058215",
+  "desc": "Ваши зелья, восстанавливающие здоровье, магию или запас сил, эффективнее на 25%.",
+  "lvl": 20,
+  "prereq": "Alchemist00",
+  "ranks": 1,
+  "tags": [
+   "alchemy"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Benefactor",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Провизор",
+  "eid": "Benefactor",
+  "formid": "00058216",
+  "desc": "Сваренные вами зелья с полезными эффектами имеют на 15% большую силу эффекта.",
+  "lvl": 30,
+  "prereq": "Physician",
+  "ranks": 1,
+  "tags": [
+   "alchemy"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCVitalHeat",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Живительный жар",
+  "eid": "skyre_ALCVitalHeat",
+  "formid": "06000868",
+  "desc": "Зелья, восстанавливающие здоровье, магию или запас сил, оказывают полное действие вдвое быстрее.",
+  "lvl": 75,
+  "prereq": "Benefactor",
+  "ranks": 1,
+  "tags": [
+   "alchemy"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Purity",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Чистота",
+  "eid": "Purity",
+  "formid": "0005821D",
+  "desc": "Создаваемые вами зелья не имеют отрицательных эффектов, а яды - положительных.",
+  "lvl": 100,
+  "prereq": "ConcentratedPoison; skyre_ALCVitalHeat",
+  "ranks": 1,
+  "tags": [
+   "alchemy",
+   "poison"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Poisoner",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Отравитель",
+  "eid": "Poisoner",
+  "formid": "00058217",
+  "desc": "Сваренные вами яды на 20% эффективнее.",
+  "lvl": 30,
+  "prereq": "Alchemist00",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ConcentratedPoison",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Концентрированный яд",
+  "eid": "ConcentratedPoison",
+  "formid": "00105F2F",
+  "desc": "Яды, нанесенные на оружие, действуют на один удар дольше.",
+  "lvl": 50,
+  "prereq": "Poisoner",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCPoisonBurst",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Ядовитый взрыв",
+  "eid": "skyre_ALCPoisonBurst",
+  "formid": "06000857",
+  "desc": "Позволяет варить ядовитые экстракты в кулинарном котле, которыми можно отравлять медвежьи капканы и шипы.",
+  "lvl": 60,
+  "prereq": "ConcentratedPoison; skyre_ALCFulminatingMixtures",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCVenomousCoercion",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Пагубное принуждение",
+  "eid": "skyre_ALCVenomousCoercion",
+  "formid": "0600082E",
+  "desc": "С ростом мастерства в Алхимии сила эффектов ядов, влияющих на разум, также возрастает.",
+  "lvl": 35,
+  "prereq": "Poisoner",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Experimenter50",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Экспериментатор",
+  "eid": "Experimenter50",
+  "formid": "00058218",
+  "desc": "Употребление ингредиента имеет шанс раскрыть его второй эффект.",
+  "lvl": 40,
+  "prereq": "Alchemist00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCFieldAlchemy",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Полевая алхимия",
+  "eid": "skyre_ALCFieldAlchemy",
+  "formid": "06000869",
+  "desc": "Позволяет создавать алхимические аппараты на кузнечных горнах и варить с их помощью зелья без алхимической лаборатории.",
+  "lvl": 80,
+  "prereq": "Experimenter50",
+  "ranks": 1,
+  "tags": [
+   "alchemy"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCFulminatingMixtures",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Гремучие смеси",
+  "eid": "skyre_ALCFulminatingMixtures",
+  "formid": "0600082F",
+  "desc": "Позволяет смешивать ядовитые составы в кулинарном котле; будучи незаметно подложенными жертве, они накладывают различные вредные эффекты.",
+  "lvl": 40,
+  "prereq": "Alchemist00",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "role": "stealth",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALCFuse",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Запал",
+  "eid": "skyre_ALCFuse",
+  "formid": "06000851",
+  "desc": "Позволяет улучшать стрелы взрывчатой смесью, чтобы они детонировали при попадании.",
+  "lvl": 60,
+  "prereq": "skyre_ALCFulminatingMixtures",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "skyre_ALCSuffocation",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Удушение",
+  "eid": "skyre_ALCSuffocation",
+  "formid": "06000873",
+  "desc": "Позволяет улучшать стрелы ядовитой смесью, которая при попадании распыляет облако удушающего пепла.",
+  "lvl": 120,
+  "prereq": "skyre_ALCFuse",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [
+   "enchanting"
+  ],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "skyre_SPCFluentSpeaker0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Умелый оратор",
+  "eid": "skyre_SPCFluentSpeaker0",
+  "formid": "06000F08",
+  "desc": "Крики драконов восстанавливаются на 10% быстрее.",
+  "lvl": 20,
+  "prereq": "Haggling00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "role": "support",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCViolentVoice0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Грубый голос",
+  "eid": "skyre_SPCViolentVoice0",
+  "formid": "06000F13",
+  "desc": "Атакующие крики драконов на 25% мощнее.",
+  "lvl": 30,
+  "prereq": "skyre_SPCFluentSpeaker0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCEchoingRage",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Отголоски ярости",
+  "eid": "skyre_SPCEchoingRage",
+  "formid": "06000F35",
+  "desc": "Сила атакующих криков драконов растет с мастерством красноречия.",
+  "lvl": 70,
+  "prereq": "skyre_SPCViolentVoice0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCLeadersVoice",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Голос лидера",
+  "eid": "skyre_SPCLeadersVoice",
+  "formid": "06000F37",
+  "desc": "Крики драконов, призывающие существ, действуют на 50% дольше.",
+  "lvl": 80,
+  "prereq": "skyre_SPCEchoingRage; skyre_SPCEchoingReason; skyre_SPCLoyalty0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCHeroicVoice0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Героический голос",
+  "eid": "skyre_SPCHeroicVoice0",
+  "formid": "06000F24",
+  "desc": "Защитные крики драконов на 10% эффективнее.",
+  "lvl": 40,
+  "prereq": "skyre_SPCFluentSpeaker0",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCEchoingReason",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Отголоски разума",
+  "eid": "skyre_SPCEchoingReason",
+  "formid": "06000F36",
+  "desc": "Сила безвредных криков драконов растет с мастерством красноречия.",
+  "lvl": 70,
+  "prereq": "skyre_SPCHeroicVoice0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Persuasion",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Убеждение",
+  "eid": "Persuasion",
+  "formid": "001090A2",
+  "desc": "Попытки убеждения облегчаются на 30%.",
+  "lvl": 25,
+  "prereq": "Haggling00",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Merchant",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Купец",
+  "eid": "Merchant",
+  "formid": "00058F7A",
+  "desc": "Вы можете продавать любые предметы любым торговцам.",
+  "lvl": 45,
+  "prereq": "Persuasion; Intimidation",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCMasquerade",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Маскарад",
+  "eid": "skyre_SPCMasquerade",
+  "formid": "06000F38",
+  "desc": "Ношение полного комплекта экипировки фракции вводит окружающих в заблуждение, и они принимают вас за члена этой фракции.",
+  "lvl": 110,
+  "prereq": "fence",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCGrandFacade",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Великий обманщик",
+  "eid": "skyre_SPCGrandFacade",
+  "formid": "06000F49",
+  "desc": "Позволяет создавать и использовать Темный капюшон, который скрывает личность во время ношения и ограждает от штрафов.",
+  "lvl": 135,
+  "prereq": "skyre_SPCMasquerade",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCAnvilKinship",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Родство с наковальней",
+  "eid": "skyre_SPCAnvilKinship",
+  "formid": "06000F31",
+  "desc": "Кузнецы будут предлагать дополнительные высококачественные материалы и более выгодные цены в зависимости от вашего навыка кузнечного дела.",
+  "lvl": 60,
+  "prereq": "Merchant",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCStrengthInNumbers0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Сила в количестве",
+  "eid": "skyre_SPCStrengthInNumbers0",
+  "formid": "06000F17",
+  "desc": "С последователем все навыки растут на 5% быстрее, а оружие и заклинания наносят дополнительные 5% урона.",
+  "lvl": 35,
+  "prereq": "Persuasion",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "speed"
+  ],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_SPCLoyalty0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Верность",
+  "eid": "skyre_SPCLoyalty0",
+  "formid": "06000F28",
+  "desc": "Бонусы «Силы в количестве» также распространяются на последователей.",
+  "lvl": 50,
+  "prereq": "skyre_SPCStrengthInNumbers0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Intimidation",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Запугивание",
+  "eid": "Intimidation",
+  "formid": "00105F29",
+  "desc": "Угрозы становятся вдвое успешнее.",
+  "lvl": 25,
+  "prereq": "Haggling00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTWarp0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Разящий",
+  "eid": "skyre_ALTWarp0",
+  "formid": "060008D6",
+  "desc": "Дальность заклинаний смещения удвоена, а их стоимость снижена.",
+  "lvl": 85,
+  "prereq": "AlterationExpert75",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost",
+   "range"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Stability",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Постоянство",
+  "eid": "Stability",
+  "formid": "000581FC",
+  "desc": "Заклинания школы Изменение действуют на 25% дольше.",
+  "lvl": 70,
+  "prereq": "AlterationAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTMedium0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Средняя",
+  "eid": "skyre_ALTMedium0",
+  "formid": "060008B7",
+  "desc": "Ношение посоха делает все заклинания на 20% сильнее, но без посоха заклинания на 15% слабее.",
+  "lvl": 55,
+  "prereq": "AlterationAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "staff"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "MageArmor30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Магическая броня",
+  "eid": "MageArmor30",
+  "formid": "000D7999",
+  "desc": "Защитные заклинания школы Изменение вдвое сильнее, если вы не носите броню.",
+  "lvl": 30,
+  "prereq": "AlterationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "shield",
+   "magic"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTSecondSkin",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Вторая кожа",
+  "eid": "skyre_ALTSecondSkin",
+  "formid": "060008BF",
+  "desc": "Защитные заклинания школы Изменение получают различные дополнительные эффекты.",
+  "lvl": 65,
+  "prereq": "MageArmor30",
+  "ranks": 1,
+  "tags": [
+   "shield",
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTMetamorphosis0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Метаморфоза",
+  "eid": "skyre_ALTMetamorphosis0",
+  "formid": "060008BA",
+  "desc": "Защитные заклинания школы Изменение дают 10% шанс полностью отразить весь урон, если на вас нет брони.",
+  "lvl": 60,
+  "prereq": "MageArmor30",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "shield",
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTAnimunculi0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Двемерские механизмы",
+  "eid": "skyre_ALTAnimunculi0",
+  "formid": "06000878",
+  "desc": "При наличии подходящих дварфских металлических деталей и камня душ вы можете создавать работающих дварфских пауков.",
+  "lvl": 30,
+  "prereq": "AlterationApprentice25",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTDirectCurrent",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Постоянный ток",
+  "eid": "skyre_ALTDirectCurrent",
+  "formid": "060008D5",
+  "desc": "Емкость заряда любого развернутого конструкта растет вместе с навыком Изменение.",
+  "lvl": 80,
+  "prereq": "skyre_ALTAnimunculi0",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": [
+   "passive"
+  ]
+ },
+ {
+  "id": "skyre_ALTEnergySaving",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Энергосбережение",
+  "eid": "skyre_ALTEnergySaving",
+  "formid": "060008DB",
+  "desc": "Когда заряд на исходе, конструкт вне боя автоматически сложится вместо того, чтобы стать нестабильным.",
+  "lvl": 100,
+  "prereq": "skyre_ALTDirectCurrent; skyre_ALTMassProduction",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTMassProduction",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Массовое производство",
+  "eid": "skyre_ALTMassProduction",
+  "formid": "060008B9",
+  "desc": "Анимункулы в инвентаре весят на 80% меньше.",
+  "lvl": 60,
+  "prereq": "skyre_ALTAnimunculi0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTPhantomflesh",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Фантомная плоть",
+  "eid": "skyre_ALTPhantomflesh",
+  "formid": "060008B6",
+  "desc": "Ношение как минимум 2 предметов снаряжения из грезоткани поглощает 85% любого получаемого физического урона, пока ваше здоровье полное.",
+  "lvl": 45,
+  "prereq": "AlterationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "physical"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTBloodMagic",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Кровавая магия",
+  "eid": "skyre_ALTBloodMagic",
+  "formid": "060008A6",
+  "desc": "Освойте магию крови – пока эта сила активна, заклинания стоят значительно меньше магии, но расходуют здоровье.",
+  "lvl": 45,
+  "prereq": "AlterationApprentice25",
+  "ranks": 0,
+  "tags": [
+   "magic",
+   "magic"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTBloodSacrifice",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Жертва крови",
+  "eid": "skyre_ALTBloodSacrifice",
+  "formid": "060008BC",
+  "desc": "Позволяет поглощать здоровье призванных и воскрешенных существ, пока активна магия крови.",
+  "lvl": 65,
+  "prereq": "skyre_ALTBloodMagic",
+  "ranks": 0,
+  "tags": [
+   "magic"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTBloodWound",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Кровавая рана",
+  "eid": "skyre_ALTBloodWound",
+  "formid": "060008D1",
+  "desc": "Расход здоровья сверх имеющегося, пока активна магия крови, парализует и вытягивает жизнь из всех в непосредственной близости. ",
+  "lvl": 80,
+  "prereq": "skyre_ALTBloodSacrifice",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "role": "control",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ALTDeepInfusion0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Глубокая инфузия",
+  "eid": "skyre_ALTDeepInfusion0",
+  "formid": "060008A3",
+  "desc": "Эффекты, наложенные на цель заклинаниями усиления оружия, действуют на 1 секунду дольше.",
+  "lvl": 30,
+  "prereq": "AlterationNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "TwinSouls",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Древние обряды",
+  "eid": "TwinSouls",
+  "formid": "000D5F1C",
+  "desc": "Возможность управлять одним дополнительным младшим даэдра, фамильяром или воскрешенным мертвецом.",
+  "lvl": 60,
+  "prereq": "ConjurationAdept50",
+  "ranks": 1,
+  "tags": [
+   "poison"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "MysticBinding",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Мистический призыв",
+  "eid": "MysticBinding",
+  "formid": "000640B3",
+  "desc": "По мере роста мастерства школы Колдовство призывное оружие также становится сильнее.",
+  "lvl": 30,
+  "prereq": "ConjurationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "SoulStealer",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Похититель душ",
+  "eid": "SoulStealer",
+  "formid": "000D799E",
+  "desc": "Призванное оружие захватывает души врагов.",
+  "lvl": 40,
+  "prereq": "MysticBinding",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONNightmareDevourer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Поглотитель кошмаров",
+  "eid": "skyre_CONNightmareDevourer0",
+  "formid": "060009E2",
+  "desc": "Ношение как минимум 1 предмета снаряжения из грезоткани дает призванному оружию шанс поглощать магию живой цели при попадании. ",
+  "lvl": 60,
+  "prereq": "SoulStealer",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "Summoner30",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Призыватель",
+  "eid": "Summoner30",
+  "formid": "00105F30",
+  "desc": "Вы можете призывать атронахов или поднимать нежить на вдвое большем расстоянии.",
+  "lvl": 30,
+  "prereq": "ConjurationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "ElementalPotency",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Сила даэдра",
+  "eid": "ElementalPotency",
+  "formid": "000CB41A",
+  "desc": "Призванные атронахи на 60% мощнее, получают перки усиления стихии и сопротивление магии.",
+  "lvl": 45,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "summon",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONDaedricWrath",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Даэдрический гнев",
+  "eid": "skyre_CONDaedricWrath",
+  "formid": "060009ED",
+  "desc": "Призванные атронахи на 70% мощнее и получают 20% сопротивления противоположным стихиям.",
+  "lvl": 65,
+  "prereq": "ElementalPotency",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONDaedricForce",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Даэдрическая сила",
+  "eid": "skyre_CONDaedricForce",
+  "formid": "060009EE",
+  "desc": "Призванные атронахи на 80% мощнее и получают усиления стихий более высокого ранга; призванные дремора на 110% мощнее.",
+  "lvl": 90,
+  "prereq": "skyre_CONDaedricWrath",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONDaedricSpite",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Даэдрическая злоба",
+  "eid": "skyre_CONDaedricSpite",
+  "formid": "060009EF",
+  "desc": "Призванные атронахи на 90% мощнее, получают усиления стихий высшего ранга и шанс отразить урон.",
+  "lvl": 120,
+  "prereq": "skyre_CONDaedricForce",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONDaedricFury",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Даэдрическая ярость",
+  "eid": "skyre_CONDaedricFury",
+  "formid": "060009F0",
+  "desc": "Призванные атронахи на 100% мощнее и могут поглощать входящие заклинания; призванные дремора на 120% мощнее.",
+  "lvl": 150,
+  "prereq": "skyre_CONDaedricSpite",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon",
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONHarvest0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Вырвать:",
+  "eid": "skyre_CONHarvest0",
+  "formid": "06000999",
+  "desc": "Обыскивайте кучки пепла воскрешенных людей и меров в поисках полезных ингредиентов – костей, кусков плоти и сердец.",
+  "lvl": 25,
+  "prereq": "ConjurationNovice00",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONBoneMastery0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Повелитель костей",
+  "eid": "skyre_CONBoneMastery0",
+  "formid": "060009BB",
+  "desc": "Используйте собранные кости, чтобы оживить костяного воина, который будет атаковать всех, кроме своего создателя.",
+  "lvl": 30,
+  "prereq": "skyre_CONHarvest0",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONWormsGift0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Дар Червя",
+  "eid": "skyre_CONWormsGift0",
+  "formid": "060009EB",
+  "desc": "Костяные конструкты получают дополнительные способности и заклинания, а их оружие наносит больше урона по мере роста вашей силы.",
+  "lvl": 60,
+  "prereq": "skyre_CONBoneMastery0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Necromage",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Некромаг",
+  "eid": "Necromage",
+  "formid": "000581E4",
+  "desc": "Все заклинания на 25% сильнее или действуют на 25% дольше при использовании против нежити.",
+  "lvl": 70,
+  "prereq": "DarkSouls; skyre_CONGravebound0; skyre_CONWormsGift0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DarkSouls",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Темные души",
+  "eid": "DarkSouls",
+  "formid": "000581DE",
+  "desc": "Поднятая нежить получает дополнительно 100 единиц здоровья.",
+  "lvl": 50,
+  "prereq": "skyre_CONHarvest0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_CONGravebound0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Слуга навеки",
+  "eid": "skyre_CONGravebound0",
+  "formid": "060009DF",
+  "desc": "Воскрешенные тела с вероятностью 50% не рассыпаются в пепел после освобождения.",
+  "lvl": 40,
+  "prereq": "skyre_CONHarvest0",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DestructionNovice00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Новичок школы разрушения",
+  "eid": "DestructionNovice00",
+  "formid": "000F2CA8",
+  "desc": "Заклинания школы Разрушение уровня новичка на 25% сильнее и стоят на 25% меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DestructionApprentice25",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ученик школы разрушения",
+  "eid": "DestructionApprentice25",
+  "formid": "000C44BF",
+  "desc": "Заклинания школы Разрушение уровня ученика на 25% сильнее и стоят на 25% меньше магии.",
+  "lvl": 25,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DestructionAdept50",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Адепт школы разрушения",
+  "eid": "DestructionAdept50",
+  "formid": "000C44C0",
+  "desc": "Заклинания школы Разрушение уровня адепта на 25% сильнее и стоят на 25% меньше магии.",
+  "lvl": 50,
+  "prereq": "DestructionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DestructionExpert75",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Эксперт школы разрушения",
+  "eid": "DestructionExpert75",
+  "formid": "000C44C1",
+  "desc": "Заклинания школы Разрушение уровня эксперта на 25% сильнее и стоят на 25% меньше магии.",
+  "lvl": 75,
+  "prereq": "DestructionAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "DestructionMaster100",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Мастер школы разрушения",
+  "eid": "DestructionMaster100",
+  "formid": "000C44C2",
+  "desc": "Заклинания школы Разрушение уровня мастера на 25% сильнее и стоят на 25% меньше магии.",
+  "lvl": 100,
+  "prereq": "DestructionExpert75",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESTroubledDreams0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Тревожные грезы",
+  "eid": "skyre_DESTroubledDreams0",
+  "formid": "06000AAA",
+  "desc": "Ношение как минимум 2 предметов снаряжения из грезоткани делает все заклинания школы Разрушение на 5% дешевле и увеличивает радиус заклинаний-плащей на 50%.",
+  "lvl": 60,
+  "prereq": "DestructionAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "range"
+  ],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "RuneMaster",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Мастер рун",
+  "eid": "RuneMaster",
+  "formid": "00105F32",
+  "desc": "Вы можете ставить руны на вдвое большее расстояние.",
+  "lvl": 40,
+  "prereq": "DestructionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESGeomancy0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Геомантия",
+  "eid": "skyre_DESGeomancy0",
+  "formid": "06000AA8",
+  "desc": "Вы сможете создавать одну дополнительную руну.",
+  "lvl": 60,
+  "prereq": "RuneMaster",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Impact",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ударная волна",
+  "eid": "Impact",
+  "formid": "000153D2",
+  "desc": "Большинство заклинаний школы Разрушение при двойном заклинании получают шанс ошеломить противника.",
+  "lvl": 40,
+  "prereq": "DestructionDualCasting",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESRushStudies0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ускоренное обучение",
+  "eid": "skyre_DESRushStudies0",
+  "formid": "06000AA3",
+  "desc": "Стихийные заклинания на 10% сильнее и стоят на 5% меньше магии при сотворении. ",
+  "lvl": 20,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "role": "utility",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak",
+   "standing"
+  ],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "AugmentedShock",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленные молнии",
+  "eid": "AugmentedShock",
+  "formid": "00058200",
+  "desc": "Заклинания электричества на 10% сильнее и имеют 1% шанс обратить в прах цель с низким уровнем здоровья.",
+  "lvl": 30,
+  "prereq": "skyre_DESRushStudies0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Disintegrate",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Дезинтеграция",
+  "eid": "Disintegrate",
+  "formid": "000F3F0E",
+  "desc": "Заклинания электричества на 10% сильнее и имеют 20% шанс выкачать из цели магию в объеме, вдвое превышающем силу заклинания, на 1 секунду.",
+  "lvl": 50,
+  "prereq": "AugmentedShock",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESElementalRam",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Стихийное подавление",
+  "eid": "skyre_DESElementalRam",
+  "formid": "06000AAE",
+  "desc": "Быстрые попадания дальнобойными заклинаниями по одному и тому же врагу снижают его сопротивление соответствующей стихии на 10% за попадание на 5 секунд, вплоть до 50%.",
+  "lvl": 80,
+  "prereq": "IntenseFlames; Disintegrate; DeepFreeze",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESIcyHeart",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ледяное сердце",
+  "eid": "skyre_DESIcyHeart",
+  "formid": "06000AC6",
+  "desc": "Вся магия льда на 15% сильнее, а входящая магия этой стихии на 15% слабее.",
+  "lvl": 100,
+  "prereq": "skyre_DESElementalRam; skyre_DESVoltaicHeart; skyre_DESBurningHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESWayOfFrosts",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Путь Мороза",
+  "eid": "skyre_DESWayOfFrosts",
+  "formid": "06000AD1",
+  "desc": "Вся магия льда на 35% сильнее и на 15% дешевле в сотворении, сопротивление холоду увеличено на 50%, но магия других стихий слабее.",
+  "lvl": 120,
+  "prereq": "skyre_DESIcyHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESChillOfDeath",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Хлад смерти",
+  "eid": "skyre_DESChillOfDeath",
+  "formid": "06000ADC",
+  "desc": "Ледяные заклинания поглощают запас сил в объеме, равном половине нанесенного урона.",
+  "lvl": 150,
+  "prereq": "skyre_DESWayOfFrosts",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESVoltaicHeart",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Электрическое сердце",
+  "eid": "skyre_DESVoltaicHeart",
+  "formid": "06000AC7",
+  "desc": "Вся магия электричества на 15% сильнее, а входящая магия этой стихии на 15% слабее.",
+  "lvl": 100,
+  "prereq": "skyre_DESElementalRam; skyre_DESBurningHeart; skyre_DESIcyHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESWayOfStorms",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Путь Грозы",
+  "eid": "skyre_DESWayOfStorms",
+  "formid": "06000AD2",
+  "desc": "Вся магия электричества на 35% сильнее и на 15% дешевле в сотворении, сопротивление электричеству увеличено на 50%, но магия других стихий слабее.",
+  "lvl": 120,
+  "prereq": "skyre_DESVoltaicHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESSpeedOfLightning",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Молниеносная скорость",
+  "eid": "skyre_DESSpeedOfLightning",
+  "formid": "06000AE5",
+  "desc": "Дальнобойные электрические заклинания при попадании увеличивают скорость передвижения заклинателя на 50% на 2 секунды.",
+  "lvl": 150,
+  "prereq": "skyre_DESWayOfStorms",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "skyre_DESBurningHeart",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Пылающее сердце",
+  "eid": "skyre_DESBurningHeart",
+  "formid": "06000AC5",
+  "desc": "Вся магия огня на 15% сильнее, а входящая магия этой стихии на 15% слабее.",
+  "lvl": 100,
+  "prereq": "skyre_DESElementalRam; skyre_DESIcyHeart; skyre_DESVoltaicHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESWayOfFlames",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Путь Пламени",
+  "eid": "skyre_DESWayOfFlames",
+  "formid": "06000AD0",
+  "desc": "Вся магия огня на 35% сильнее и на 15% дешевле в сотворении, сопротивление огню увеличено на 50%, но магия других стихий слабее.",
+  "lvl": 120,
+  "prereq": "skyre_DESBurningHeart",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [
+   "resist"
+  ],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_DESRagingBlaze",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Неистовое пламя",
+  "eid": "skyre_DESRagingBlaze",
+  "formid": "06000AE0",
+  "desc": "Дальнобойные огненные заклинания на 25% слабее, но при сотворении создают второй снаряд.",
+  "lvl": 150,
+  "prereq": "skyre_DESWayOfFlames",
+  "ranks": 1,
+  "tags": [
+   "magic",
+   "poison"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "fire",
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "AugmentedFrost",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленный мороз",
+  "eid": "AugmentedFrost",
+  "formid": "000581EA",
+  "desc": "Заклинания мороза на 10% сильнее и имеют 1% шанс парализовать цель на 3 секунды.",
+  "lvl": 30,
+  "prereq": "skyre_DESRushStudies0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "DeepFreeze",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Глубокая заморозка",
+  "eid": "DeepFreeze",
+  "formid": "000F3933",
+  "desc": "Заклинания мороза на 10% сильнее, а сила связанных с морозом эффектов замедления также увеличена на 10%.",
+  "lvl": 50,
+  "prereq": "AugmentedFrost",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "AugmentedFlames",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленное пламя",
+  "eid": "AugmentedFlames",
+  "formid": "000581E7",
+  "desc": "Заклинания огня на 10% сильнее и имеют 2% шанс сбить цель с ног.",
+  "lvl": 30,
+  "prereq": "skyre_DESRushStudies0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "IntenseFlames",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Жаркое пламя",
+  "eid": "IntenseFlames",
+  "formid": "000F392E",
+  "desc": "Все заклинания огня на 10% сильнее и повреждают броню цели.",
+  "lvl": 50,
+  "prereq": "AugmentedFlames",
+  "ranks": 1,
+  "tags": [
+   "armor",
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLPuppeteer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Кукловод",
+  "eid": "skyre_ILLPuppeteer0",
+  "formid": "06000C2C",
+  "desc": "Обманные образы существуют на 25% дольше и могут быть призваны на 50% дальше.",
+  "lvl": 30,
+  "prereq": "IllusionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLClockworkDreams0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Сочетание грез",
+  "eid": "skyre_ILLClockworkDreams0",
+  "formid": "06000C35",
+  "desc": "Ношение не менее 2 предметов снаряжения из грёзоткани даёт 10% шанс наложить на себя «Завесу иллюзий» при чтении любого заклинания Иллюзии.",
+  "lvl": 60,
+  "prereq": "skyre_ILLPuppeteer0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLCharade",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Спектакль",
+  "eid": "skyre_ILLCharade",
+  "formid": "06000C34",
+  "desc": "Позволяет призывать ещё один обманный образ.",
+  "lvl": 50,
+  "prereq": "skyre_ILLPuppeteer0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon",
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLTorpor",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Оцепенение",
+  "eid": "skyre_ILLTorpor",
+  "formid": "06000C3C",
+  "desc": "Когда обманный образ получает удар в ближнем бою, с шансом 15% он парализует атакующего на 1 секунду.",
+  "lvl": 75,
+  "prereq": "skyre_ILLCharade",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLRetaliatingEchoes",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Отголоски мести",
+  "eid": "skyre_ILLRetaliatingEchoes",
+  "formid": "06000C3E",
+  "desc": "Когда обманный образ погибает, он наносит магический урон в размере до 40% от максимального здоровья своего убийцы.",
+  "lvl": 95,
+  "prereq": "skyre_ILLTorpor",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 4,
+  "build": false,
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLMinddweller0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Житейская мудрость",
+  "eid": "skyre_ILLMinddweller0",
+  "formid": "06000C26",
+  "desc": "Заклинания школы Иллюзия воздействующей природы действуют на 30% дольше и получают преимущество от мастерства.",
+  "lvl": 30,
+  "prereq": "IllusionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLIncite0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Поощрение",
+  "eid": "skyre_ILLIncite0",
+  "formid": "06000C31",
+  "desc": "Положительные эффекты заклинаний Иллюзии на 33% сильнее.",
+  "lvl": 35,
+  "prereq": "skyre_ILLMinddweller0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLTorturedMind0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Искаженный разум",
+  "eid": "skyre_ILLTorturedMind0",
+  "formid": "06000C3A",
+  "desc": "Заклинания школы Иллюзия фантомной природы получают преимущество от мастерства.",
+  "lvl": 60,
+  "prereq": "skyre_ILLMinddweller0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLEmptyMind",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Пустой разум",
+  "eid": "skyre_ILLEmptyMind",
+  "formid": "06000C3D",
+  "desc": "Магия Иллюзии воздействующей природы не теряет длительность при многократном наложении на одну цель.",
+  "lvl": 90,
+  "prereq": "skyre_ILLTorturedMind0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "AspectOfTerror",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Роковое наваждение",
+  "eid": "AspectOfTerror",
+  "formid": "00059B78",
+  "desc": "Подверженные страху непрерывно передают небольшие количества своих запаса сил и магии заклинателю.",
+  "lvl": 40,
+  "prereq": "skyre_ILLMinddweller0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "HypnoticGaze",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Покорение",
+  "eid": "HypnoticGaze",
+  "formid": "00059B77",
+  "desc": "Заклинания очарования действуют в 2 раза дольше и имеют 15% шанс очаровать более сильную цель.",
+  "lvl": 70,
+  "prereq": "AspectOfTerror",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Rage",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Неистовый натиск",
+  "eid": "Rage",
+  "formid": "000C44B5",
+  "desc": "Подверженные ярости получают прилив скорости передвижения и наносят больше урона в бою. ",
+  "lvl": 100,
+  "prereq": "HypnoticGaze",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLVessel",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Сосуд",
+  "eid": "skyre_ILLVessel",
+  "formid": "06000C3F",
+  "desc": "Любое существо, находящееся под действием заклинаний Иллюзии воздействующей природы, может стать целью заклинаний обманной природы.",
+  "lvl": 120,
+  "prereq": "Rage",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ILLDeepGaze0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Проницательный взгляд",
+  "eid": "skyre_ILLDeepGaze0",
+  "formid": "06000C24",
+  "desc": "При чтении заклинания «Прозрение» есть шанс раскрыть атрибуты цели.",
+  "lvl": 20,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic",
+   "poison"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "IllusionDualCasting",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Двойная иллюзия",
+  "eid": "IllusionDualCasting",
+  "formid": "000153D0",
+  "desc": "Двойное заклинание школы Иллюзия, напрямую воздействующее на кого-либо, начинает действовать и на даэдра – как призываемых, так и независимых.",
+  "lvl": 20,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 6,
+  "y": 0,
+  "build": false,
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon",
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESPatron",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Клиент",
+  "eid": "skyre_RESPatron",
+  "formid": "06000DD7",
+  "desc": "Дух-проводник активен в течение 1 дня.",
+  "lvl": 85,
+  "prereq": "RestorationExpert75",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESBeaconOfLight0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Маяк света",
+  "eid": "skyre_RESBeaconOfLight0",
+  "formid": "06000DD9",
+  "desc": "Духи-проводники получают 150 дополнительной брони и на 30% более устойчивы к магии.",
+  "lvl": 115,
+  "prereq": "skyre_RESPatron",
+  "ranks": 1,
+  "tags": [
+   "armor"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "light"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESMarked0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Метка",
+  "eid": "skyre_RESMarked0",
+  "formid": "06000DD5",
+  "desc": "Проклятия получают повышенный шанс распространения и действуют в большем радиусе.",
+  "lvl": 80,
+  "prereq": "RestorationExpert75",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "range"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "low_hp"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESMeditation0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Медитация",
+  "eid": "skyre_RESMeditation0",
+  "formid": "06000DCA",
+  "desc": "Заклинания восстановления здоровья и запаса сил на 15% эффективнее, если применяются вне боя.",
+  "lvl": 50,
+  "prereq": "RestorationAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESBreachingDarkness0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Сокрушая тьму",
+  "eid": "skyre_RESBreachingDarkness0",
+  "formid": "06000DCD",
+  "desc": "Заклинания на основе Наказания могут убивать или обращать в бегство более сильную нежить.",
+  "lvl": 60,
+  "prereq": "RestorationAdept50",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "role": "passive",
+  "mechanics": [
+   "on_kill"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": [
+   "on_kill"
+  ]
+ },
+ {
+  "id": "skyre_RESAuramancer0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Аурамансер",
+  "eid": "skyre_RESAuramancer0",
+  "formid": "06000DC3",
+  "desc": "Радиус аур увеличивается вдвое, а их эффекты расходуют на 25% меньше магии.",
+  "lvl": 40,
+  "prereq": "RestorationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "role": "support",
+  "mechanics": [
+   "cost",
+   "range"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESLifeAndDeath0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Жизнь и смерть",
+  "eid": "skyre_RESLifeAndDeath0",
+  "formid": "06000DCF",
+  "desc": "Величина и длительность эффектов аур растут вместе с мастерством заклинателя в Восстановлении.",
+  "lvl": 60,
+  "prereq": "skyre_RESAuramancer0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESCarrier0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Разносчик заразы",
+  "eid": "skyre_RESCarrier0",
+  "formid": "06000DC0",
+  "desc": "Мор распространяется в два раза дальше.",
+  "lvl": 30,
+  "prereq": "RestorationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESPlaguelord0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Властитель чумы",
+  "eid": "skyre_RESPlaguelord0",
+  "formid": "06000DD1",
+  "desc": "Мор распространяется в два раза быстрее.",
+  "lvl": 60,
+  "prereq": "skyre_RESCarrier0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "Respite",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Передышка",
+  "eid": "Respite",
+  "formid": "000581F9",
+  "desc": "Лечебные заклинания также восстанавливают запас сил.",
+  "lvl": 40,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_RESWardDeflect0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Отражающий оберег",
+  "eid": "skyre_RESWardDeflect0",
+  "formid": "06000DC7",
+  "desc": "Физические обереги снижают получаемый урон от стрел на 15%.",
+  "lvl": 40,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "physical"
+  ],
+  "magictype": [
+   "ward"
+  ],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "wardAbsorb",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Оберег-поглотитель",
+  "eid": "wardAbsorb",
+  "formid": "00068BCC",
+  "desc": "Обереги уровня эксперта и мастера восстанавливают магию при попадании по ним заклинаниями.",
+  "lvl": 60,
+  "prereq": "skyre_RESWardDeflect0",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "ward"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "skyre_RESInsomnia0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Бессоница",
+  "eid": "skyre_RESInsomnia0",
+  "formid": "06000DD3",
+  "desc": "Ношение не менее 2 предметов экипировки из ткани сновидений делает применение всех оберегов на 25% дешевле.",
+  "lvl": 80,
+  "prereq": "skyre_RESWardDeflect0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "ward"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "AvoidDeath",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Бегство от смерти",
+  "eid": "AvoidDeath",
+  "formid": "000A3F64",
+  "desc": "Раз в сутки, если ваше здоровье становится ниже 10%, автоматически восстанавливается 250 единиц здоровья.",
+  "lvl": 70,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "role": "support",
+  "mechanics": [
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "Enchanter00",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Зачарователь",
+  "eid": "Enchanter00",
+  "formid": "000BEE97",
+  "desc": "Новые зачарования на 15% сильнее, а сила свитков растет с мастерством.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "SoulSiphon",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Поглотитель душ",
+  "eid": "SoulSiphon",
+  "formid": "00108A44",
+  "desc": "Смертельные удары по существам, но не по людям, захватывают 20% души жертвы, перезаряжая оружие.",
+  "lvl": 40,
+  "prereq": "SoulSqueezer",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "ExtraEffect",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Дополнительный эффект",
+  "eid": "ExtraEffect",
+  "formid": "00058F7F",
+  "desc": "Возможность наложить два зачарования на один предмет, но оба зачарования на 60% слабее.",
+  "lvl": 40,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCDefensiveEnchanter0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Чары защиты",
+  "eid": "skyre_ENCDefensiveEnchanter0",
+  "formid": "06000B01",
+  "desc": "Защитные зачарования на 25% сильнее.",
+  "lvl": 30,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "shield"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "CorpusEnchanter",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Жизненные чары",
+  "eid": "CorpusEnchanter",
+  "formid": "00058F7D",
+  "desc": "Зачарования, укрепляющие здоровье, магию и запас сил, на 25% сильнее.",
+  "lvl": 70,
+  "prereq": "skyre_ENCDefensiveEnchanter0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCElementalEnchanter0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Стихийный зачарователь",
+  "eid": "skyre_ENCElementalEnchanter0",
+  "formid": "06000B03",
+  "desc": "Стихийные зачарования на длинных луках и двуручном оружии на 20% сильнее.",
+  "lvl": 30,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "twohand"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "InsightfulEnchanter",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Чары умений",
+  "eid": "InsightfulEnchanter",
+  "formid": "00058F7E",
+  "desc": "Зачарования, укрепляющие навыки, на 25% сильнее.",
+  "lvl": 70,
+  "prereq": "skyre_ENCElementalEnchanter0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCElementalBombard0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Стихийная бомбардировка",
+  "eid": "skyre_ENCElementalBombard0",
+  "formid": "06000B8D",
+  "desc": "Позволяет улучшать болты эффектами стихийных взрывов.",
+  "lvl": 35,
+  "prereq": "skyre_ENCElementalEnchanter0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "crossbow"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCArcaneBurst",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Волшебный взрыв",
+  "eid": "skyre_ENCArcaneBurst",
+  "formid": "06000B98",
+  "desc": "Улучшайте медвежьи капканы эффектами стихийных взрывов. ",
+  "lvl": 60,
+  "prereq": "skyre_ENCElementalEnchanter0",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCDreamweaver0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Ткач снов",
+  "eid": "skyre_ENCDreamweaver0",
+  "formid": "06000AFF",
+  "desc": "Зачарования на снаряжении из грезоткани на 15% сильнее.",
+  "lvl": 20,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCScriptureBasic",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Основы начертания",
+  "eid": "skyre_ENCScriptureBasic",
+  "formid": "06000B05",
+  "desc": "Создавайте свитки известных вам заклинаний уровня Новичок и Ученик с помощью пера и чернильницы.",
+  "lvl": 30,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCScriptureAdvanced",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Продвинутое начертание",
+  "eid": "skyre_ENCScriptureAdvanced",
+  "formid": "06000B06",
+  "desc": "Создавайте свитки известных вам заклинаний уровня Адепт с помощью пера и чернильницы.",
+  "lvl": 60,
+  "prereq": "skyre_ENCScriptureBasic",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCScriptureElaborate",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Искусное начертание",
+  "eid": "skyre_ENCScriptureElaborate",
+  "formid": "06000B07",
+  "desc": "Создавайте свитки известных вам заклинаний уровня Эксперт с помощью пера и чернильницы.",
+  "lvl": 90,
+  "prereq": "skyre_ENCScriptureAdvanced",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCScriptureSage",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Мастерское начертание",
+  "eid": "skyre_ENCScriptureSage",
+  "formid": "06000B08",
+  "desc": "Создавайте свитки известных вам заклинаний уровня Мастер с помощью пера и чернильницы.",
+  "lvl": 120,
+  "prereq": "skyre_ENCScriptureElaborate",
+  "ranks": 1,
+  "tags": [
+   "magic"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCArcaneArchery",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Мистическая стрельба",
+  "eid": "skyre_ENCArcaneArchery",
+  "formid": "06000B6E",
+  "desc": "Наполняйте полностью натянутые выстрелы из лука стихийной магией.",
+  "lvl": 35,
+  "prereq": "Enchanter00",
+  "ranks": 0,
+  "tags": [
+   "bow"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "skyre_ENCEnchantedQuiver0",
+  "mod": "SkyRE 2.2.3",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Зачарованный колчан",
+  "eid": "skyre_ENCEnchantedQuiver0",
+  "formid": "06000B95",
+  "desc": "Выстрелы Тайной стрельбы стоят на 5 магии меньше и могут использоваться, пока магия выше 40%.",
+  "lvl": 50,
+  "prereq": "skyre_ENCArcaneArchery",
+  "ranks": 0,
+  "tags": [
+   "magic"
+  ],
+  "x": 3,
+  "y": 3,
+  "build": false,
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ }
+]

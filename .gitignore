@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.7z
+perk-table/data/backups/
+*.OLD*
+_check.js
+perk-table/backups/

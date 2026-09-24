@@ -1,0 +1,102 @@
+[
+  {
+    "id": "one-handed",
+    "name": "Одноручное оружие",
+    "vanilla": true
+  },
+  {
+    "id": "two-handed",
+    "name": "Двуручное оружие",
+    "vanilla": true
+  },
+  {
+    "id": "archery",
+    "name": "Стрельба",
+    "vanilla": true
+  },
+  {
+    "id": "block",
+    "name": "Блокирование",
+    "vanilla": true
+  },
+  {
+    "id": "smithing",
+    "name": "Кузнечное дело",
+    "vanilla": true
+  },
+  {
+    "id": "heavy-armor",
+    "name": "Тяжёлая броня",
+    "vanilla": true
+  },
+  {
+    "id": "light-armor",
+    "name": "Лёгкая броня",
+    "vanilla": true
+  },
+  {
+    "id": "pickpocket",
+    "name": "Карманные кражи",
+    "vanilla": true
+  },
+  {
+    "id": "lockpicking",
+    "name": "Взлом",
+    "vanilla": true
+  },
+  {
+    "id": "sneak",
+    "name": "Скрытность",
+    "vanilla": true
+  },
+  {
+    "id": "alchemy",
+    "name": "Алхимия",
+    "vanilla": true
+  },
+  {
+    "id": "speech",
+    "name": "Красноречие",
+    "vanilla": true
+  },
+  {
+    "id": "illusion",
+    "name": "Иллюзия",
+    "vanilla": true
+  },
+  {
+    "id": "conjuration",
+    "name": "Колдовство",
+    "vanilla": true
+  },
+  {
+    "id": "destruction",
+    "name": "Разрушение",
+    "vanilla": true
+  },
+  {
+    "id": "restoration",
+    "name": "Восстановление",
+    "vanilla": true
+  },
+  {
+    "id": "alteration",
+    "name": "Изменение",
+    "vanilla": true
+  },
+  {
+    "id": "enchanting",
+    "name": "Зачарование",
+    "vanilla": true
+  },
+  {
+    "id": "vampirism",
+    "name": "Вампиризм (Dawnguard)",
+    "vanilla": true
+  },
+  {
+    "id": "werewolf",
+    "name": "Оборотень (Dawnguard)",
+    "vanilla": true
+  }
+]

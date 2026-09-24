@@ -1,0 +1,2116 @@
+[
+ {
+  "id": "00058F67",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Блок и силовой удар щитом",
+  "eid": "IRN_Block_15_BlockAndBash",
+  "formid": "00058F67",
+  "desc": "Блокирование на 25% эффективнее. Можно наносить силовой удар щитом, наносящий больше урона от ударов щитом.",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "04153B71",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Защитная стойка",
+  "eid": "IRN_Block_30_DefensiveStance",
+  "formid": "04153B71",
+  "desc": "Блокирование оружием эффективнее на 25%.",
+  "lvl": 30,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00058F68",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Отбивание стрел",
+  "eid": "IRN_Block_30_DeflectArrows",
+  "formid": "00058F68",
+  "desc": "Стрелы, попадающие в щит, почти не наносят урона.",
+  "lvl": 30,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 3,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "04153B73",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Меч И Щит",
+  "eid": "IRN_Block_30_SwordAndShield",
+  "formid": "04153B73",
+  "desc": "Атаки одноручным оружием наносят на 20% больше урона, если вы держите щит. Силовые удары щитом наносят в [3% от запаса сил] раз больше урона.",
+  "lvl": 30,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "onehand",
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00106253",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Блок на бегу",
+  "eid": "IRN_Block_50_BlockRunner",
+  "formid": "00106253",
+  "desc": "Можно быстрее двигаться в блоке; атаки одноручным оружием наносят на 20% больше урона потерявшим равновесие целям, если вы держите щит.",
+  "lvl": 50,
+  "prereq": "IRN_Block_30_SwordAndShield",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand",
+   "shield"
+  ],
+  "condition": [
+   "moving"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00058F69",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Защита от заклинаний",
+  "eid": "IRN_Block_50_SpellProtection",
+  "formid": "00058F69",
+  "desc": "Блокирование щитом снижает получаемый урон от заклинаний на 50%.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [
+   "ward"
+  ],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0417C380",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Парирующий удар щитом",
+  "eid": "IRN_Block_60_ParryingBash",
+  "formid": "0417C380",
+  "desc": "Удары оружием во время силовой атаки противника наносят в [5% от запаса сил] раз больше урона от ударов щитом.",
+  "lvl": 60,
+  "prereq": "IRN_Block_30_DefensiveStance",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0005F594",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Смертельный удар плашмя",
+  "eid": "IRN_Block_70_DeadlyBash",
+  "formid": "0005F594",
+  "desc": "Силовые удары щитом наносят на 100% больше урона блокирующим или потерявшим равновесие целям.",
+  "lvl": 70,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "kill",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "0416D07C",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Щитоносец",
+  "eid": "IRN_Block_80_ShieldWall",
+  "formid": "0416D07C",
+  "desc": "Вас невозможно выбить из равновесия, пока вы блокируете щитом.",
+  "lvl": 80,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "000D8C33",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Быстрые рефлексы",
+  "eid": "IRN_Block_90_QuickReflexes",
+  "formid": "000D8C33",
+  "desc": "Время замедляется, если вы блокируете оружием во время силовой атаки противника.",
+  "lvl": 90,
+  "prereq": "IRN_Block_60_ParryingBash",
+  "ranks": 1,
+  "role": "control",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "00058F6A",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Живой молот",
+  "eid": "IRN_Block_90_ShieldCharge",
+  "formid": "00058F6A",
+  "desc": "Спринт с поднятым щитом выбивает из равновесия большинство целей и наносит 50 урона.",
+  "lvl": 90,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "shield"
+  ],
+  "condition": [
+   "moving",
+   "blocked"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "0416D07D",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Непробиваемость",
+  "eid": "IRN_Block_100_Impenetrable",
+  "formid": "0416D07D",
+  "desc": "Блокируя щитом, вы не получаете урона от ближних атак, пока ваш запас сил выше половины.",
+  "lvl": 100,
+  "prereq": "IRN_Block_80_ShieldWall",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": [
+   "on_block"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "04107C49",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Чемпион",
+  "eid": "IRN_TwoHanded_15_Champion1",
+  "formid": "04107C49",
+  "desc": "Атаки двуручным оружием наносят на 15% больше урона.",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "00052D51",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Стойка чемпиона",
+  "eid": "IRN_TwoHanded_20_ChampionsStance",
+  "formid": "00052D51",
+  "desc": "Двуручные силовые атаки требуют на 20% меньше запаса сил.",
+  "lvl": 20,
+  "prereq": "IRN_TwoHanded_15_Champion1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "04135565",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Варвар",
+  "eid": "IRN_TwoHanded_30_Barbarian1",
+  "formid": "04135565",
+  "desc": "Атаки двуручным оружием наносят на 15% больше урона, когда ваше здоровье ниже 70%.",
+  "lvl": 30,
+  "prereq": "IRN_TwoHanded_15_Champion1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000C5C05",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Путь: Кровоточащий удар",
+  "eid": "IRN_TwoHanded_30_BleedStrike1",
+  "formid": "000C5C05",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Атаки двуручным оружием наносят дополнительные 3 единицы урона кровотечением за 4 секунды, плюс дополнительный урон атаки, равный 1% запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_TwoHanded_15_Champion1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0003AF83",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Путь: Критический разгром",
+  "eid": "IRN_TwoHanded_30_CriticalBlow1",
+  "formid": "0003AF83",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Атаки двуручным оружием имеют шанс 30% нанести критический удар и наносят на 0,5% больше критического урона за каждую единицу запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_TwoHanded_15_Champion1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0003AF84",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Путь: Мощный штурм",
+  "eid": "IRN_TwoHanded_30_PowerAssault1",
+  "formid": "0003AF84",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Силовые атаки двуручным оружием наносят на 0,2% больше урона за каждую единицу запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_TwoHanded_15_Champion1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000CB407",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Жестокий рывок",
+  "eid": "IRN_TwoHanded_40_ViciousCharge",
+  "formid": "000CB407",
+  "desc": "Можно выполнять силовые атаки в спринте с двуручным оружием, наносящие на 20% больше урона целям с полным здоровьем.",
+  "lvl": 40,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power",
+   "moving"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0413556D",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Берсерк",
+  "eid": "IRN_TwoHanded_50_Berserker1",
+  "formid": "0413556D",
+  "desc": "Атаки двуручным оружием на 15% быстрее, когда ваше здоровье ниже 70%.",
+  "lvl": 50,
+  "prereq": "IRN_TwoHanded_30_Barbarian1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04116F4B",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Глубокие раны",
+  "eid": "IRN_TwoHanded_50_DeepWounds1",
+  "formid": "04116F4B",
+  "desc": "Атаки двуручным оружием наносят на 50% больше критического урона.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04130459",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Расчленитель",
+  "eid": "IRN_TwoHanded_50_Limbsplitter1",
+  "formid": "04130459",
+  "desc": "Атаки двуручным оружием наносят на 15% больше урона кровоточащим целям.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04130460",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Крушитель черепов",
+  "eid": "IRN_TwoHanded_50_Skullcrusher1",
+  "formid": "04130460",
+  "desc": "Силовые атаки двуручным оружием наносят на 15% больше урона. Дополнительно на 8% больше по потерявшим равновесие целям.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "00052D52",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Стойка мастера войны",
+  "eid": "IRN_TwoHanded_60_WarmasterStance",
+  "formid": "00052D52",
+  "desc": "Атаки двуручным оружием наносят на 0,2% больше урона за каждую единицу запаса сил. Открывает обезглавливание. ",
+  "lvl": 60,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04130464",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Стойка чемпиона",
+  "eid": "IRN_TwoHanded_80_BrutalFighter",
+  "formid": "04130464",
+  "desc": "Двуручные силовые атаки требуют на 20% меньше запаса сил.",
+  "lvl": 80,
+  "prereq": "IRN_TwoHanded_50_Skullcrusher1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "0411C04F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Смертельный удар",
+  "eid": "IRN_TwoHanded_80_KillingBlow",
+  "formid": "0411C04F",
+  "desc": "Атаки двуручным оружием наносят дополнительно на 50% больше критического урона целям с запасом здоровья ниже половины. ",
+  "lvl": 80,
+  "prereq": "IRN_TwoHanded_50_DeepWounds1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "crit",
+   "kill"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "0413045C",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Свирепость",
+  "eid": "IRN_TwoHanded_80_Rampage",
+  "formid": "0413045C",
+  "desc": "Обычные атаки двуручным оружием на 15% быстрее.",
+  "lvl": 80,
+  "prereq": "IRN_TwoHanded_50_Limbsplitter1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "04130463",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Уничтожитель брони",
+  "eid": "IRN_TwoHanded_100_ArmorCrusher",
+  "formid": "04130463",
+  "desc": "Силовые атаки двуручным оружием игнорируют 100% брони и наносят дополнительный урон, равный 10% вашего запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_TwoHanded_80_BrutalFighter",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "dmg",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "0411C050",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Сокрушительный удар",
+  "eid": "IRN_TwoHanded_100_DevastatingBlow",
+  "formid": "0411C050",
+  "desc": "Силовые атаки двуручным оружием наносят дополнительно на 0,5% больше критического урона за каждую единицу запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_TwoHanded_80_KillingBlow",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "crit",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power",
+   "crit"
+  ],
+  "trigger": [],
+  "x": 1,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "0413045F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Ужасные увечья",
+  "eid": "IRN_TwoHanded_100_MortalWounds",
+  "formid": "0413045F",
+  "desc": "Силовые атаки двуручным оружием наносят дополнительные 3 единицы урона кровотечением за 8 секунд, плюс дополнительный урон, равный 5% запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_TwoHanded_80_Rampage",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 4,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "0005218E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кузнец",
+  "eid": "IRN_Smithing_15_Blacksmith",
+  "formid": "0005218E",
+  "desc": "Вы лучше владеете закалкой и можете улучшать зачарованное оружие и броню.",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "000CB40D",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Простые доспехи",
+  "eid": "IRN_Smithing_30_SteelSmithing",
+  "formid": "000CB40D",
+  "desc": "Можно создавать стальную и костяную броню и оружие в кузницах.",
+  "lvl": 30,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "000CB40E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Двемерские доспехи",
+  "eid": "IRN_Smithing_40_DwarvenSmithing",
+  "formid": "000CB40E",
+  "desc": "Вы можете создавать двемерские доспехи и оружие в кузнице.",
+  "lvl": 40,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000CB40F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кузнец по редкостям",
+  "eid": "IRN_Smithing_40_ElvenSmithing",
+  "formid": "000CB40F",
+  "desc": "Можно создавать эльфийскую и хитиновую броню и оружие в кузницах.",
+  "lvl": 40,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000CB414",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Сложные типы брони",
+  "eid": "IRN_Smithing_60_AdvancedSmithing",
+  "formid": "000CB414",
+  "desc": "Можно создавать чешуйчатую, пластинчатую и нордскую броню и оружие в кузницах.",
+  "lvl": 60,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000CB410",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Орочьи доспехи",
+  "eid": "IRN_Smithing_60_OrcishSmithing",
+  "formid": "000CB410",
+  "desc": "Вы можете создавать орочьи доспехи и оружие в кузнице.",
+  "lvl": 60,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "000CB412",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Мифические доспехи",
+  "eid": "IRN_Smithing_80_EbonySmithing",
+  "formid": "000CB412",
+  "desc": "Можно создавать эбонитовую и сталгримовую броню и оружие в кузницах.",
+  "lvl": 80,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "000CB411",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Стеклодувное кузнечное дело",
+  "eid": "IRN_Smithing_80_GlassSmithing",
+  "formid": "000CB411",
+  "desc": "Вы можете создавать стеклянные доспехи и оружие в кузнице.",
+  "lvl": 80,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "000CB413",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Даэдрические доспехи",
+  "eid": "IRN_Smithing_100_DaedricSmithing",
+  "formid": "000CB413",
+  "desc": "Вы можете создавать даэдрические доспехи и оружие в кузнице.",
+  "lvl": 100,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "00052190",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Драконьи доспехи",
+  "eid": "IRN_Smithing_100_DragonSmithing",
+  "formid": "00052190",
+  "desc": "Можно создавать драконью броню и оружие из драконьей кости в кузницах.",
+  "lvl": 100,
+  "prereq": "",
+  "ranks": 1,
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "041C828E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Ловкость в обороне",
+  "eid": "IRN_LightArmor_15_AgileDefender1",
+  "formid": "041C828E",
+  "desc": "Класс легкой брони увеличивается на 20%.",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "00051B1C",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Вторая кожа",
+  "eid": "IRN_LightArmor_30_Unhindered",
+  "formid": "00051B1C",
+  "desc": "Лёгкая броня ничего не весит, а вы двигаетесь на 10% быстрее, когда носите её.",
+  "lvl": 30,
+  "prereq": "IRN_LightArmor_15_AgileDefender1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "041CD395",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Выносливость",
+  "eid": "IRN_LightArmor_40_Endurace",
+  "formid": "041CD395",
+  "desc": "Вы получаете на 50% меньше урона, когда ваше здоровье ниже половины и на вас только лёгкая броня.",
+  "lvl": 40,
+  "prereq": "IRN_LightArmor_15_AgileDefender1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00105F22",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Акробат",
+  "eid": "IRN_LightArmor_50_Acrobat",
+  "formid": "00105F22",
+  "desc": "Урон от падения снижен на 90%, а запас сил восстанавливается на 50% быстрее в лёгкой броне.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "speed",
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "041CD396",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Второй ветер",
+  "eid": "IRN_LightArmor_60_SecondWind",
+  "formid": "041CD396",
+  "desc": "Запас сил восстанавливается на 50% быстрее, когда ваше здоровье ниже половины и на вас только лёгкая броня.",
+  "lvl": 60,
+  "prereq": "IRN_LightArmor_40_Endurace",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "speed",
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00051B1B",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Подгонка по фигуре",
+  "eid": "IRN_LightArmor_70_CustomFit",
+  "formid": "00051B1B",
+  "desc": "Повышает показатель брони лёгкой брони на 0,3% за каждую единицу здоровья.",
+  "lvl": 70,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "041CD399",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Адреналин",
+  "eid": "IRN_LightArmor_80_Adrenaline",
+  "formid": "041CD399",
+  "desc": "Вы двигаетесь на 20% быстрее, когда ваше здоровье ниже половины и на вас только лёгкая броня.",
+  "lvl": 80,
+  "prereq": "IRN_LightArmor_60_SecondWind",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "00107831",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Крылья ветра",
+  "eid": "IRN_LightArmor_90_WindWalker",
+  "formid": "00107831",
+  "desc": "Избегание 90% урона от атак и заклинаний во время спринта в лёгкой броне.",
+  "lvl": 90,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": [],
+  "x": 0,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "041CD39D",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Полная отдача",
+  "eid": "IRN_LightArmor_100_AllOut",
+  "formid": "041CD39D",
+  "desc": "Когда здоровье ниже 30% и на вас только лёгкая броня, вы получаете прибавку к урону атак, равную 30% показателя брони, но теряете 30% брони.",
+  "lvl": 100,
+  "prereq": "IRN_LightArmor_80_Adrenaline",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "conditional"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "04005910",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Сильная рука",
+  "eid": "IRN_OneHanded_15_Armsman1",
+  "formid": "04005910",
+  "desc": "Атаки одноручным оружием наносят на 25% больше урона, а одноручное оружие получает 3 единицы бонусного урона. ",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "00052D50",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Боевая стойка",
+  "eid": "IRN_OneHanded_20_FightingStance",
+  "formid": "00052D50",
+  "desc": "Силовые атаки одноручным оружием разходуют на 25% меньше запаса сил.",
+  "lvl": 20,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "0003FFFA",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Путь: Урон кровотечением",
+  "eid": "IRN_OneHanded_30_BleedDamage1",
+  "formid": "0003FFFA",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Атаки одноручным оружием наносят дополнительные 4 единицы урона кровотечением за 4 секунды, плюс дополнительный урон атаки, равный 2% запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0005F56F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Путь: Критический удар",
+  "eid": "IRN_OneHanded_30_CriticalStrike1",
+  "formid": "0005F56F",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Атаки одноручным оружием имеют шанс 30% нанести критический удар и наносят на 1% больше критического урона за каждую единицу запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00106256",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойной вихрь",
+  "eid": "IRN_OneHanded_30_DualFlurry1",
+  "formid": "00106256",
+  "desc": "Атаки с двух рук на 15% быстрее.",
+  "lvl": 30,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "0005F592",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Путь: Силовая атака",
+  "eid": "IRN_OneHanded_30_PowerAttack1",
+  "formid": "0005F592",
+  "desc": "{МОЖНО ВЫБРАТЬ ТОЛЬКО ОДИН ПУТЬ} Силовые атаки одноручным оружием наносят на 0,4 больше урона за каждую единицу запаса сил.",
+  "lvl": 30,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "04084230",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Драчун",
+  "eid": "IRN_OneHanded_30_Skirmisher1",
+  "formid": "04084230",
+  "desc": "Атаки одноручным оружием на 15% быстрее, если в левой руке нет щита, оружия или посоха.",
+  "lvl": 30,
+  "prereq": "IRN_OneHanded_15_Armsman1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand",
+   "staff",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "000CB406",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Доблестный рывок",
+  "eid": "IRN_OneHanded_40_ValorousCharge",
+  "formid": "000CB406",
+  "desc": "Можно выполнять силовые атаки в спринте с одноручным оружием, наносящие на 20% больше урона целям с полным здоровьем.",
+  "lvl": 40,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power",
+   "moving"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "04065C2B",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Костолом",
+  "eid": "IRN_OneHanded_50_BoneBreaker1",
+  "formid": "04065C2B",
+  "desc": "Силовые атаки одноручным оружием наносят на 20% больше урона. Дополнительно на 10% больше по потерявшим равновесие целям.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "00106258",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойная мясорубка",
+  "eid": "IRN_OneHanded_50_DualSavagery1",
+  "formid": "00106258",
+  "desc": "Атаки двумя оружиями наносят на 15% больше урона.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "0405BA20",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Рубака",
+  "eid": "IRN_OneHanded_50_HacknSlash1",
+  "formid": "0405BA20",
+  "desc": "Атаки одноручным оружием наносят на 20% больше урона кровоточащим целям.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04098638",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Агрессия",
+  "eid": "IRN_OneHanded_50_Overrun1",
+  "formid": "04098638",
+  "desc": "Атаки одноручным оружием требуют на 20% меньше запаса сил, если в левой руке нет щита, оружия или посоха.",
+  "lvl": 50,
+  "prereq": "IRN_OneHanded_30_Skirmisher1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand",
+   "staff",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "0404251B",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Точный удар",
+  "eid": "IRN_OneHanded_50_PrecisionStrike1",
+  "formid": "0404251B",
+  "desc": "Атаки одноручным оружием наносят на 100% больше критического урона.",
+  "lvl": 50,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "0003AF81",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Воинская стойка",
+  "eid": "IRN_OneHanded_60_WarriorStance",
+  "formid": "0003AF81",
+  "desc": "Атаки одноручным оружием наносят на 0,2% больше урона за каждую единицу запаса сил. Открывает обезглавливание. ",
+  "lvl": 60,
+  "prereq": "",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 5,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "04065C2E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Дисциплинированный боец",
+  "eid": "IRN_OneHanded_80_DisciplinedFighter",
+  "formid": "04065C2E",
+  "desc": "Силовые атаки одноручным оружием разходуют на 25% меньше запаса сил.",
+  "lvl": 80,
+  "prereq": "IRN_OneHanded_50_BoneBreaker1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "0405BA23",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Порыв",
+  "eid": "IRN_OneHanded_80_Onslaught",
+  "formid": "0405BA23",
+  "desc": "Обычные атаки одноручным оружием на 15% быстрее.",
+  "lvl": 80,
+  "prereq": "IRN_OneHanded_50_HacknSlash1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 4,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "0404C71E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Беспощадный удар",
+  "eid": "IRN_OneHanded_80_RuthlessStrike",
+  "formid": "0404C71E",
+  "desc": "Атаки одноручным оружием наносят дополнительно на 100% больше критического урона целям с запасом здоровья ниже половины. ",
+  "lvl": 80,
+  "prereq": "IRN_OneHanded_50_PrecisionStrike1",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "04029013",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Разбиватель брони",
+  "eid": "IRN_OneHanded_100_ArmorBreaker",
+  "formid": "04029013",
+  "desc": "Силовые атаки одноручным оружием игнорируют 100% брони и наносят дополнительный урон, равный 20% вашего запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_OneHanded_80_DisciplinedFighter",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "dmg",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 3,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "0405BA27",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Тяжелые Раны",
+  "eid": "IRN_OneHanded_100_GrievousWounds",
+  "formid": "0405BA27",
+  "desc": "Силовые атаки одноручным оружием наносят дополнительные 4 единицы урона кровотечением за 8 секунд, плюс дополнительный урон, равный 10% запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_OneHanded_80_Onslaught",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": [],
+  "x": 4,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "0404C71F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Безжалостный удар",
+  "eid": "IRN_OneHanded_100_SavageStrike",
+  "formid": "0404C71F",
+  "desc": "Силовые атаки одноручным оружием наносят дополнительно на 1% больше критического урона за каждую единицу запаса сил.",
+  "lvl": 100,
+  "prereq": "IRN_OneHanded_80_RuthlessStrike",
+  "ranks": 1,
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "crit",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power",
+   "crit"
+  ],
+  "trigger": [],
+  "x": 2,
+  "y": 4,
+  "build": 0
+ },
+ {
+  "id": "04195881",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Крепкий защитник",
+  "eid": "IRN_HeavyArmor_15_SturdyDefender1",
+  "formid": "04195881",
+  "desc": "Класс тяжелой брони увеличивается на 20%.",
+  "lvl": 15,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 3,
+  "y": 0,
+  "build": 0
+ },
+ {
+  "id": "00058F6E",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Стальные кулаки",
+  "eid": "IRN_HeavyArmor_30_FistsOfSteel",
+  "formid": "00058F6E",
+  "desc": "При бое без оружия тяжелые перчатки наносят дополнительный урон, равный их классу брони.",
+  "lvl": 30,
+  "prereq": "IRN_HeavyArmor_15_SturdyDefender1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": [],
+  "x": 3,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00058F6F",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Хорошая экипировка",
+  "eid": "IRN_HeavyArmor_30_WellFitted",
+  "formid": "00058F6F",
+  "desc": "Повышает показатель брони тяжёлой брони на 0,2% за каждую единицу здоровья.",
+  "lvl": 30,
+  "prereq": "IRN_HeavyArmor_15_SturdyDefender1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 2,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "0419FA84",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Джаггернаут",
+  "eid": "IRN_HeavyArmor_40_Juggernaut",
+  "formid": "0419FA84",
+  "desc": "Получаемый урон снижен на 25% в полном комплекте тяжёлой брони при запасе сил не менее 10%.",
+  "lvl": 40,
+  "prereq": "IRN_HeavyArmor_15_SturdyDefender1",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 5,
+  "y": 1,
+  "build": 0
+ },
+ {
+  "id": "00058F6D",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Упорная тренировка",
+  "eid": "IRN_HeavyArmor_60_Conditioning",
+  "formid": "00058F6D",
+  "desc": "Надетая тяжёлая броня ничего не весит и не замедляет ваши движения.",
+  "lvl": 60,
+  "prereq": "",
+  "ranks": 1,
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 1,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "00058F6C",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Центр тяжести",
+  "eid": "IRN_HeavyArmor_60_TowerOfStrength",
+  "formid": "00058F6C",
+  "desc": "На 50% меньше шанса потерять равновесие в полном комплекте тяжёлой брони.",
+  "lvl": 60,
+  "prereq": "IRN_HeavyArmor_40_Juggernaut",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 6,
+  "y": 2,
+  "build": 0
+ },
+ {
+  "id": "0419FA85",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Неукротимость",
+  "eid": "IRN_HeavyArmor_80_Unstoppable",
+  "formid": "0419FA85",
+  "desc": "Получаемый урон снижен на 50% во время атак в полном комплекте тяжёлой брони.",
+  "lvl": 80,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 6,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "00107832",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Идеальная подгонка",
+  "eid": "IRN_HeavyArmor_90_PerfectFitted",
+  "formid": "00107832",
+  "desc": "Дополнительная прибавка к показателю брони за каждый элемент тяжёлой брони, равная 10% здоровья.",
+  "lvl": 90,
+  "prereq": "",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 0,
+  "y": 3,
+  "build": 0
+ },
+ {
+  "id": "041A4B87",
+  "mod": "Iron Path 1.0.5",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Несокрушимость",
+  "eid": "IRN_HeavyArmor_100_Unbreakable",
+  "formid": "041A4B87",
+  "desc": "Вы почти не получаете урона в ближнем бою от противников с запасом сил ниже половины, нося полный комплект тяжёлой брони.",
+  "lvl": 100,
+  "prereq": "IRN_HeavyArmor_80_Unstoppable",
+  "ranks": 1,
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [],
+  "x": 6,
+  "y": 4,
+  "build": 0
+ }
+]

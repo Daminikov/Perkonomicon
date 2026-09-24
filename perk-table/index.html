@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>База перков Skyrim</title>
+<style>
+  :root{
+    /* — канвас — */
+    --bg:#07090e; --bg-elev:#0b0f16; --panel:#111724; --panel2:#161e2e; --panel3:#1a2334;
+    /* — линии — */
+    --line:rgba(148,163,199,.10); --line2:rgba(148,163,199,.20); --line3:rgba(148,163,199,.32);
+    /* — текст — */
+    --txt:#e9edf6; --dim:#96a1ba; --dim2:#66718c;
+    /* — акцент: драконий янтарь — */
+    --gold:#e2a648; --gold2:#f4c777; --gold-ink:#221503;
+    --gold-soft:rgba(226,166,72,.13); --gold-ring:rgba(226,166,72,.28);
+    /* — статусы — */
+    --ok:#54d495; --bad:#f07e7e; --warn:#e6b45c;
+    /* — геометрия и глубина — */
+    --r:14px; --r-sm:10px;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 32px -8px rgba(0,0,0,.55);
+    --shadow-lg:0 2px 4px rgba(0,0,0,.5), 0 24px 64px -12px rgba(0,0,0,.7);
+    --ring:0 0 0 1px var(--line);
+    --ease:cubic-bezier(.2,0,0,1);
+    --sans:"Inter","Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;
+    --mono:"Cascadia Code","Cascadia Mono",ui-monospace,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  ::selection{background:var(--gold-soft);color:var(--gold2)}
+  body{
+    background:
+      radial-gradient(1100px 520px at 12% -8%, rgba(56,78,132,.16) 0%, transparent 62%),
+      radial-gradient(900px 460px at 92% -4%, rgba(132,88,44,.12) 0%, transparent 58%),
+      radial-gradient(700px 900px at 50% 118%, rgba(40,56,96,.10) 0%, transparent 60%),
+      var(--bg);
+    background-attachment:fixed;
+    color:var(--txt);
+    font:14px/1.45 var(--sans);
+    font-variant-numeric:tabular-nums;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    padding:26px 24px 96px;
+  }
+  .wrap{max-width:1340px;margin:0 auto}
+
+  /* ── шапка ─────────────────────────────────── */
+  header{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-bottom:18px}
+  h1{margin:0;font-size:25px;font-weight:640;letter-spacing:-.022em;line-height:1.1}
+  h1 .accent{color:var(--gold)}
+  .sub{color:var(--dim);font-size:13px;margin-top:6px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .sub b{color:var(--dim);font-weight:560}
+  .dotok,.dotbad,.dotwait{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+  .dotok{background:var(--ok);box-shadow:0 0 0 3px rgba(84,212,149,.14)}
+  .dotbad{background:var(--bad);box-shadow:0 0 0 3px rgba(240,126,126,.14)}
+  .dotwait{background:var(--warn);box-shadow:0 0 0 3px rgba(230,180,92,.14)}
+  .stats{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+  .stat{background:linear-gradient(180deg,var(--panel),var(--bg-elev));border:1px solid var(--line);
+    border-radius:var(--r);padding:10px 15px;min-width:94px;box-shadow:var(--ring)}
+  .stat b{display:block;font-size:20px;font-weight:660;letter-spacing:-.01em;line-height:1.2}
+  .stat span{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.07em}
+  .stat.gold{border-color:var(--gold-ring);background:linear-gradient(180deg,rgba(226,166,72,.09),var(--bg-elev))}
+  .stat.gold b{color:var(--gold2)}
+
+  /* ── панель инструментов ───────────────────── */
+  .bar{position:sticky;top:12px;z-index:40;
+    background:rgba(11,15,22,.78);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);
+    border:1px solid var(--line);border-radius:16px;padding:13px;margin-bottom:14px;
+    box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.04)}
+  .bar-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .bar-row + .bar-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+  .search{flex:1 1 260px;display:flex;align-items:center;gap:9px;background:var(--bg-elev);
+    border:1px solid var(--line);border-radius:var(--r-sm);padding:0 12px;height:40px;transition:border-color .15s var(--ease), box-shadow .15s var(--ease)}
+  .search:focus-within{border-color:var(--gold-ring);box-shadow:0 0 0 3px var(--gold-soft)}
+  .search svg{flex:none;opacity:.5}
+  .search input{flex:1;background:none;border:0;outline:0;color:var(--txt);font:inherit;height:100%}
+  .search input::placeholder{color:var(--dim2)}
+  .kbd{font:11px/1 var(--mono);color:var(--dim2);border:1px solid var(--line2);border-bottom-width:2px;border-radius:6px;padding:3px 6px}
+  .btn{height:40px;padding:0 15px;border-radius:var(--r-sm);cursor:pointer;background:var(--panel2);
+    border:1px solid var(--line2);color:var(--txt);font:inherit;font-weight:540;
+    display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+    transition:background .15s var(--ease), border-color .15s var(--ease), color .15s var(--ease), transform .1s var(--ease)}
+  .btn:hover{border-color:var(--line3);background:var(--panel3)}
+  .btn:active{transform:translateY(1px)}
+  .btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .btn.primary{background:linear-gradient(180deg,#ecb257,#d59a3a);border-color:rgba(244,199,119,.55);color:var(--gold-ink);
+    font-weight:640;box-shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 16px -4px rgba(226,166,72,.45), inset 0 1px 0 rgba(255,255,255,.3)}
+  .btn.primary:hover{background:linear-gradient(180deg,#f4bd63,#dfa342)}
+  .btn.ghost{background:transparent;border-color:transparent;color:var(--dim)}
+  .btn.ghost:hover{background:var(--panel2);border-color:var(--line);color:var(--txt)}
+  .btn.sm{height:33px;padding:0 12px;font-size:13px}
+  .btn.danger:hover{border-color:rgba(240,126,126,.5);color:#f5b8b8;background:rgba(240,126,126,.08)}
+  .btn[aria-pressed="true"]{border-color:var(--gold-ring);color:var(--gold2);background:rgba(226,166,72,.10)}
+
+  /* ── фасеты фильтров ───────────────────────── */
+  .facet{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .facet > .lbl{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.07em;min-width:78px;font-weight:560}
+  .chip{display:inline-flex;align-items:center;gap:7px;cursor:pointer;user-select:none;background:var(--bg-elev);
+    border:1px solid var(--line);border-radius:999px;padding:5px 11px 5px 9px;font-size:12.5px;color:var(--dim);
+    transition:border-color .14s var(--ease), color .14s var(--ease), background .14s var(--ease)}
+  .chip:hover{border-color:var(--line2);color:var(--txt)}
+  .chip .dot{width:8px;height:8px;border-radius:50%;flex:none}
+  .chip .n{color:var(--dim2);font-size:11px}
+  .chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .chip[aria-pressed="true"]{background:var(--panel2);border-color:var(--line2);color:var(--txt)}
+  .chip.off{opacity:.45}
+  .chip.zero{opacity:.32}
+  .lvl-range{display:flex;align-items:center;gap:8px}
+  .lvl-range input[type=range]{width:120px;accent-color:var(--gold)}
+  .lvl-range .val{font:12px var(--mono);color:var(--gold2);min-width:52px}
+
+  /* ── выпадающие меню ───────────────────────── */
+  .dd{position:relative}
+  .dd > .dd-btn{height:33px;padding:0 11px;font-size:13px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;user-select:none;background:var(--bg-elev);border:1px solid var(--line);border-radius:9px;color:var(--dim);transition:border-color .14s var(--ease), color .14s var(--ease)}
+  .dd > .dd-btn:hover{border-color:var(--line2);color:var(--txt)}
+  .dd > .dd-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .dd > .dd-btn .dot{width:8px;height:8px;border-radius:50%;flex:none}
+  .dd > .dd-btn .n{color:var(--dim2);font-size:11px}
+  .dd > .dd-btn .chev{width:10px;height:10px;margin-left:2px;transition:transform .18s var(--ease)}
+  .dd > .dd-list{position:absolute;top:calc(100% + 6px);left:0;z-index:70;display:none;min-width:190px;max-height:340px;overflow-y:auto;
+    background:rgba(17,23,36,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border:1px solid var(--line2);border-radius:12px;box-shadow:var(--shadow-lg);padding:5px}
+  .dd.open > .dd-list{display:block}
+  .dd.open > .dd-btn{border-color:var(--gold-ring);color:var(--gold2)}
+  .dd.open > .dd-btn .chev{transform:rotate(180deg)}
+  .dd-item{display:flex;align-items:center;gap:8px;padding:7px 10px;font-size:12.5px;color:var(--dim);cursor:pointer;border-radius:8px;user-select:none;transition:background .12s var(--ease), color .12s var(--ease)}
+  .dd-item:hover{background:rgba(255,255,255,.05);color:var(--txt)}
+  .dd-item .dot{width:7px;height:7px;border-radius:50%;flex:none}
+  .dd-item .n{margin-left:auto;color:var(--dim2);font-size:11px}
+  .dd-item.off{opacity:.45}
+  .dd-list::-webkit-scrollbar{width:8px}
+  .dd-list::-webkit-scrollbar-track{background:transparent}
+  .dd-list::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px;border:2px solid transparent;background-clip:content-box}
+  .dd-list::-webkit-scrollbar-thumb:hover{background:var(--line3);border:2px solid transparent;background-clip:content-box}
+  .dd-list::-webkit-scrollbar-button{display:none}
+  .dd-mode{display:flex;align-items:center;gap:6px;padding:6px 10px;border-top:1px solid var(--line);margin-top:4px;font-size:11px;color:var(--dim2);cursor:pointer;user-select:none}
+  .dd-mode:hover{color:var(--dim)}
+  .dd-mode input{accent-color:var(--gold);width:14px;height:14px}
+
+  /* ── таблица ───────────────────────────────── */
+  .tbl{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow), var(--ring)}
+  .thead{display:grid;grid-template-columns:46px minmax(230px,1fr) minmax(340px,2.1fr) 92px 54px;
+    background:rgba(255,255,255,.02);border-bottom:1px solid var(--line)}
+  .thead div{padding:11px 14px;font-size:10.5px;font-weight:560;text-transform:uppercase;letter-spacing:.08em;color:var(--dim2);border-right:1px solid var(--line)}
+  .thead div:last-child{border-right:0}
+  .thead div.lvl-h{text-align:center}
+  .thead div.box-h{text-align:center}
+
+  .group{border-bottom:1px solid var(--line)}
+  .group:last-child{border-bottom:0}
+  .ghead{display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;padding:13px 15px;
+    background:linear-gradient(90deg, rgba(255,255,255,.025), transparent 55%);border-left:3px solid var(--mc);
+    transition:background .14s var(--ease)}
+  .ghead:hover{background:linear-gradient(90deg, rgba(255,255,255,.055), transparent 55%)}
+  .ghead .cdot{width:10px;height:10px;border-radius:3px;background:var(--mc);box-shadow:0 0 12px -1px var(--mc);flex:none}
+  .ghead .gname{font-weight:620;font-size:15px;letter-spacing:-.01em}
+  .ghead .gver{font:11px/1 var(--mono);color:var(--dim2);border:1px solid var(--line);border-radius:6px;padding:3px 7px;background:var(--bg-elev)}
+  .ghead .gmeta{margin-left:auto;display:flex;align-items:center;gap:10px;color:var(--dim2);font-size:12px}
+  .ghead .gmeta b{color:var(--gold2);font-weight:600}
+  .ghead .gadd{opacity:0;transition:opacity .14s var(--ease)}
+  .ghead:hover .gadd{opacity:1}
+  .chev{transition:transform .18s var(--ease);color:var(--dim2)}
+  .group.collapsed .chev{transform:rotate(-90deg)}
+  .group.collapsed > .sgroups{display:none}
+
+  .subgroup{border-top:1px solid var(--line)}
+  .shead{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;
+    padding:9px 15px 9px 27px;background:rgba(255,255,255,.015);border-left:3px solid var(--sc);
+    transition:background .14s var(--ease)}
+  .shead:hover{background:rgba(255,255,255,.04)}
+  .shead .sdot{width:7px;height:7px;border-radius:50%;background:var(--sc);flex:none;box-shadow:0 0 8px -1px var(--sc)}
+  .shead .sname{font-size:13px;font-weight:560;color:var(--dim)}
+  .shead .scount{margin-left:auto;font-size:11.5px;color:var(--dim2)}
+  .shead .scount b{color:var(--gold2)}
+  .subgroup.collapsed .chev{transform:rotate(-90deg)}
+  .subgroup.collapsed .rows{display:none}
+
+  .row{display:grid;grid-template-columns:46px minmax(230px,1fr) minmax(340px,2.1fr) 92px 54px;
+    border-top:1px solid var(--line);border-left:3px solid transparent;transition:background .12s var(--ease), border-left-color .12s var(--ease)}
+  .row:hover{background:rgba(255,255,255,.028)}
+  .row.on{background:linear-gradient(90deg, rgba(226,166,72,.09), rgba(226,166,72,.015) 45%);border-left-color:var(--gold)}
+  .c{display:flex;align-items:center;padding:10px 14px;border-right:1px solid var(--line);min-width:0}
+  .c:last-child{border-right:0}
+  .c.box{justify-content:center;padding:10px 0}
+  .c.lvl{justify-content:center}
+  .c.act{justify-content:center;padding:10px 0;gap:4px}
+
+  input[type=checkbox]{appearance:none;-webkit-appearance:none;width:20px;height:20px;border-radius:7px;cursor:pointer;flex:none;
+    border:1.5px solid var(--line3);background:var(--bg-elev);position:relative;transition:border-color .14s var(--ease), background .14s var(--ease)}
+  input[type=checkbox]:hover{border-color:var(--gold)}
+  input[type=checkbox]:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  input[type=checkbox]:checked{background:linear-gradient(180deg,#ecb257,#d59a3a);border-color:rgba(244,199,119,.6)}
+  input[type=checkbox]:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+    border:solid var(--gold-ink);border-width:0 2.5px 2.5px 0;transform:rotate(43deg)}
+
+  .perk{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .perk .nm{font-weight:560;font-size:14.5px;letter-spacing:-.005em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .perk .meta{display:flex;align-items:center;gap:8px;min-width:0;flex-wrap:wrap}
+  .perk .eid{font:11px/1.3 var(--mono);color:var(--dim2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .fid{font:10.5px/1 var(--mono);color:var(--dim2);border:1px solid var(--line);border-radius:6px;padding:3px 6px;flex:none;background:var(--bg-elev)}
+  .tag{font-size:10.5px;font-weight:520;border-radius:6px;padding:3px 7px;flex:none;background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--dim)}
+  .desc{color:var(--dim);font-size:13.5px;line-height:1.5;text-wrap:pretty}
+  .row.on .desc{color:#bcc5d9}
+  .lvlpill{font:600 12.5px/1 var(--mono);border-radius:999px;padding:6px 11px;background:var(--bg-elev);border:1px solid var(--line);color:var(--dim)}
+  .lvlpill.l0{color:#93a2c0}
+  .lvlpill.l1{border-color:rgba(96,140,220,.35);color:#a2b6dd;background:rgba(80,120,210,.08)}
+  .lvlpill.l2{border-color:rgba(110,190,120,.35);color:#a4d3a8;background:rgba(90,180,110,.08)}
+  .lvlpill.l3{border-color:rgba(226,166,72,.4);color:#ecc07e;background:rgba(226,166,72,.09)}
+  .lvlpill.l4{border-color:rgba(216,110,214,.42);color:#e7a3e0;background:rgba(210,100,210,.09)}
+
+  .iconbtn{width:30px;height:30px;border-radius:9px;cursor:pointer;display:inline-flex;align-items:center;
+    justify-content:center;background:transparent;border:1px solid transparent;color:var(--dim2);transition:border-color .14s var(--ease), color .14s var(--ease), background .14s var(--ease);padding:0}
+  .iconbtn:hover{border-color:var(--line2);color:var(--txt);background:var(--panel3)}
+  .iconbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .iconbtn.del:hover{border-color:rgba(240,126,126,.45);color:#f5b8b8;background:rgba(240,126,126,.08)}
+
+  .empty{padding:32px 20px 38px;text-align:center;color:var(--dim2);border-top:1px solid var(--line)}
+  .empty b{display:block;color:var(--txt);font-size:16px;font-weight:600;margin-bottom:6px}
+  .empty .hint{margin-top:14px;font-size:12.5px}
+  .empty code{background:var(--bg-elev);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;font-family:var(--mono);color:var(--dim)}
+  .gempty{padding:11px 15px 13px 30px;color:var(--dim2);font-size:12.5px;border-top:1px solid var(--line)}
+  .gempty button{background:none;border:0;color:var(--gold2);cursor:pointer;font:inherit;padding:0 2px;text-decoration:underline dotted;text-underline-offset:3px}
+
+  /* ── модальная карточка ────────────────────── */
+  .sheet{position:fixed;inset:0;z-index:80;display:none;background:rgba(4,6,10,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .sheet.open{display:block}
+  .card{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(780px, calc(100vw - 32px));
+    max-height:90vh;overflow:auto;background:var(--panel);border:1px solid var(--line2);border-radius:18px;box-shadow:var(--shadow-lg)}
+  .card h2{margin:0;padding:20px 24px 15px;font-size:17px;font-weight:620;letter-spacing:-.01em;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:rgba(17,23,36,.96);backdrop-filter:blur(10px);z-index:1}
+  .card .body{padding:20px 24px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+  .card .body .full{grid-column:1 / -1}
+  .fld{display:flex;flex-direction:column;gap:7px}
+  .fld label{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.07em;font-weight:560}
+  .fld input,.fld textarea,.fld select{background:var(--bg-elev);border:1px solid var(--line);border-radius:var(--r-sm);
+    color:var(--txt);font:inherit;padding:10px 13px;outline:0;width:100%;transition:border-color .14s var(--ease), box-shadow .14s var(--ease)}
+  .fld textarea{min-height:96px;resize:vertical;line-height:1.55}
+  .fld input:focus,.fld textarea:focus,.fld select:focus{border-color:var(--gold-ring);box-shadow:0 0 0 3px var(--gold-soft)}
+  .fld input::placeholder,.fld textarea::placeholder{color:var(--dim2)}
+  .rowline{display:flex;gap:8px;align-items:center}
+  .card .foot{padding:15px 24px 20px;display:flex;gap:10px;align-items:center;border-top:1px solid var(--line)}
+  .card .foot .msg{color:var(--bad);font-size:13px;margin-right:auto}
+  .err{border-color:rgba(240,126,126,.6) !important}
+
+  /* ── баннер и тост ─────────────────────────── */
+  .banner{margin-bottom:13px;border:1px solid rgba(230,180,92,.35);background:rgba(230,180,92,.08);border-radius:var(--r);
+    padding:12px 15px;font-size:13px;color:#ecd3a2;display:none}
+  .banner.show{display:block}
+  .banner b{color:var(--gold2)}
+  .banner code{background:rgba(226,166,72,.12);border:1px solid rgba(226,166,72,.25);border-radius:6px;padding:1px 6px;font-family:var(--mono);font-size:12px}
+
+  .draft{position:fixed;left:24px;bottom:24px;z-index:90;display:flex;align-items:center;gap:10px;
+    background:rgba(22,30,46,.9);border:1px solid var(--line2);border-radius:999px;padding:10px 17px;
+    font-size:12.5px;color:var(--dim);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);
+    opacity:0;transform:translateY(12px);transition:opacity .22s var(--ease), transform .22s var(--ease);pointer-events:none}
+  .draft.show{opacity:1;transform:none}
+  .draft b{color:var(--gold2)}
+
+  /* ── скроллбары страницы ───────────────────── */
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--line2);border-radius:5px;border:2px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-thumb:hover{background:var(--line3);border:2px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-corner{background:transparent}
+
+  /* ── адаптив и доступность ─────────────────── */
+  @media (max-width: 720px){
+    body{padding:16px 12px 80px}
+    .bar{position:static;backdrop-filter:none}
+    .stats{margin-left:0}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>База перков <span class="accent">Skyrim</span></h1>
+      <div class="sub">
+        <span id="saveState"><span class="dotwait"></span> подключение…</span>
+        <span style="color:var(--line2)">·</span>
+        <span>перки лежат отдельными файлами по модам в папке <b>data/perks</b></span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="sTotal">0</b><span>Перков</span></div>
+      <div class="stat"><b id="sShown">0</b><span>В фильтре</span></div>
+      <div class="stat gold"><b id="sMark">0</b><span>В сборке</span></div>
+      <div class="stat"><b id="sMods">0</b><span>Модов</span></div>
+      <div class="stat"><b id="sBranch">0</b><span>Веток</span></div>
+    </div>
+  </header>
+
+  <div class="banner" id="banner"></div>
+
+  <div class="bar">
+    <div class="bar-row">
+      <label class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Поиск: название, EditorID, FormID, описание…" autocomplete="off">
+        <span class="kbd">/</span>
+      </label>
+      <button class="btn primary" id="addBtn">+ Добавить перк</button>
+      <button class="btn" id="groupBtn">Группировка: мод → ветка</button>
+      <button class="btn" id="importBtn">Импорт CSV</button>
+      <button class="btn" id="exportAll">Выгрузить всё</button>
+      <button class="btn" id="saveAllBtn">Записать в файлы</button>
+    </div>
+    <div class="bar-row">
+      <div class="facet"><span class="lbl">Ветка</span><span id="branchChips" class="facet" style="gap:8px"></span></div>
+      <div class="facet"><span class="lbl">Роль</span><span id="roleDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Механика</span><span id="mechDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Стихия</span><span id="elementDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Тип магии</span><span id="magictypeDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Оружие</span><span id="weaponDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Условие</span><span id="conditionDd" class="dd"></span></div>
+      <div class="facet"><span class="lbl">Триггер</span><span id="triggerDd" class="dd"></span></div>
+    </div>
+    <div class="bar-row">
+      <div class="facet"><span class="lbl">Моды</span><span id="modChips" class="facet" style="gap:8px"></span></div>
+    </div>
+    <div class="bar-row">
+      <div class="facet"><span class="lbl">Моды CSF</span><span id="csfChips" class="facet" style="gap:8px"></span></div>
+      <button class="btn sm" id="onlyMark" aria-pressed="false" style="margin-left:6px">Только в сборке</button>
+      <span class="lvl-range" style="margin-left:6px">
+        <span class="lbl" style="min-width:auto">Ур. от</span>
+        <input id="lvlMin" type="range" min="0" max="100" step="5" value="0">
+        <span class="val" id="lvlVal">0</span>
+        </span>
+        <button class="btn sm ghost" id="expandAll" style="margin-left:6px">Свернуть/развернуть</button>
+        <button class="btn sm ghost" id="filterMode" aria-pressed="false" style="margin-left:6px">Режим: эксклюзивный</button>
+        <button class="btn sm ghost" id="resetFilters" style="margin-left:6px">Сбросить фильтры</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tbl">
+    <div class="thead">
+      <div class="box-h">✓</div>
+      <div>Перк</div>
+      <div>Описание</div>
+      <div class="lvl-h">Ур.</div>
+      <div></div>
+    </div>
+    <div id="groups"></div>
+    <div class="empty" id="empty" style="display:none">
+      <b>Пока пусто</b>
+      Жми «+ Добавить перк» (или клавишу <b>N</b>), либо залей пачкой через «Импорт CSV».
+      <div class="hint">CSV: <code>Мод;Ветка;Перк;EditorID;FormID;Описание;Ур.;Тип;В сборке</code></div>
+    </div>
+  </div>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="card">
+    <h2 id="formTitle">Новый перк</h2>
+    <div class="body">
+      <div class="fld"><label>Мод (сборка)</label><input id="fMod" list="modList" placeholder="Ordinator 9.31" autocomplete="off">
+        <datalist id="modList"></datalist></div>
+      <div class="fld"><label>Ветка</label>
+        <div class="rowline">
+          <select id="fBranch"></select>
+          <button class="btn sm ghost" id="newBranchBtn" title="Добавить свою ветку">+</button>
+        </div>
+      </div>
+      <div class="fld"><label>Название перка</label><input id="fName" placeholder="Натиск" autocomplete="off"></div>
+      <div class="fld"><label>EditorID</label><input id="fEid" placeholder="ORD_One70_Onslaught" autocomplete="off"></div>
+      <div class="fld"><label>FormID</label><input id="fFid" placeholder="0636C6E9" autocomplete="off"></div>
+      <div class="fld"><label>Требуемый навык</label><input id="fLvl" type="number" min="0" max="100" step="1" placeholder="70"></div>
+      <div class="fld"><label>Тип (если нужно уточнить)</label>
+        <select id="fTags" multiple size="1" style="height:auto">
+          <option value="sword">Меч</option><option value="axe">Топор</option>
+          <option value="mace">Булава</option><option value="dagger">Кинжал</option>
+          <option value="dual">Парное</option><option value="core">Общее</option>
+          <option value="bow">Лук</option><option value="crossbow">Арбалет</option>
+          <option value="fist">Кулаки</option><option value="cloth">Без брони</option>
+          <option value="magic">Магия</option><option value="stealth">Скрытность</option>
+          <option value="craft">Крафт</option><option value="social">Социальное</option>
+        </select></div>
+      <div class="fld"><label>Отметка</label>
+        <label style="display:flex;align-items:center;gap:9px;text-transform:none;letter-spacing:0;color:var(--dim);font-size:13.5px;padding:10px 2px">
+          <input id="fBuild" type="checkbox" style="width:20px;height:20px"> Будет в сборке
+        </label>
+      </div>
+      <div class="fld full"><label>Описание</label><textarea id="fDesc" placeholder="Повторные силовые атаки одноручным оружием по одной и той же цели наносят дополнительный урон вплоть до двойного."></textarea></div>
+    </div>
+    <div class="foot">
+      <span class="msg" id="fMsg"></span>
+      <button class="btn ghost" id="cancelBtn">Отмена</button>
+      <button class="btn primary" id="saveBtn">Сохранить</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="fileInput" accept=".csv,.txt,.json" style="display:none">
+<div class="draft" id="toast"><span id="toastTxt"></span></div>
+
+<script>
+const TAGS = {sword:"Меч",axe:"Топор",mace:"Булава",dagger:"Кинжал",dual:"Парное",core:"Общее",
+  bow:"Лук",crossbow:"Арбалет",fist:"Кулаки",cloth:"Без брони",magic:"Магия",stealth:"Скрытность",craft:"Крафт",social:"Социальное"};
+const ROLES = {attack:"Атака",defense:"Защита",control:"Контроль",summon:"Призыв",stealth:"Скрытность",
+  craft:"Крафт",support:"Поддержка",utility:"Утилита",passive:"Пассив"};
+const MECHS = {dmg:"Урон",crit:"Крит",dot:"Кровотечение",power_attack:"Силовая",cost:"Расход",
+  pierce:"Пробитие",speed:"Скорость",on_kill:"При убийстве",conditional:"Условие",stack:"Накопление",
+  block:"Блок",resist:"Сопротивление",regen:"Регенерация",range:"Дальность"};
+const ELEMENTS = {fire:"Огонь",frost:"Мороз",shock:"Молния",poison:"Яд",light:"Свет",dark:"Тьма",arcane:"Тайная",physical:"Физический"};
+const MAGICTYPES = {ward:"Обереги",heal:"Лечение",summon:"Призыв",illusion:"Иллюзия",destruction:"Разрушение",alteration:"Изменение",enchanting:"Зачарование"};
+const WEAPONS = {sword:"Меч",axe:"Топор",mace:"Булава",dagger:"Кинжал",bow:"Лук",crossbow:"Арбалет",dual:"Парное",twohand:"Двуручное",onehand:"Одноручное",unarmed:"Кулаки",staff:"Посох",shield:"Щит"};
+const CONDITIONS = {power:"Силовая",crit:"Крит",kill:"При убийстве",low_hp:"Низкое HP",full_hp:"Полное HP",sneak:"Скрытность",moving:"В движении",standing:"Стоя",behind:"Сзади",staggered:"Ошеломлён",blocked:"Блок",night:"Ночь",day:"День"};
+const TRIGGERS = {on_hit:"При ударе",on_block:"При блоке",on_dodge:"При уклонении",on_cast:"При касте",on_kill:"При убийстве",on_crit:"При крите",on_damaged:"При уроне",passive:"Пассивно"};
+const HUES = [38,205,145,285,12,178,320,95,230,60,265,165,340,110,195];
+const BRANCH_HUES = [38,205,145,285,12,178,320,95,230,60,265,165,340,110,195,20,240,75];
+
+const S = {
+  mods: [], branches: [], perks: {}, files: {},
+  groupBy: "mod",
+  q: "", tags: new Set(), fMods: new Set(), fBranches: new Set(), fRoles: new Set(), fMechs: new Set(),
+  fElements: new Set(), fMagicTypes: new Set(), fWeapons: new Set(), fConditions: new Set(), fTriggers: new Set(),
+  lvlMin: 0, onlyMark: false, filterMode: "exclusive",
+  dirty: new Set(), online: false, collapsed: new Set(), subCollapsed: new Set(),
+  ddOpen: null
+};
+
+const $ = id => document.getElementById(id);
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+/* ─ загрузка / сохранение ───────────────────── */
+async function boot(){
+  try{
+    const r = await fetch("/api/state", {cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json();
+    S.mods = d.mods || []; S.branches = d.branches || [];
+    S.perks = d.perks || {}; S.files = d.files || {};
+    S.online = true;
+    Object.keys(S.perks).forEach(m => (S.perks[m] || []).forEach(normalize));
+    setSaveState("ok", "все данные на диске");
+  }catch(e){
+    S.online = false;
+    try{
+      const d = JSON.parse(localStorage.getItem("perkTable.draft") || "null");
+      if(d){ S.mods = d.mods || []; S.branches = d.branches || []; S.perks = d.perks || {};
+        Object.keys(S.perks).forEach(m => (S.perks[m] || []).forEach(normalize)); }
+    }catch(_){}
+    setSaveState("bad", "нет связи с сервером — работаю в черновике");
+    showBanner("<b>Сервер не отвечает.</b> Открой приложение через <b>start.cmd</b> (или <code>python app.py</code>) — тогда перки пишутся в файлы на диске. Сейчас правки живут только в браузере.");
+  }
+  fillModList();
+  render();
+}
+
+function normalize(p){
+  if(!p.id) p.id = uid();
+  if(!Array.isArray(p.tags)) p.tags = p.tags ? [p.tags] : [];
+  p.lvl = (p.lvl === "" || p.lvl == null) ? -1 : +p.lvl;
+  p.build = !!p.build;
+  // ветка: предпочитаем branch_id (id из справочника), иначе ищем по русскому имени
+  if(!p.branch_id && p.branch){
+    const b = S.branches.find(x => x.name === p.branch || x.id === p.branch);
+    if(b) p.branch_id = b.id;
+  }
+  if(!p.branch) p.branch = branchOf(p.branch_id || "").name;
+  return p;
+}
+function setSaveState(kind, text){
+  const cls = kind === "ok" ? "dotok" : kind === "bad" ? "dotbad" : "dotwait";
+  $("saveState").innerHTML = `<span class="${cls}"></span> ${text}`;
+}
+function showBanner(html){ const b = $("banner"); b.innerHTML = html; b.classList.add("show"); }
+function markDirty(mod){ S.dirty.add(mod); scheduleSave(); }
+let saveTimer = null;
+function scheduleSave(){
+  if(!S.online){ stashDraft(); return; }
+  setSaveState("wait", "сохраняю…");
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(flushSave, 700);
+}
+async function flushSave(){
+  if(!S.online) return;
+  const mods = Array.from(S.dirty);
+  S.dirty.clear();
+  if(!mods.length){ setSaveState("ok", "все данные на диске"); return; }
+  try{
+    for(const m of mods){
+      const r = await fetch("/api/save", {method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({mod:m, perks:S.perks[m] || []})});
+      if(!r.ok) throw new Error("HTTP " + r.status);
+      const j = await r.json();
+      if(j.file) S.files[m] = j.file;
+    }
+    setSaveState("ok", "сохранено в файлы");
+  }catch(e){
+    mods.forEach(m=>S.dirty.add(m));
+    setSaveState("bad", "не смог записать файл: " + e.message);
+  }
+}
+function stashDraft(){
+  try{ localStorage.setItem("perkTable.draft", JSON.stringify({mods:S.mods, branches:S.branches, perks:S.perks})); }catch(e){}
+}
+
+/* ── вспомогательное ─────────────────────────── */
+function usedMods(){
+  const used = Array.from(new Set(Object.keys(S.perks).filter(m => (S.perks[m] || []).length)));
+  return S.mods.filter(m => used.includes(m)).concat(used.filter(m => !S.mods.includes(m)));
+}
+const branchOf = id => S.branches.find(b => b.id === id) || S.branches.find(b => b.name === id) || {id:id, name:id || "Без ветки", vanilla:false};
+function allPerks(){
+  const out = [];
+  Object.keys(S.perks).forEach(m => (S.perks[m] || []).forEach(p => out.push({p:p, m:m})));
+  return out;
+}
+function modColor(m){
+  const i = S.mods.indexOf(m);
+  const h = i >= 0 ? HUES[i % HUES.length] : (Array.from(m || "x").reduce((a,c)=>a + c.charCodeAt(0), 0) * 7) % 360;
+  return `oklch(0.72 0.13 ${h})`;
+}
+function branchColor(b){
+  const i = S.branches.findIndex(x => x.id === b);
+  const h = i >= 0 ? BRANCH_HUES[i % BRANCH_HUES.length] : (Array.from(b || "x").reduce((a,c)=>a + c.charCodeAt(0), 0) * 11) % 360;
+  return `oklch(0.70 0.11 ${h})`;
+}
+function lvlBand(l){ if(l < 0) return 0; if(l <= 15) return 0; if(l <= 35) return 1; if(l <= 60) return 2; if(l <= 85) return 3; return 4; }
+function splitMod(m){ const mm = /^(.*?)\s+(\d[\w.\-]*)$/.exec(m || ""); return mm ? [mm[1], mm[2]] : [m || "", ""]; }
+
+/* ── отрисовка ───────────────────────────────── */
+function render(){
+  const wrap = $("groups");
+  wrap.innerHTML = "";
+  const all = allPerks();
+  $("sTotal").textContent = all.length;
+  $("sMark").textContent = all.filter(o=>o.p.build).length;
+  $("sMods").textContent = usedMods().length;
+  $("sBranch").textContent = new Set(all.map(o=>o.p.branch_id || o.p.branch)).size;
+  $("empty").style.display = all.length ? "none" : "";
+
+  const rows = all.filter(matchFilters);
+  $("sShown").textContent = rows.length;
+
+  const topIsMod = S.groupBy === "mod";
+  const buckets = new Map();
+  rows.forEach(o=>{
+    const top = topIsMod ? o.m : (o.p.branch_id || o.p.branch || "none");
+    const sub = topIsMod ? (o.p.branch_id || o.p.branch || "none") : o.m;
+    if(!buckets.has(top)) buckets.set(top, new Map());
+    const inner = buckets.get(top);
+    if(!inner.has(sub)) inner.set(sub, []);
+    inner.get(sub).push(o);
+  });
+  if(!buckets.size){
+    buildChips();
+    return;
+  }
+
+  [...buckets.keys()].sort((a,b)=>sortKey(a,b, topIsMod ? "mod" : "branch")).forEach(top=>{
+    const label = topIsMod ? top : branchOf(top).name;
+    const color = topIsMod ? modColor(top) : branchColor(top);
+    const inner = buckets.get(top);
+    const innerCount = [...inner.values()].reduce((a,v)=>a + v.length, 0);
+    // не рендерим пустые группы (моды/ветки, которые не прошли фильтр)
+    if(innerCount === 0) return;
+    const markedHere = [...inner.values()].flat().filter(o=>o.p.build).length;
+
+    const g = document.createElement("div");
+    g.className = "group" + (S.collapsed.has(top) ? " collapsed" : "");
+    g.style.setProperty("--mc", color);
+    const head = document.createElement("div");
+    head.className = "ghead";
+    head.innerHTML = `<span class="cdot"></span><span class="gname"></span>
+      ${topIsMod && splitMod(top)[1] ? `<span class="gver">v${splitMod(top)[1]}</span>` : ``}
+      ${!topIsMod && branchOf(top).vanilla ? `<span class="gver">ванильная</span>` : ``}
+      <span class="gmeta"><span class="gc"></span>${markedHere ? `<span><b>${markedHere}</b> в сборке</span>` : ``}
+        ${topIsMod ? `<button class="iconbtn gadd" title="Добавить перк в этот мод">+</button>` : ``}
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </span>`;
+    head.querySelector(".gname").textContent = label;
+    head.querySelector(".gc").textContent = innerCount ? innerCount + " перков" : "пусто";
+    if(topIsMod){
+      head.querySelector(".gadd").addEventListener("click", e=>{ e.stopPropagation(); openForm(null, top, ""); });
+    }
+    head.addEventListener("click", ()=>{
+      S.collapsed.has(top) ? S.collapsed.delete(top) : S.collapsed.add(top);
+      render();
+    });
+    g.appendChild(head);
+
+    const sg = document.createElement("div");
+    sg.className = "sgroups";
+    if(!innerCount){
+      const he = document.createElement("div");
+      he.className = "gempty";
+      he.textContent = topIsMod ? "В этом моде перков ещё нет. " : "В этой ветке перков пока нет.";
+      if(topIsMod){
+        const btn = document.createElement("button");
+        btn.textContent = "добавить";
+        btn.addEventListener("click", ()=>openForm(null, top, ""));
+        he.appendChild(btn);
+      }
+      sg.appendChild(he);
+    }
+    [...inner.keys()].sort((a,b)=>sortKey(a,b, topIsMod ? "branch" : "mod")).forEach(sub=>{
+      const list = inner.get(sub);
+      const sLabel = topIsMod ? branchOf(sub).name : sub;
+      const sColor = topIsMod ? branchColor(sub) : modColor(sub);
+      const key = top + ">" + sub;
+      const subEl = document.createElement("div");
+      subEl.className = "subgroup" + (S.subCollapsed.has(key) ? " collapsed" : "");
+      subEl.style.setProperty("--sc", sColor);
+      const sh = document.createElement("div");
+      sh.className = "shead";
+      sh.innerHTML = `<span class="sdot"></span><span class="sname"></span>
+        <span class="scount"><b>${list.filter(o=>o.p.build).length}</b> / ${list.length}</span>
+        <svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>`;
+      sh.querySelector(".sname").textContent = sLabel;
+      sh.addEventListener("click", ()=>{
+        S.subCollapsed.has(key) ? S.subCollapsed.delete(key) : S.subCollapsed.add(key);
+        render();
+      });
+      subEl.appendChild(sh);
+      const box = document.createElement("div");
+      box.className = "rows";
+      list.forEach(({p,m})=>box.appendChild(makeRow(p,m)));
+      subEl.appendChild(box);
+      sg.appendChild(subEl);
+    });
+    g.appendChild(sg);
+    wrap.appendChild(g);
+  });
+  buildChips();
+}
+
+function sortKey(a, b, kind){
+  if(a === "none") return 1;
+  if(b === "none") return -1;
+  if(kind === "branch"){
+    const ia = S.branches.findIndex(x=>x.id === a), ib = S.branches.findIndex(x=>x.id === b);
+    if(ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+  }
+  return String(a).localeCompare(String(b), "ru");
+}
+
+function matchFilters(o){
+  const p = o.p;
+  if(S.fMods.size && !S.fMods.has(o.m)) return false;
+  if(S.fBranches.size && !S.fBranches.has(p.branch_id || p.branch || "none")) return false;
+  if(S.fRoles.size && !S.fRoles.has(p.role || "passive")) return false;
+  if(S.fMechs.size && !(p.mechanics || []).some(m=>S.fMechs.has(m))) return false;
+  if(S.fElements.size && !(p.element || []).some(e=>S.fElements.has(e))) return false;
+  if(S.fMagicTypes.size && !(p.magictype || []).some(m=>S.fMagicTypes.has(m))) return false;
+  if(S.fWeapons.size && !(p.weapon_type || []).some(w=>S.fWeapons.has(w))) return false;
+  if(S.fConditions.size && !(p.condition || []).some(c=>S.fConditions.has(c))) return false;
+  if(S.fTriggers.size && !(p.trigger || []).some(t=>S.fTriggers.has(t))) return false;
+  if(S.tags.size && !(p.tags || []).some(t=>S.tags.has(t))) return false;
+  if(S.onlyMark && !p.build) return false;
+  if(S.lvlMin > 0 && p.lvl >= 0 && p.lvl < S.lvlMin) return false;
+  if(S.q){
+    const hay = (p.name + " " + p.eid + " " + p.desc + " " + p.formid + " " + o.m + " " + branchOf(p.branch).name).toLowerCase();
+    if(!hay.includes(S.q)) return false;
+  }
+  return true;
+}
+
+function makeRow(p, mod){
+  const row = document.createElement("div");
+  row.className = "row" + (p.build ? " on" : "");
+  row.innerHTML = `<div class="c box"><input type="checkbox"></div>
+    <div class="c"><div class="perk"><span class="nm"></span>
+      <span class="meta"><span class="eid"></span>${p.formid ? `<span class="fid"></span>` : ``}
+      ${(p.tags || []).map(t=>`<span class="tag">${TAGS[t] || t}</span>`).join("")}</span></div></div>
+    <div class="c"><span class="desc"></span></div>
+    <div class="c lvl"><span class="lvlpill"></span></div>
+    <div class="c act">
+      <button class="iconbtn edit" title="Править"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L20 8l-4-4L4 16z"/></svg></button>
+      <button class="iconbtn del" title="Удалить"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14M9 7V5h6v2M7 7l1 13h8l1-13"/></svg></button>
+    </div>`;
+  row.querySelector(".nm").textContent = p.name || p.eid || "(без названия)";
+  row.querySelector(".eid").textContent = p.eid || "";
+  const fid = row.querySelector(".fid");
+  if(fid) fid.textContent = "PERK:" + p.formid;
+  row.querySelector(".desc").textContent = p.desc || "";
+  const pill = row.querySelector(".lvlpill");
+  pill.textContent = p.lvl < 0 ? "—" : p.lvl;
+  pill.classList.add("l" + lvlBand(p.lvl));
+  const cb = row.querySelector("input");
+  cb.checked = !!p.build;
+  cb.addEventListener("change", ()=>{ p.build = cb.checked; markDirty(mod); render(); });
+  row.querySelector(".edit").addEventListener("click", ()=>openForm(p.id, mod, p.branch_id || p.branch));
+  row.querySelector(".del").addEventListener("click", ()=>{
+    if(!confirm("Удалить перк «" + (p.name || p.eid) + "»?")) return;
+    const arr = S.perks[mod] || [];
+    const i = arr.findIndex(x=>x.id === p.id);
+    if(i >= 0) arr.splice(i,1);
+    markDirty(mod); render(); toast("Удалено");
+  });
+  return row;
+}
+
+/* ─ чипы фильтров ─────────────────────────── */
+function buildChips(){
+  const all = allPerks();
+  const CSF_MODS = new Set(["Draconic Nature 1.4","VIGILANT 2.0","Pyromancy 1.0","Hand To Hand 1.1","GLENMORIL 2.1","Pilgrim 1.2","Unarmoured Defense 1.1","Firmament 1.0","Constellations 1.0"]);
+  const isCSF = m => CSF_MODS.has(m);
+  const mods = usedMods();
+  // Разделяем на обычные и CSF
+  const regularMods = mods.filter(m=>!isCSF(m));
+  const csfMods = mods.filter(m=>isCSF(m));
+
+  const renderModChips = (list, containerId, csfStyle) => {
+    const mw = $(containerId); mw.innerHTML = "";
+    if(!list.length){ mw.innerHTML = `<span style="color:var(--dim2);font-size:12.5px">пока пусто</span>`; return; }
+    const visibleMods = list.filter(m=>{
+      const perks = S.perks[m] || [];
+      if(!perks.length) return false;
+      if(!S.fBranches.size) return true;
+      return perks.some(p=>S.fBranches.has(p.branch_id || p.branch || "none"));
+    });
+    visibleMods.sort((a,b)=>splitMod(a)[0].localeCompare(splitMod(b)[0], "ru"));
+    visibleMods.forEach(m=>{
+      const n = (S.perks[m] || []).length;
+      const el = document.createElement("button");
+      el.className = "chip" + (csfStyle ? " csf" : "") + (S.fMods.has(m) ? "" : " off") + (n ? "" : " zero");
+      el.type = "button";
+      el.innerHTML = `<span class="dot" style="background:${modColor(m)};color:${modColor(m)}"></span><span>${splitMod(m)[0]}</span><span class="n">${n}</span>`;
+      el.addEventListener("click", ()=>{
+        if(S.filterMode === "exclusive"){
+          const wasActive = S.fMods.has(m);
+          clearAllFilters();
+          if(!wasActive) S.fMods.add(m);
+        } else {
+          S.fMods.has(m) ? S.fMods.delete(m) : S.fMods.add(m);
+        }
+        render();
+      });
+      mw.appendChild(el);
+    });
+  };
+  renderModChips(regularMods, "modChips", false);
+  renderModChips(csfMods, "csfChips", true);
+
+  document.addEventListener("click", ()=>{ document.querySelectorAll(".dd.open").forEach(d=>d.classList.remove("open")); });
+  document.addEventListener("keydown", e=>{ if(e.key==="Escape") document.querySelectorAll(".dd.open").forEach(d=>d.classList.remove("open")); });
+
+  const bw = $("branchChips"); bw.innerHTML = "";
+  const counts = {};
+  all.forEach(o=>{ const k = o.p.branch_id || o.p.branch || "none"; counts[k] = (counts[k] || 0) + 1; });
+  // Показываем только ветки, которые есть в текущей выборке (после фильтра по модам)
+  const activeBranches = new Set(all.filter(o=>!S.fMods.size || S.fMods.has(o.m)).map(o=>o.p.branch_id || o.p.branch || "none"));
+  S.branches.forEach(b=>{
+    const n = counts[b.id] || 0;
+    if(!activeBranches.has(b.id) && n===0) return;
+    const el = document.createElement("button");
+    el.className = "chip" + (S.fBranches.has(b.id) ? "" : " off") + (n ? "" : " zero");
+    el.type = "button";
+    el.innerHTML = `<span class="dot" style="background:${branchColor(b.id)};color:${branchColor(b.id)}"></span><span>${b.name}</span><span class="n">${n}</span>`;
+    el.addEventListener("click", ()=>{
+      if(S.filterMode === "exclusive"){
+        const wasActive = S.fBranches.has(b.id);
+        clearAllFilters();
+        if(!wasActive) S.fBranches.add(b.id);
+      } else {
+        S.fBranches.has(b.id) ? S.fBranches.delete(b.id) : S.fBranches.add(b.id);
+      }
+      render();
+    });
+    bw.appendChild(el);
+  });
+
+  // теги (старые) — убраны, теперь фильтрация через выпадающие меню
+  const tw = $("tagChips"); if(tw) tw.innerHTML = "";
+
+  // Выпадающие меню: Роль, Механика, Стихия, Тип магии, Оружие, Условие, Триггер
+  buildDropdown("roleDd", ROLES, S.fRoles, all.map(o=>o.p.role || "passive"), "Роль");
+  buildDropdown("mechDd", MECHS, S.fMechs, all.flatMap(o=>o.p.mechanics || []), "Механика");
+  buildDropdown("elementDd", ELEMENTS, S.fElements, all.flatMap(o=>o.p.element || []), "Стихия");
+  buildDropdown("magictypeDd", MAGICTYPES, S.fMagicTypes, all.flatMap(o=>o.p.magictype || []), "Тип магии");
+  buildDropdown("weaponDd", WEAPONS, S.fWeapons, all.flatMap(o=>o.p.weapon_type || []), "Оружие");
+  buildDropdown("conditionDd", CONDITIONS, S.fConditions, all.flatMap(o=>o.p.condition || []), "Условие");
+  buildDropdown("triggerDd", TRIGGERS, S.fTriggers, all.flatMap(o=>o.p.trigger || []), "Триггер");
+}
+
+function clearAllFilters(){
+  S.tags.clear(); S.fMods.clear(); S.fBranches.clear(); S.fRoles.clear(); S.fMechs.clear();
+  S.fElements.clear(); S.fMagicTypes.clear(); S.fWeapons.clear(); S.fConditions.clear(); S.fTriggers.clear();
+}
+
+function buildDropdown(elId, items, selectedSet, values, title){
+  const dd = $(elId); dd.innerHTML = "";
+  const btn = document.createElement("button");
+  btn.className = "dd-btn"; btn.type = "button";
+  const active = [...selectedSet].filter(k=>values.includes(k));
+  const label = active.length ? active.map(k=>items[k]||k).join(", ") : title;
+  const n = active.length ? ` (${active.length})` : "";
+  btn.innerHTML = `<span>${label}</span>${n}<svg class="chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>`;
+  btn.addEventListener("click", (e)=>{ e.stopPropagation(); dd.classList.toggle("open"); });
+  dd.appendChild(btn);
+
+  const list = document.createElement("div");
+  list.className = "dd-list";
+  const counts = {};
+  values.forEach(v=>{ counts[v] = (counts[v] || 0) + 1; });
+  Object.entries(items).forEach(([k,label])=>{
+    const n = counts[k] || 0;
+    if(!n && !selectedSet.has(k)) return;
+    const item = document.createElement("div");
+    item.className = "dd-item" + (selectedSet.has(k) ? "" : " off");
+    item.innerHTML = `<span class="dot" style="background:var(--dim2)"></span><span>${label}</span><span class="n">${n}</span>`;
+    item.addEventListener("click", ()=>{
+      if(S.filterMode === "exclusive"){
+        // глобальный эксклюзивный: выбор в ЛЮБОМ фильтре сбрасывает ВСЕ остальные фильтры
+        const wasActive = selectedSet.has(k);
+        clearAllFilters();
+        if(!wasActive) selectedSet.add(k);
+      } else {
+        selectedSet.has(k) ? selectedSet.delete(k) : selectedSet.add(k);
+      }
+      render();
+    });
+    list.appendChild(item);
+  });
+  dd.appendChild(list);
+}
+
+/* ── форма ───────────────────────────────────── */
+const sheet = $("sheet");
+let editId = null;
+function fillBranchSelect(keep){
+  const el = $("fBranch");
+  const cur = keep != null ? keep : el.value;
+  el.innerHTML = "";
+  S.branches.forEach(b=>{
+    const o = document.createElement("option");
+    o.value = b.id; o.textContent = b.name + (b.vanilla ? "" : " (своя)");
+    el.appendChild(o);
+  });
+  el.value = cur || (S.branches[0] ? S.branches[0].id : "");
+}
+function fillModList(){
+  const dl = $("modList"); dl.innerHTML = "";
+  S.mods.forEach(m=>{ const o = document.createElement("option"); o.value = m; dl.appendChild(o); });
+}
+function findPerk(id){
+  for(const m of Object.keys(S.perks)){
+    const p = (S.perks[m] || []).find(x=>x.id === id);
+    if(p) return {p:p, m:m};
+  }
+  return null;
+}
+function openForm(id, presetMod, presetBranch){
+  editId = id || null;
+  const hit = id ? findPerk(id) : null;
+  const rec = hit ? hit.p : null;
+  $("formTitle").textContent = rec ? "Правка перка" : "Новый перк";
+  $("fMod").value = rec ? hit.m : (presetMod || "");
+  fillBranchSelect(rec ? (rec.branch || "") : (presetBranch || ""));
+  $("fName").value = rec ? rec.name : "";
+  $("fEid").value = rec ? rec.eid : "";
+  $("fFid").value = rec ? rec.formid : "";
+  $("fLvl").value = (rec && rec.lvl >= 0) ? rec.lvl : "";
+  $("fDesc").value = rec ? rec.desc : "";
+  $("fBuild").checked = rec ? !!rec.build : false;
+  Array.from($("fTags").options).forEach(o=>{ o.selected = rec ? (rec.tags || []).includes(o.value) : false; });
+  $("fMsg").textContent = "";
+  ["fMod","fName","fDesc"].forEach(i=>$(i).classList.remove("err"));
+  fillModList();
+  sheet.classList.add("open");
+  setTimeout(()=>$("fMod").focus(), 40);
+}
+function closeForm(){ sheet.classList.remove("open"); editId = null; }
+$("addBtn").addEventListener("click", ()=>openForm(null, "", ""));
+$("cancelBtn").addEventListener("click", closeForm);
+sheet.addEventListener("click", e=>{ if(e.target === sheet) closeForm(); });
+$("newBranchBtn").addEventListener("click", async ()=>{
+  const name = prompt("Название новой ветки:");
+  if(!name || !name.trim()) return;
+  const id = name.trim().toLowerCase().replace(/[^a-zа-я0-9]+/gi, "-").replace(/^-|-$/g, "") || uid();
+  if(!S.branches.some(b=>b.id === id)) S.branches.push({id:id, name:name.trim(), vanilla:false});
+  if(S.online){
+    try{ await fetch("/api/branches", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({branches:S.branches})}); }catch(e){}
+  }
+  fillBranchSelect(id);
+});
+document.addEventListener("keydown", e=>{
+  const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
+  if(e.key === "Escape" && sheet.classList.contains("open")) return closeForm();
+  if(e.key === "/" && !sheet.classList.contains("open") && !typing){ e.preventDefault(); $("q").focus(); }
+  if(e.key.toLowerCase() === "n" && !sheet.classList.contains("open") && !typing){ e.preventDefault(); $("addBtn").click(); }
+  if(e.key === "Enter" && e.ctrlKey && sheet.classList.contains("open")) $("saveBtn").click();
+});
+$("saveBtn").addEventListener("click", async ()=>{
+  const mod = $("fMod").value.trim();
+  const branch = $("fBranch").value;
+  const tags = Array.from($("fTags").selectedOptions).map(o=>o.value);
+  const lvlRaw = $("fLvl").value.trim();
+  const rec = {
+    id: editId || uid(),
+    branch: branch,
+    name: $("fName").value.trim(),
+    eid: $("fEid").value.trim(),
+    formid: $("fFid").value.trim().replace(/^PERK:/i, "").toUpperCase(),
+    desc: $("fDesc").value.trim(),
+    lvl: lvlRaw === "" ? -1 : Math.max(0, Math.min(100, parseInt(lvlRaw, 10) || 0)),
+    build: $("fBuild").checked
+  };
+  rec.tags = tags.length ? tags : autoTags(rec);
+  const bad = [];
+  if(!mod){ $("fMod").classList.add("err"); bad.push("мод"); }
+  if(!rec.name && !rec.eid){ $("fName").classList.add("err"); bad.push("название или EditorID"); }
+  if(!rec.desc){ $("fDesc").classList.add("err"); bad.push("описание"); }
+  if(bad.length){ $("fMsg").textContent = "Заполни: " + bad.join(", "); return; }
+
+  const wasEdit = !!editId;
+  if(wasEdit){
+    const hit = findPerk(editId);
+    const arr = S.perks[hit.m] || [];
+    const i = arr.findIndex(x=>x.id === editId);
+    if(i >= 0) arr.splice(i, 1);
+    markDirty(hit.m);
+    if(!arr.length) delete S.perks[hit.m];
+  }
+  if(!S.perks[mod]) S.perks[mod] = [];
+  S.perks[mod].push(rec);
+  markDirty(mod);
+  if(!S.mods.includes(mod)){ S.mods.push(mod); pushMods(); }
+  closeForm(); render(); toast(wasEdit ? "Сохранено" : "Перк добавлен");
+});
+async function pushMods(){
+  if(!S.online) return;
+  try{ await fetch("/api/mods", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({mods:S.mods})}); }catch(e){}
+}
+function autoTags(r){
+  const s = ((r.name || "") + " " + (r.eid || "") + " " + (r.desc || "")).toLowerCase();
+  const t = [];
+  if(/меч|sword/.test(s)) t.push("sword");
+  if(/топор|(^|[^a-z])axe/.test(s)) t.push("axe");
+  if(/булав|mace/.test(s)) t.push("mace");
+  if(/кинжал|dagger/.test(s)) t.push("dagger");
+  if(/парн|двух рук|двойн|dual/.test(s)) t.push("dual");
+  if(/лук|bow/.test(s)) t.push("bow");
+  if(/арбалет|crossbow/.test(s)) t.push("crossbow");
+  return t.length ? t : ["core"];
+}
+
+/* ── верхняя панель ─────────────────────────── */
+$("q").addEventListener("input", e=>{ S.q = e.target.value.trim().toLowerCase(); render(); });
+$("lvlMin").addEventListener("input", e=>{ S.lvlMin = +e.target.value; $("lvlVal").textContent = S.lvlMin; render(); });
+$("onlyMark").addEventListener("click", ()=>{ S.onlyMark = !S.onlyMark; $("onlyMark").setAttribute("aria-pressed", S.onlyMark); render(); });
+$("groupBtn").addEventListener("click", ()=>{
+  S.groupBy = S.groupBy === "mod" ? "branch" : "mod";
+  $("groupBtn").textContent = S.groupBy === "mod" ? "Группировка: мод → ветка" : "Группировка: ветка → мод";
+  render();
+});
+$("expandAll").addEventListener("click", ()=>{
+  const anyCollapsed = S.collapsed.size + S.subCollapsed.size;
+  S.collapsed.clear(); S.subCollapsed.clear();
+  if(!anyCollapsed) usedMods().forEach(m=>S.collapsed.add(m));
+  render();
+});
+$("resetFilters").addEventListener("click", ()=>{
+  S.q = ""; $("q").value = "";
+  S.tags.clear(); S.fMods.clear(); S.fBranches.clear(); S.fRoles.clear(); S.fMechs.clear();
+  S.fElements.clear(); S.fMagicTypes.clear(); S.fWeapons.clear(); S.fConditions.clear(); S.fTriggers.clear();
+  S.onlyMark = false; $("onlyMark").setAttribute("aria-pressed", false);
+  S.lvlMin = 0; $("lvlMin").value = 0; $("lvlVal").textContent = "0";
+  render();
+});
+$("filterMode").addEventListener("click", ()=>{
+  S.filterMode = S.filterMode === "exclusive" ? "combined" : "exclusive";
+  $("filterMode").textContent = "Режим: " + (S.filterMode === "exclusive" ? "эксклюзивный" : "комбинированный");
+  $("filterMode").setAttribute("aria-pressed", S.filterMode === "combined");
+  render();
+});
+$("saveAllBtn").addEventListener("click", async ()=>{
+  if(!S.online){ stashDraft(); return toast("Сервер не запущен — данные держу в черновике браузера"); }
+  Object.keys(S.perks).forEach(m=>S.dirty.add(m));
+  await flushSave(); toast("Все моды записаны в файлы");
+  render();
+});
+
+/* ── CSV ─────────────────────────────────────── */
+function toCsv(list){
+  const q = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const head = ["Мод","Ветка","Перк","EditorID","FormID","Описание","Ур.","Тип","В сборке"];
+  const lines = [head.map(q).join(";")];
+  list.forEach(({p,m})=>lines.push([m, branchOf(p.branch).name, p.name, p.eid, p.formid ? "PERK:" + p.formid : "",
+    p.desc, p.lvl < 0 ? "" : p.lvl, (p.tags || []).map(t=>TAGS[t] || t).join(", "), p.build ? "да" : ""].map(q).join(";")));
+  return "\ufeff" + lines.join("\r\n");
+}
+function download(text, name){
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], {type:"text/csv;charset=utf-8"}));
+  a.download = name; a.click();
+}
+$("exportAll").addEventListener("click", ()=>{
+  const list = allPerks();
+  if(!list.length) return toast("База пустая");
+  download(toCsv(list), "perks-all.csv");
+  toast("Выгружено перков: " + list.length);
+});
+$("importBtn").addEventListener("click", ()=>$("fileInput").click());
+$("fileInput").addEventListener("change", e=>{
+  const f = e.target.files[0]; if(!f) return;
+  const fr = new FileReader();
+  fr.onload = () => {
+    try{
+      const text = String(fr.result).replace(/^\ufeff/, "");
+      const rows = /\.json$/i.test(f.name) ? JSON.parse(text) : parseCsv(text);
+      if(!Array.isArray(rows) || !rows.length) throw new Error("пусто");
+      const norm = rows.map(r=>{
+        const branchName = String(r.branch || r["Ветка"] || "").trim();
+        let bid = "";
+        if(branchName){
+          const found = S.branches.find(b=>b.name.toLowerCase() === branchName.toLowerCase() || b.id === branchName);
+          if(found) bid = found.id;
+          else { bid = branchName.toLowerCase().replace(/[^a-zа-я0-9]+/gi, "-"); S.branches.push({id:bid, name:branchName, vanilla:false}); }
+        }
+        const p = normalize({
+          id: uid(), branch: bid,
+          name: String(r.name || r["Перк"] || "").trim(),
+          eid: String(r.eid || r["EditorID"] || "").trim(),
+          formid: String(r.formid || r["FormID"] || "").replace(/^PERK:/i, "").toUpperCase(),
+          desc: String(r.desc || r["Описание"] || "").trim(),
+          lvl: parseLvl(r.lvl != null ? r.lvl : r["Ур."]),
+          tags: Array.isArray(r.tags) ? r.tags : [],
+          build: /^(да|yes|true|1|\+)$/i.test(String(r.build || r["В сборке"] || "").trim())
+        });
+        if(!p.tags.length) p.tags = autoTags(p);
+        return {mod: String(r.mod || r["Мод"] || "").trim(), p:p};
+      }).filter(o=>o.mod && (o.p.name || o.p.eid));
+      if(!norm.length) throw new Error("не понял колонки");
+      const add = confirm("Найдено перков: " + norm.length + "\n\nОК — добавить к текущим\nОтмена — заменить всё");
+      if(!add){ S.perks = {}; S.mods = []; }
+      norm.forEach(o=>{
+        if(!S.perks[o.mod]) S.perks[o.mod] = [];
+        S.perks[o.mod].push(o.p);
+        if(!S.mods.includes(o.mod)) S.mods.push(o.mod);
+      });
+      Object.keys(S.perks).forEach(m=>S.dirty.add(m));
+      pushMods();
+      if(S.online){
+        fetch("/api/branches", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({branches:S.branches})}).catch(()=>{});
+      }
+      scheduleSave(); render(); toast("Загружено перков: " + norm.length);
+    }catch(err){ toast("Не разобрал файл: " + err.message); }
+    e.target.value = "";
+  };
+  fr.readAsText(f, "utf-8");
+});
+function parseLvl(v){
+  const s = String(v == null ? "" : v).replace(",", ".").trim();
+  if(!s) return -1;
+  const n = parseFloat(s);
+  return isNaN(n) ? -1 : Math.max(0, Math.min(100, Math.round(n)));
+}
+function parseCsv(text){
+  const delim = (text.split(";").length > text.split(",").length) ? ";" : ",";
+  const rows = []; let row = [], cell = "", q = false;
+  for(let i = 0; i < text.length; i++){
+    const c = text[i];
+    if(q){
+      if(c === '"' && text[i+1] === '"'){ cell += '"'; i++; }
+      else if(c === '"') q = false;
+      else cell += c;
+    } else if(c === '"') q = true;
+    else if(c === delim){ row.push(cell); cell = ""; }
+    else if(c === "\n"){ row.push(cell); rows.push(row); row = []; cell = ""; }
+    else if(c !== "\r") cell += c;
+  }
+  if(cell.length || row.length){ row.push(cell); rows.push(row); }
+  if(!rows.length) return [];
+  const head = rows[0].map(s=>s.trim());
+  const looksHeader = head.some(h=>/^(мод|mod|ветка|branch|перк|name|editorid|formid|описание|desc|ур\.?|уровень|lvl|тип|tags|в сборке|build)$/i.test(h));
+  const body = looksHeader ? rows.slice(1) : rows;
+  return body.filter(r=>r.some(c=>c.trim())).map(r=>{
+    const o = {};
+    head.forEach((h,i)=>{ o[h] = (r[i] || "").trim(); });
+    return o;
+  });
+}
+
+let toastTimer;
+function toast(t){
+  const el = $("toast");
+  $("toastTxt").textContent = t;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>el.classList.remove("show"), 3000);
+}
+
+boot();
+</script>
+</body>
+</html>

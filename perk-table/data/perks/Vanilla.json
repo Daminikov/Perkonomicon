@@ -1,0 +1,5815 @@
+[
+ {
+  "id": "00058215",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Целитель",
+  "eid": "Physician",
+  "formid": "00058215",
+  "desc": "Ваши зелья, восстанавливающие здоровье, магию или запас сил, эффективнее на 25%.",
+  "lvl": 20,
+  "prereq": "Alchemist00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058216",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Провизор",
+  "eid": "Benefactor",
+  "formid": "00058216",
+  "desc": "У создаваемых вами зелий положительный эффект дополнительно увеличивается на 25%.",
+  "lvl": 30,
+  "prereq": "Physician",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058217",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Отравитель",
+  "eid": "Poisoner",
+  "formid": "00058217",
+  "desc": "Создаваемые вами яды эффективнее на 25%.",
+  "lvl": 30,
+  "prereq": "Physician",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058218",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Экспериментатор",
+  "eid": "Experimenter50",
+  "formid": "00058218",
+  "desc": "При поедании ингредиента вы узнаете первые два его свойства.",
+  "lvl": 50,
+  "prereq": "Benefactor",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F2F",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Концентрированный яд",
+  "eid": "ConcentratedPoison",
+  "formid": "00105F2F",
+  "desc": "Яд, нанесенный на оружие, действует вдвое большее количество ударов.",
+  "lvl": 60,
+  "prereq": "Poisoner",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F2E",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Травник",
+  "eid": "GreenThumb",
+  "formid": "00105F2E",
+  "desc": "Вы получаете с растений по два ингредиента.",
+  "lvl": 70,
+  "prereq": "ConcentratedPoison",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F2C",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Змеиная кровь",
+  "eid": "Snakeblood",
+  "formid": "00105F2C",
+  "desc": "50% сопротивляемость всем ядам.",
+  "lvl": 80,
+  "prereq": "Experimenter50; ConcentratedPoison",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "Update.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0005821D",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Чистота",
+  "eid": "Purity",
+  "formid": "0005821D",
+  "desc": "Создаваемые вами зелья не имеют отрицательных эффектов, а яды - положительных.",
+  "lvl": 100,
+  "prereq": "Snakeblood",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "source": "Update.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BE127",
+  "mod": "Vanilla",
+  "branch": "Алхимия",
+  "branch_id": "alchemy",
+  "name": "Алхимик",
+  "eid": "Alchemist00",
+  "formid": "000BE127",
+  "desc": "Зелья и яды вашего изготовления на 20% сильнее.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F68",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Отбивание стрел",
+  "eid": "DeflectArrows",
+  "formid": "00058F68",
+  "desc": "Стрелы, попадающие в щит, не наносят урона.",
+  "lvl": 30,
+  "prereq": "ShieldWall00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "source": "Update.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow",
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F67",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Силовой удар плашмя",
+  "eid": "PowerBashPerk",
+  "formid": "00058F67",
+  "desc": "Вы можете наносить силовые удары плашмя.",
+  "lvl": 30,
+  "prereq": "ShieldWall00",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000D8C33",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Быстрые рефлексы",
+  "eid": "QuickReflexes",
+  "formid": "000D8C33",
+  "desc": "Если вы блокируете силовую атаку противника, время замедляется.",
+  "lvl": 30,
+  "prereq": "ShieldWall00",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [
+   "power_attack",
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "power",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0005F594",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Смертельный удар плашмя",
+  "eid": "DeadlyBash",
+  "formid": "0005F594",
+  "desc": "Удары плашмя наносят впятеро больше урона.",
+  "lvl": 50,
+  "prereq": "PowerBashPerk",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "kill"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058F69",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Защита от стихий",
+  "eid": "ElementalProtection",
+  "formid": "00058F69",
+  "desc": "Закрывшись щитом, вы получаете на 50% меньше урона от огня, холода и электричества.",
+  "lvl": 50,
+  "prereq": "DeflectArrows",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [
+   "frost",
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "sneak",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00106253",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Блок на бегу",
+  "eid": "BlockRunner",
+  "formid": "00106253",
+  "desc": "Вы можете быстрее двигаться, закрывшись щитом.",
+  "lvl": 70,
+  "prereq": "ElementalProtection",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "moving",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058F66",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Обезоруживание",
+  "eid": "DisarmingBash",
+  "formid": "00058F66",
+  "desc": "Вы можете обезоружить противника силовым ударом плашмя.",
+  "lvl": 70,
+  "prereq": "DeadlyBash",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058F6A",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Живой молот",
+  "eid": "ShieldCharge",
+  "formid": "00058F6A",
+  "desc": "Спринт с поднятым щитом сбивает с ног большинство противников.",
+  "lvl": 100,
+  "prereq": "DisarmingBash; BlockRunner",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace",
+   "shield"
+  ],
+  "condition": [
+   "moving",
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000BCCAE",
+  "mod": "Vanilla",
+  "branch": "Блокирование",
+  "branch_id": "block",
+  "name": "Щитоносец",
+  "eid": "ShieldWall00",
+  "formid": "000BCCAE",
+  "desc": "Блокирование эффективнее на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "020059A5",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Животная энергия",
+  "eid": "DLC1AnimalVigorPerk",
+  "formid": "020059A5",
+  "desc": "В облике зверя здоровье и запас сил увеличены на 100 единиц.",
+  "lvl": -1,
+  "prereq": "DLC1BestialStrength25Perk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059A4",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Звериная сила",
+  "eid": "DLC1BestialStrength25Perk",
+  "formid": "020059A4",
+  "desc": "В облике вервольфа вы наносите на 25% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059A7",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Жадность в еде",
+  "eid": "DLC1GorgingPerk",
+  "formid": "020059A7",
+  "desc": "Пожирание восстанавливает вдвое больше здоровья.",
+  "lvl": -1,
+  "prereq": "DLC1AnimalVigorPerk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059A6",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Неразборчивость в еде",
+  "eid": "DLC1SavageFeedingPerk",
+  "formid": "020059A6",
+  "desc": "Позволяет пожирать большинство мертвых существ. Поедание существ, а не людей, дает лишь половину добавки времени.",
+  "lvl": -1,
+  "prereq": "DLC1GorgingPerk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059AA",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Тотем ледяных братьев",
+  "eid": "DLC1TotemOfIceBrothersPerk",
+  "formid": "020059AA",
+  "desc": "Тотем Братства воем созывает снежных волков.",
+  "lvl": -1,
+  "prereq": "DLC1BestialStrength25Perk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 0,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059A8",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Тотем ужаса",
+  "eid": "DLC1TotemOfTerrorPerk",
+  "formid": "020059A8",
+  "desc": "Жуткий вой вервольфа действует даже на существ более высокого уровня.",
+  "lvl": -1,
+  "prereq": "DLC1BestialStrength25Perk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059AB",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Тотем луны",
+  "eid": "DLC1TotemOfTheMoonPerk",
+  "formid": "020059AB",
+  "desc": "Тотем Братства воем созывает вервольфов.",
+  "lvl": -1,
+  "prereq": "DLC1TotemOfIceBrothersPerk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 9,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "020059A9",
+  "mod": "Vanilla",
+  "branch": "Вампиризм (Dawnguard)",
+  "branch_id": "vampirism",
+  "name": "Тотем хищника",
+  "eid": "DLC1TotemPredatorPerk",
+  "formid": "020059A9",
+  "desc": "Тотем Охоты охватывает теперь большую территорию и показывает противников: спокойны ли они, ищут что-то или сражаются.",
+  "lvl": -1,
+  "prereq": "DLC1BestialStrength25Perk",
+  "ranks": 0,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BE125",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Взломщик-ученик",
+  "eid": "ApprenticeLocks25",
+  "formid": "000BE125",
+  "desc": "Замки уровня ученика значительно легче взломать.",
+  "lvl": 25,
+  "prereq": "NoviceLocks00",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00106259",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Умелые ручки",
+  "eid": "QuickHands",
+  "formid": "00106259",
+  "desc": "Способность незаметно взламывать замки.",
+  "lvl": 40,
+  "prereq": "ApprenticeLocks25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C3680",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Взломщик-специалист",
+  "eid": "AdeptLocks50",
+  "formid": "000C3680",
+  "desc": "Замки уровня адепта значительно легче взломать.",
+  "lvl": 50,
+  "prereq": "ApprenticeLocks25",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00107830",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Восковой слепок",
+  "eid": "WaxKey",
+  "formid": "00107830",
+  "desc": "Если от взломанного замка существует ключ, вы автоматически получаете его копию.",
+  "lvl": 50,
+  "prereq": "QuickHands",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0005820A",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Золотоискатель",
+  "eid": "GoldenTouch",
+  "formid": "0005820A",
+  "desc": "Вы находите больше золота в сундуках.",
+  "lvl": 60,
+  "prereq": "AdeptLocks50",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F26",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Охотник за сокровищами",
+  "eid": "TreasureHunter",
+  "formid": "00105F26",
+  "desc": "На 50% больше шансов найти особое сокровище.",
+  "lvl": 70,
+  "prereq": "GoldenTouch",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C3681",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Взломщик-эксперт",
+  "eid": "ExpertLocks75",
+  "formid": "000C3681",
+  "desc": "Замки уровня эксперта значительно легче взломать.",
+  "lvl": 75,
+  "prereq": "AdeptLocks50",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058208",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Замочный мастер",
+  "eid": "Locksmith",
+  "formid": "00058208",
+  "desc": "Начальное положение отмычки ближе к правильной позиции.",
+  "lvl": 80,
+  "prereq": "ExpertLocks75",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C3682",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Взломщик-мастер",
+  "eid": "MasterLocks100",
+  "formid": "000C3682",
+  "desc": "Замки уровня мастера значительно легче взломать.",
+  "lvl": 100,
+  "prereq": "ExpertLocks75",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058209",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Вечная отмычка",
+  "eid": "Unbreakable",
+  "formid": "00058209",
+  "desc": "Отмычки не ломаются.",
+  "lvl": 100,
+  "prereq": "Locksmith",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F392A",
+  "mod": "Vanilla",
+  "branch": "Взлом",
+  "branch_id": "lockpicking",
+  "name": "Взломщик-новичок",
+  "eid": "NoviceLocks00",
+  "formid": "000F392A",
+  "desc": "Замки уровня новичка значительно легче взломать.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581F8",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Регенерация",
+  "eid": "Regeneration",
+  "formid": "000581F8",
+  "desc": "Лечебные заклинания на 50% более эффективны.",
+  "lvl": 20,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 5,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "support",
+  "mechanics": [
+   "regen"
+  ],
+  "element": [],
+  "magictype": [
+   "heal"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153D1",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Двойное восстановление",
+  "eid": "RestorationDualCasting",
+  "formid": "000153D1",
+  "desc": "При сотворении заклинания школы восстановления с двух рук получается его более сильный вариант.",
+  "lvl": 20,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "000C44C7",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Ученик школы восстановления",
+  "eid": "RestorationApprentice25",
+  "formid": "000C44C7",
+  "desc": "Заклинания школы восстановления уровня ученика расходуют вдвое меньше магии.",
+  "lvl": 25,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581F4",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Восполнение",
+  "eid": "Recovery30",
+  "formid": "000581F4",
+  "desc": "Магия восстанавливается на 25% быстрее.",
+  "lvl": 30,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "support",
+  "mechanics": [
+   "speed",
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581F9",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Передышка",
+  "eid": "Respite",
+  "formid": "000581F9",
+  "desc": "Лечебные заклинания также восстанавливают запас сил.",
+  "lvl": 40,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 7,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C8",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Адепт школы восстановления",
+  "eid": "RestorationAdept50",
+  "formid": "000C44C8",
+  "desc": "Заклинания школы восстановления уровня адепта расходуют вдвое меньше магии.",
+  "lvl": 50,
+  "prereq": "RestorationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00068BCC",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Оберег-поглотитель",
+  "eid": "wardAbsorb",
+  "formid": "00068BCC",
+  "desc": "Обереги при ударе по ним заклинаниями подпитывают вашу магию.",
+  "lvl": 60,
+  "prereq": "RestorationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "support",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "ward"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_hit"
+  ]
+ },
+ {
+  "id": "000581E4",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Некромаг",
+  "eid": "Necromage",
+  "formid": "000581E4",
+  "desc": "Все заклинания более эффективны против нежити.",
+  "lvl": 70,
+  "prereq": "Regeneration",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 7,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C9",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Эксперт школы восстановления",
+  "eid": "RestorationExpert75",
+  "formid": "000C44C9",
+  "desc": "Заклинания школы восстановления уровня эксперта расходуют вдвое меньше магии.",
+  "lvl": 75,
+  "prereq": "RestorationAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000A3F64",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Бегство от смерти",
+  "eid": "AvoidDeath",
+  "formid": "000A3F64",
+  "desc": "Раз в сутки, если ваше здоровье становится ниже 10%, автоматически восстанавливается 250 единиц здоровья.",
+  "lvl": 90,
+  "prereq": "Recovery30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "support",
+  "mechanics": [
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C44CA",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Мастер школы восстановления",
+  "eid": "RestorationMaster100",
+  "formid": "000C44CA",
+  "desc": "Заклинания школы восстановления уровня мастера расходуют вдвое меньше магии.",
+  "lvl": 100,
+  "prereq": "RestorationExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F2CAA",
+  "mod": "Vanilla",
+  "branch": "Восстановление",
+  "branch_id": "restoration",
+  "name": "Новичок школы восстановления",
+  "eid": "RestorationNovice00",
+  "formid": "000F2CAA",
+  "desc": "Заклинания школы восстановления уровня новичка расходуют вдвое меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00052D51",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Стойка чемпиона",
+  "eid": "ChampionsStance",
+  "formid": "00052D51",
+  "desc": "Силовые атаки двуручным оружием расходуют на 25% меньше сил.",
+  "lvl": 20,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0003AF83",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Глубокие раны",
+  "eid": "DeepWounds30",
+  "formid": "0003AF83",
+  "desc": "Удары двуручным мечом с 10% вероятностью наносят критический урон.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "меч",
+   "крит"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "twohand"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C5C05",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Расчленитель",
+  "eid": "Limbsplitter30",
+  "formid": "000C5C05",
+  "desc": "Атаки секирой наносят дополнительный урон от кровопотери.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0003AF84",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Крушитель черепов",
+  "eid": "Skullcrusher30",
+  "formid": "0003AF84",
+  "desc": "Удары боевым молотом игнорируют 25% брони.",
+  "lvl": 30,
+  "prereq": "Barbarian00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "source": "Dragonborn.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00052D52",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Сокрушительный удар",
+  "eid": "DevastatingBlow",
+  "formid": "00052D52",
+  "desc": "Силовые атаки стоя наносят 25% дополнительного урона с некоторым шансом отрубить противнику голову.",
+  "lvl": 50,
+  "prereq": "ChampionsStance",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power",
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000CB407",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Великий рывок",
+  "eid": "GreatCriticalCharge",
+  "formid": "000CB407",
+  "desc": "Вы можете провести силовую атаку двуручным оружием в спринте, нанеся двойной критический урон.",
+  "lvl": 50,
+  "prereq": "ChampionsStance",
+  "ranks": 1,
+  "tags": [
+   "силовая",
+   "крит"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "crit",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual",
+   "twohand"
+  ],
+  "condition": [
+   "power",
+   "crit",
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0003AF9E",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Веерная атака",
+  "eid": "Sweep",
+  "formid": "0003AF9E",
+  "desc": "Силовые атаки двуручным оружием при движении вбок наносят урон всем противникам перед вами.",
+  "lvl": 70,
+  "prereq": "GreatCriticalCharge; DevastatingBlow",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0003AFA7",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Мастер боевых искусств",
+  "eid": "Warmaster",
+  "formid": "0003AFA7",
+  "desc": "Силовая атака при движении назад парализует противника с вероятностью 25%.",
+  "lvl": 100,
+  "prereq": "Sweep",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "control",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000BABE8",
+  "mod": "Vanilla",
+  "branch": "Двуручное оружие",
+  "branch_id": "two-handed",
+  "name": "Варвар",
+  "eid": "Barbarian00",
+  "formid": "000BABE8",
+  "desc": "Двуручное оружие наносит на 20% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "twohand"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7C",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Экономия душ",
+  "eid": "SoulSqueezer",
+  "formid": "00058F7C",
+  "desc": "Камни душ дают дополнительную магию для перезарядки.",
+  "lvl": 20,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F80",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Огненные чары",
+  "eid": "FireEnchanter",
+  "formid": "00058F80",
+  "desc": "Огненные зачарования, накладываемые на оружие и броню, сильнее на 25%.",
+  "lvl": 30,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F81",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Морозные чары",
+  "eid": "FrostEnchanter",
+  "formid": "00058F81",
+  "desc": "Зачарования холода, накладываемые на оружие и броню, сильнее на 25%.",
+  "lvl": 40,
+  "prereq": "FireEnchanter",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00108A44",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Поглотитель душ",
+  "eid": "SoulSiphon",
+  "formid": "00108A44",
+  "desc": "Смертельные удары по существам, но не по людям, приводят к перезарядке оружия на 5% души жертвы.",
+  "lvl": 40,
+  "prereq": "SoulSqueezer",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7E",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Чары умений",
+  "eid": "InsightfulEnchanter",
+  "formid": "00058F7E",
+  "desc": "Зачарования навыков, накладываемые на броню, сильнее на 25%.",
+  "lvl": 50,
+  "prereq": "Enchanter00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F82",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Грозовые чары",
+  "eid": "StormEnchanter",
+  "formid": "00058F82",
+  "desc": "Зачарования электричества, накладываемые на оружие и броню, сильнее на 25%.",
+  "lvl": 50,
+  "prereq": "FrostEnchanter",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7D",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Жизненные чары",
+  "eid": "CorpusEnchanter",
+  "formid": "00058F7D",
+  "desc": "Зачарования здоровья, магии и запаса сил, накладываемые на броню, сильнее на 25%.",
+  "lvl": 70,
+  "prereq": "InsightfulEnchanter",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7F",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Дополнительный эффект",
+  "eid": "ExtraEffect",
+  "formid": "00058F7F",
+  "desc": "Вы можете наложить на один и тот же предмет два зачарования.",
+  "lvl": 100,
+  "prereq": "CorpusEnchanter; StormEnchanter",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BEE97",
+  "mod": "Vanilla",
+  "branch": "Зачарование",
+  "branch_id": "enchanting",
+  "name": "Зачарователь",
+  "eid": "Enchanter00",
+  "formid": "000BEE97",
+  "desc": "Новые зачарования сильнее на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153CD",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Двойное изменение",
+  "eid": "AlterationDualCasting",
+  "formid": "000153CD",
+  "desc": "При сотворении заклинания школы изменения с двух рук получается его более сильный вариант.",
+  "lvl": 20,
+  "prereq": "AlterationNovice00",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "000C44B7",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Ученик школы изменения",
+  "eid": "AlterationApprentice25",
+  "formid": "000C44B7",
+  "desc": "Заклинания школы изменения уровня ученика расходуют вдвое меньше магии.",
+  "lvl": 25,
+  "prereq": "AlterationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000D7999",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Магическая броня",
+  "eid": "MageArmor30",
+  "formid": "000D7999",
+  "desc": "Защитные заклинания, такие как Каменная плоть, вдвое сильнее, если вы не носите броню.",
+  "lvl": 30,
+  "prereq": "AlterationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия",
+   "броня"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00053128",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Сопротивление магии",
+  "eid": "MagicResistance30",
+  "formid": "00053128",
+  "desc": "Блокируется 10% эффекта заклинаний.",
+  "lvl": 30,
+  "prereq": "AlterationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [
+   "block",
+   "resist"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [
+   "blocked"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C44B8",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Адепт школы изменения",
+  "eid": "AlterationAdept50",
+  "formid": "000C44B8",
+  "desc": "Заклинания школы изменения уровня адепта расходуют вдвое меньше магии.",
+  "lvl": 50,
+  "prereq": "AlterationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581FC",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Постоянство",
+  "eid": "Stability",
+  "formid": "000581FC",
+  "desc": "Заклинания изменения держатся дольше.",
+  "lvl": 70,
+  "prereq": "AlterationAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "USMP",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C44B9",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Эксперт школы изменения",
+  "eid": "AlterationExpert75",
+  "formid": "000C44B9",
+  "desc": "Заклинания школы изменения уровня эксперта расходуют вдвое меньше магии.",
+  "lvl": 75,
+  "prereq": "AlterationAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44BA",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Мастер школы изменения",
+  "eid": "AlterationMaster100",
+  "formid": "000C44BA",
+  "desc": "Заклинания школы изменения уровня мастера расходуют вдвое меньше магии.",
+  "lvl": 100,
+  "prereq": "AlterationExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581F7",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Атронах",
+  "eid": "atronach",
+  "formid": "000581F7",
+  "desc": "Вы поглощаете 30% магии от любых заклинаний, попавших в вас.",
+  "lvl": 100,
+  "prereq": "AlterationExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F2CA6",
+  "mod": "Vanilla",
+  "branch": "Изменение",
+  "branch_id": "alteration",
+  "name": "Новичок школы изменения",
+  "eid": "AlterationNovice00",
+  "formid": "000F2CA6",
+  "desc": "Заклинания школы изменения уровня новичка расходуют вдвое меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581E1",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Обман животных",
+  "eid": "Animage",
+  "formid": "000581E1",
+  "desc": "Заклинания иллюзии действуют на животных более высокого уровня.",
+  "lvl": 20,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153D0",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Двойная иллюзия",
+  "eid": "IllusionDualCasting",
+  "formid": "000153D0",
+  "desc": "При сотворении заклинания школы иллюзий с двух рук получается его более сильный вариант.",
+  "lvl": 20,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "000C44C3",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Ученик школы иллюзии",
+  "eid": "IllusionApprentice25",
+  "formid": "000C44C3",
+  "desc": "Заклинания школы иллюзии уровня ученика расходуют вдвое меньше магии.",
+  "lvl": 25,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00059B77",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Гипнотический взгляд",
+  "eid": "HypnoticGaze",
+  "formid": "00059B77",
+  "desc": "Заклинания успокоения применимы к противникам более высокого уровня. Сочетается с Обманом людских глаз и Обманом животных.",
+  "lvl": 30,
+  "prereq": "IllusionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581E2",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Обман людских глаз",
+  "eid": "KindredMage",
+  "formid": "000581E2",
+  "desc": "Все заклинания иллюзии действуют на людей более высокого уровня.",
+  "lvl": 40,
+  "prereq": "Animage",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00059B78",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Наука страха",
+  "eid": "AspectOfTerror",
+  "formid": "00059B78",
+  "desc": "Заклинания страха применимы к противникам более высокого уровня. Сочетается с Обманом людских глаз и Обманом животных.",
+  "lvl": 50,
+  "prereq": "HypnoticGaze",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C4",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Адепт школы иллюзии",
+  "eid": "IllusionAdept50",
+  "formid": "000C44C4",
+  "desc": "Заклинания школы иллюзии уровня адепта расходуют вдвое меньше магии.",
+  "lvl": 50,
+  "prereq": "IllusionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581FD",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Бесшумные заклинания",
+  "eid": "QuietCasting",
+  "formid": "000581FD",
+  "desc": "Вы творите любые заклинания любой школы магии совершенно бесшумно для других.",
+  "lvl": 50,
+  "prereq": "KindredMage",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44B5",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Неистовство",
+  "eid": "Rage",
+  "formid": "000C44B5",
+  "desc": "Заклинания бешенства применимы к противникам более высокого уровня. Сочетается с Обманом людских глаз и Обманом животных.",
+  "lvl": 70,
+  "prereq": "AspectOfTerror",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "illusion"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C5",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Эксперт школы иллюзии",
+  "eid": "IllusionExpert75",
+  "formid": "000C44C5",
+  "desc": "Заклинания школы иллюзии уровня эксперта расходуют вдвое меньше магии.",
+  "lvl": 75,
+  "prereq": "IllusionAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00059B76",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Мастер разума",
+  "eid": "MasterOfTheMind",
+  "formid": "00059B76",
+  "desc": "Заклинания школы иллюзии действуют на нежить, даэдра и механизмы.",
+  "lvl": 90,
+  "prereq": "QuietCasting; Rage",
+  "ranks": 5,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C6",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Мастер школы иллюзии",
+  "eid": "IllusionMaster100",
+  "formid": "000C44C6",
+  "desc": "Заклинания школы иллюзии уровня мастера расходуют вдвое меньше магии.",
+  "lvl": 100,
+  "prereq": "IllusionExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F2CA9",
+  "mod": "Vanilla",
+  "branch": "Иллюзия",
+  "branch_id": "illusion",
+  "name": "Новичок школы иллюзии",
+  "eid": "IllusionNovice00",
+  "formid": "000F2CA9",
+  "desc": "Заклинания школы иллюзии уровня новичка расходуют вдвое меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058202",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Ночной вор",
+  "eid": "NightThief",
+  "formid": "00058202",
+  "desc": "+25% к вероятности успеха при краже у спящих.",
+  "lvl": 30,
+  "prereq": "LightFingers00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "conditional"
+  ],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058204",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Щипач",
+  "eid": "Cutpurse",
+  "formid": "00058204",
+  "desc": "Карманные кражи становятся на 50% легче.",
+  "lvl": 40,
+  "prereq": "NightThief",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F28",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Носитель яда",
+  "eid": "Poisoned",
+  "formid": "00105F28",
+  "desc": "Вы можете скрытно наносить урон врагам, подбрасывая им яд в карманы.",
+  "lvl": 40,
+  "prereq": "NightThief",
+  "ranks": 1,
+  "tags": [
+   "скрытность"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00096590",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Накладные карманы",
+  "eid": "ExtraPockets",
+  "formid": "00096590",
+  "desc": "Грузоподъемность увеличивается на 100.",
+  "lvl": 50,
+  "prereq": "NightThief",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000D79A0",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Ключник",
+  "eid": "KeyMaster",
+  "formid": "000D79A0",
+  "desc": "Вам почти всегда удается стащить ключ из чужого кармана.",
+  "lvl": 60,
+  "prereq": "Cutpurse",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": [
+   "passive"
+  ]
+ },
+ {
+  "id": "00058201",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Дезориентация",
+  "eid": "Misdirection",
+  "formid": "00058201",
+  "desc": "Вы можете красть экипированное оружие.",
+  "lvl": 70,
+  "prereq": "Cutpurse",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058205",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Фокусник",
+  "eid": "PerfectTouch",
+  "formid": "00058205",
+  "desc": "Вы можете красть экипированные предметы.",
+  "lvl": 100,
+  "prereq": "Misdirection",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BE124",
+  "mod": "Vanilla",
+  "branch": "Карманные кражи",
+  "branch_id": "pickpocket",
+  "name": "Ловкие пальчики",
+  "eid": "LightFingers00",
+  "formid": "000BE124",
+  "desc": "Вы получаете бонус 20% к карманным кражам. На вероятность успеха кражи влияют вес и ценность предмета.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153CE",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Двойное колдовство",
+  "eid": "ConjurationDualCasting",
+  "formid": "000153CE",
+  "desc": "При сотворении заклинания школы колдовства с двух рук заклинание держится дольше.",
+  "lvl": 20,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "000640B3",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Мистический призыв",
+  "eid": "MysticBinding",
+  "formid": "000640B3",
+  "desc": "Призванное оружие наносит больше урона.",
+  "lvl": 20,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44BB",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Ученик школы колдовства",
+  "eid": "ConjurationApprentice25",
+  "formid": "000C44BB",
+  "desc": "Заклинания школы колдовства уровня ученика расходуют вдвое меньше магии.",
+  "lvl": 25,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000D799E",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Похититель душ",
+  "eid": "SoulStealer",
+  "formid": "000D799E",
+  "desc": "Призванное оружие захватывает души врагов.",
+  "lvl": 30,
+  "prereq": "MysticBinding",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F30",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Призыватель",
+  "eid": "Summoner30",
+  "formid": "00105F30",
+  "desc": "Вы можете призывать атронахов или поднимать нежить на вдвое большем расстоянии.",
+  "lvl": 30,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000CB419",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Атромантия",
+  "eid": "Atromancy",
+  "formid": "000CB419",
+  "desc": "Призванные атронахи существуют вдвое дольше.",
+  "lvl": 40,
+  "prereq": "Summoner30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581DD",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Некромантия",
+  "eid": "Necromancy",
+  "formid": "000581DD",
+  "desc": "Поднятая нежить остается в вашей власти дольше.",
+  "lvl": 40,
+  "prereq": "ConjurationNovice00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "summon",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44BC",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Адепт школы колдовства",
+  "eid": "ConjurationAdept50",
+  "formid": "000C44BC",
+  "desc": "Заклинания школы колдовства уровня адепта расходуют вдвое меньше магии.",
+  "lvl": 50,
+  "prereq": "ConjurationApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000D799C",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Изгнание в Обливион",
+  "eid": "OblivionBinding",
+  "formid": "000D799C",
+  "desc": "Призванное оружие изгоняет призванных существ и обращает поднятую нежить в бегство.",
+  "lvl": 50,
+  "prereq": "SoulStealer",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000581DE",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Темные души",
+  "eid": "DarkSouls",
+  "formid": "000581DE",
+  "desc": "Поднятая нежить получает дополнительно 100 единиц здоровья.",
+  "lvl": 70,
+  "prereq": "Necromancy",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44BD",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Эксперт школы колдовства",
+  "eid": "ConjurationExpert75",
+  "formid": "000C44BD",
+  "desc": "Заклинания школы колдовства уровня эксперта расходуют вдвое меньше магии.",
+  "lvl": 75,
+  "prereq": "ConjurationAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB41A",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Сила стихий",
+  "eid": "ElementalPotency",
+  "formid": "000CB41A",
+  "desc": "Призванные атронахи на 50% сильнее.",
+  "lvl": 80,
+  "prereq": "Atromancy",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C44BE",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Мастер школы колдовства",
+  "eid": "ConjurationMaster100",
+  "formid": "000C44BE",
+  "desc": "Заклинания школы колдовства уровня мастера расходуют вдвое меньше магии.",
+  "lvl": 100,
+  "prereq": "ConjurationExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000D5F1C",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Парные души",
+  "eid": "TwinSouls",
+  "formid": "000D5F1C",
+  "desc": "Вы можете вызвать двух атронахов или поднять двух зомби.",
+  "lvl": 100,
+  "prereq": "DarkSouls; ElementalPotency",
+  "ranks": 1,
+  "tags": [
+   "парное"
+  ],
+  "x": 4,
+  "y": 4,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "summon"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F2CA7",
+  "mod": "Vanilla",
+  "branch": "Колдовство",
+  "branch_id": "conjuration",
+  "name": "Новичок школы колдовства",
+  "eid": "ConjurationNovice00",
+  "formid": "000F2CA7",
+  "desc": "Заклинания школы колдовства уровня новичка расходуют вдвое меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F75",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Очарование",
+  "eid": "Allure",
+  "formid": "00058F75",
+  "desc": "При торговле с представителем противоположного пола цены выгоднее на 10%.",
+  "lvl": 30,
+  "prereq": "Haggling00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F72",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Подкуп",
+  "eid": "Bribery",
+  "formid": "00058F72",
+  "desc": "Вы можете подкупать стражников, чтобы они не замечали преступления.",
+  "lvl": 30,
+  "prereq": "Haggling00",
+  "ranks": 1,
+  "tags": [
+   "меч"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7A",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Купец",
+  "eid": "Merchant",
+  "formid": "00058F7A",
+  "desc": "Вы можете продавать любые предметы любым торговцам.",
+  "lvl": 50,
+  "prereq": "Allure",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "001090A2",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Убеждение",
+  "eid": "Persuasion",
+  "formid": "001090A2",
+  "desc": "Попытки убеждения облегчаются на 30%.",
+  "lvl": 50,
+  "prereq": "Bribery",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F29",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Запугивание",
+  "eid": "Intimidation",
+  "formid": "00105F29",
+  "desc": "Угрозы становятся вдвое успешнее.",
+  "lvl": 70,
+  "prereq": "Persuasion",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F7B",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Вкладчик",
+  "eid": "Investor",
+  "formid": "00058F7B",
+  "desc": "Вы можете вложить 500 золотых в любой магазин, чтобы навсегда увеличить доступный запас золота его владельца.",
+  "lvl": 70,
+  "prereq": "Merchant",
+  "ranks": 10,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "passive"
+  ]
+ },
+ {
+  "id": "00058F79",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Скупщик",
+  "eid": "fence",
+  "formid": "00058F79",
+  "desc": "Вы можете торговать краденым с любым торговцем, в чье дело вы вложили средства.",
+  "lvl": 90,
+  "prereq": "Investor",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "001090A5",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Великий торговец",
+  "eid": "MasterTrader",
+  "formid": "001090A5",
+  "desc": "Каждый торговец в этом мире получает дополнительно 1000 золотых для торговли.",
+  "lvl": 100,
+  "prereq": "fence",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BE128",
+  "mod": "Vanilla",
+  "branch": "Красноречие",
+  "branch_id": "speech",
+  "name": "Торговец",
+  "eid": "Haggling00",
+  "formid": "000BE128",
+  "desc": "Цены при покупке и продаже выгоднее на 10%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB40E",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Двемерские доспехи",
+  "eid": "DwarvenSmithing",
+  "formid": "000CB40E",
+  "desc": "Вы можете создавать двемерские доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 30,
+  "prereq": "SteelSmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB40F",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Эльфийские доспехи",
+  "eid": "ElvenSmithing",
+  "formid": "000CB40F",
+  "desc": "Вы можете создавать эльфийские доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 30,
+  "prereq": "SteelSmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 11,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB414",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Сложные типы брони",
+  "eid": "AdvancedArmors",
+  "formid": "000CB414",
+  "desc": "Вы можете создавать ламеллярные и пластинчатые доспехи во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 50,
+  "prereq": "ElvenSmithing",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 11,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB410",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Орочьи доспехи",
+  "eid": "OrcishSmithing",
+  "formid": "000CB410",
+  "desc": "Вы можете создавать орочьи доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 50,
+  "prereq": "DwarvenSmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0005218E",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Кузнец-волшебник",
+  "eid": "ArcaneBlacksmith",
+  "formid": "0005218E",
+  "desc": "Вы можете улучшать магическое оружие и броню.",
+  "lvl": 60,
+  "prereq": "SteelSmithing",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 7,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB411",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Стеклянные доспехи",
+  "eid": "GlassSmithing",
+  "formid": "000CB411",
+  "desc": "Вы можете создавать стеклянные доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 70,
+  "prereq": "AdvancedArmors",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 9,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB412",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Эбонитовые доспехи",
+  "eid": "EbonySmithing",
+  "formid": "000CB412",
+  "desc": "Вы можете создавать эбонитовые доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 80,
+  "prereq": "OrcishSmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB413",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Даэдрические доспехи",
+  "eid": "DaedricSmithing",
+  "formid": "000CB413",
+  "desc": "Вы можете создавать даэдрические доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 90,
+  "prereq": "EbonySmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00052190",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Драконьи доспехи",
+  "eid": "DragonArmor",
+  "formid": "00052190",
+  "desc": "Вы можете создавать драконьи доспехи во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": 100,
+  "prereq": "DaedricSmithing; GlassSmithing",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB40D",
+  "mod": "Vanilla",
+  "branch": "Кузнечное дело",
+  "branch_id": "smithing",
+  "name": "Стальные доспехи",
+  "eid": "SteelSmithing",
+  "formid": "000CB40D",
+  "desc": "Вы можете создавать стальные доспехи и оружие во всех кузницах и улучшать их до вдвое более высокого уровня.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 7,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "craft",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00051B1B",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Подгонка по фигуре",
+  "eid": "CustomFit",
+  "formid": "00051B1B",
+  "desc": "Класс брони увеличивается на 25% при ношении полного комплекта легких доспехов: шлем, кираса, перчатки, сапоги.",
+  "lvl": 30,
+  "prereq": "AgileDefender00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00051B1C",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Вторая кожа",
+  "eid": "Unhindered",
+  "formid": "00051B1C",
+  "desc": "Надетая легкая броня ничего не весит и не замедляет ваши движения.",
+  "lvl": 50,
+  "prereq": "CustomFit",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F22",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Крылья ветра",
+  "eid": "WindWalker",
+  "formid": "00105F22",
+  "desc": "Запас сил восстанавливается на 50% быстрее при ношении полного комплекта легких доспехов: шлем, кираса, перчатки, сапоги.",
+  "lvl": 60,
+  "prereq": "Unhindered",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "support",
+  "mechanics": [
+   "speed",
+   "regen"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00051B17",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Полный комплект",
+  "eid": "MatchingSet",
+  "formid": "00051B17",
+  "desc": "Дополнительный бонус 25% к классу брони при ношении полного комплекта однотипной легкой брони.",
+  "lvl": 70,
+  "prereq": "CustomFit",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00107831",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Ловкий боец",
+  "eid": "DeftMovement",
+  "formid": "00107831",
+  "desc": "10% вероятность полностью избежать рукопашного урона при ношении полного комплекта легкой брони: шлем, кираса, перчатки, сапоги.",
+  "lvl": 100,
+  "prereq": "WindWalker; MatchingSet",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 1,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BE123",
+  "mod": "Vanilla",
+  "branch": "Лёгкая броня",
+  "branch_id": "light-armor",
+  "name": "Ловкость в обороне",
+  "eid": "AgileDefender00",
+  "formid": "000BE123",
+  "desc": "Класс легкой брони увеличивается на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02008A70",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Трупное проклятье",
+  "eid": "DLC1CorpseCursePerk",
+  "formid": "02008A70",
+  "desc": "Магия крови: позволяет парализовать противника.",
+  "lvl": -1,
+  "prereq": "DLC1GargoylePerk",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0200599B",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Обнаружение всех существ",
+  "eid": "DLC1DetectLifePerk",
+  "formid": "0200599B",
+  "desc": "Сила ночи: Обнаружение всех существ, даже двемерских механизмов.",
+  "lvl": -1,
+  "prereq": "DLC1PowerOfTheGrave",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 8,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02016908",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Вызов гаргульи",
+  "eid": "DLC1GargoylePerk",
+  "formid": "02016908",
+  "desc": "Магия крови: позволяет призвать гаргулью, которая будет сражаться на вашей стороне.",
+  "lvl": -1,
+  "prereq": "DLC1VampiricGrip",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "summon",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0200599C",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Туманная форма",
+  "eid": "DLC1MistFormPerk",
+  "formid": "0200599C",
+  "desc": "Сила ночи: Превращение в неуязимое облако тумана, позволяющее восстанавливать здоровье, магию и запас сил.",
+  "lvl": -1,
+  "prereq": "DLC1DetectLifePerk",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 9,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "support",
+  "mechanics": [],
+  "element": [
+   "dark",
+   "arcane"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02005997",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Плащ ночи",
+  "eid": "DLC1NightCloakPerk",
+  "formid": "02005997",
+  "desc": "В бою вас окутывает стая летучих мышей, кусающих находящихся поблизости врагов.",
+  "lvl": -1,
+  "prereq": "DLC1PoisonTalons",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 3,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02005996",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Ядовитые когти",
+  "eid": "DLC1PoisonTalons",
+  "formid": "02005996",
+  "desc": "В ближнем бою вы наносите 20 единиц урона ядом.",
+  "lvl": -1,
+  "prereq": "DLC1VampiricBite; DLC1UnearthlyWill",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "poison"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02005998",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Сила могилы",
+  "eid": "DLC1PowerOfTheGrave",
+  "formid": "02005998",
+  "desc": "В облике вампира-лорда вы получаете прибавку в 50 ед. к здоровью, магии и запасу сил.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "вампир"
+  ],
+  "x": 5,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0200599E",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Сверхъестественные рефлексы",
+  "eid": "DLC1SupernaturalReflexesPerk",
+  "formid": "0200599E",
+  "desc": "Сила ночи: Все вокруг замедляется, а вы двигаетесь быстрее.",
+  "lvl": -1,
+  "prereq": "DLC1MistFormPerk",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 10,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02005995",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Неземные желания",
+  "eid": "DLC1UnearthlyWill",
+  "formid": "02005995",
+  "desc": "Применение Сил ночи и Магии крови стоит на 33% меньше.",
+  "lvl": -1,
+  "prereq": "DLC1PowerOfTheGrave",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [
+   "dark"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "02005994",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Лечение кровью",
+  "eid": "DLC1VampiricBite",
+  "formid": "02005994",
+  "desc": "Убийство жертвы укусом при проведении силовой атаки полностью восстанавливает ваше здоровье.",
+  "lvl": -1,
+  "prereq": "DLC1PowerOfTheGrave",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 6,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "support",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [
+   "heal"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "power",
+   "kill"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0200599A",
+  "mod": "Vanilla",
+  "branch": "Оборотень (Dawnguard)",
+  "branch_id": "werewolf",
+  "name": "Хватка вампира",
+  "eid": "DLC1VampiricGrip",
+  "formid": "0200599A",
+  "desc": "Магия крови: позволяет притянуть существо издалека и придушить его, когда жертва окажется близко.",
+  "lvl": -1,
+  "prereq": "DLC1PowerOfTheGrave",
+  "ranks": 1,
+  "tags": [
+   "вампир",
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Dawnguard.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00052D50",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Боевая стойка",
+  "eid": "FightingStance",
+  "formid": "00052D50",
+  "desc": "Силовые атаки одноручным оружием расходуют на 25% меньше сил.",
+  "lvl": 20,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "power_attack",
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0005F56F",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Мечник",
+  "eid": "Bladesman30",
+  "formid": "0005F56F",
+  "desc": "Удары мечом с вероятностью 10% наносят критический урон.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "меч",
+   "крит"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0005F592",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Костолом",
+  "eid": "BoneBreaker30",
+  "formid": "0005F592",
+  "desc": "”дары булавой игнорируют 25% брони.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "булава",
+   "броня"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Dragonborn.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "mace"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00106256",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойной вихрь",
+  "eid": "DualFlurry30",
+  "formid": "00106256",
+  "desc": "Атаки с двух рук на 20% быстрее.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "парное"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "0003FFFA",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Рубака",
+  "eid": "HackAndSlash30",
+  "formid": "0003FFFA",
+  "desc": "Удары боевым топором наносят дополнительный урон от кровопотери.",
+  "lvl": 30,
+  "prereq": "Armsman00",
+  "ranks": 1,
+  "tags": [
+   "топор"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "dot"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "axe"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000CB406",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Рывок",
+  "eid": "CriticalCharge",
+  "formid": "000CB406",
+  "desc": "Вы можете провести силовую атаку одноручным оружием в спринте, нанеся двойной критический урон.",
+  "lvl": 50,
+  "prereq": "FightingStance",
+  "ranks": 1,
+  "tags": [
+   "силовая",
+   "крит"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "crit",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "dual",
+   "onehand"
+  ],
+  "condition": [
+   "power",
+   "crit",
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0003AF81",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Безжалостный удар",
+  "eid": "SavageStrike",
+  "formid": "0003AF81",
+  "desc": "Силовые атаки стоя наносят 25% дополнительного урона с некоторым шансом отрубить противнику голову.",
+  "lvl": 50,
+  "prereq": "FightingStance",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "dmg",
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power",
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00106258",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Двойная мясорубка",
+  "eid": "DualSavagery",
+  "formid": "00106258",
+  "desc": "Силовые атаки с двух рук наносят на 50% больше урона.",
+  "lvl": 70,
+  "prereq": "DualFlurry30",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "силовая"
+  ],
+  "x": 0,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0003AFA6",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Парализующий удар",
+  "eid": "ParalyzingStrike",
+  "formid": "0003AFA6",
+  "desc": "Силовая атака при движении назад парализует противника с вероятностью 25%.",
+  "lvl": 100,
+  "prereq": "CriticalCharge; SavageStrike",
+  "ranks": 1,
+  "tags": [
+   "силовая"
+  ],
+  "x": 3,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [
+   "power_attack"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "power"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000BABE4",
+  "mod": "Vanilla",
+  "branch": "Одноручное оружие",
+  "branch_id": "one-handed",
+  "name": "Сильная рука",
+  "eid": "Armsman00",
+  "formid": "000BABE4",
+  "desc": "Одноручное оружие наносит на 20% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153CF",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Двойное разрушение",
+  "eid": "DestructionDualCasting",
+  "formid": "000153CF",
+  "desc": "При сотворении заклинания школы разрушения с двух рук получается его более сильный вариант.",
+  "lvl": 20,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 1,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "destruction"
+  ],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": [
+   "on_cast"
+  ]
+ },
+ {
+  "id": "000C44BF",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ученик школы разрушения",
+  "eid": "DestructionApprentice25",
+  "formid": "000C44BF",
+  "desc": "Заклинания школы разрушения уровня ученика расходуют вдвое меньше магии.",
+  "lvl": 25,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581E7",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленное пламя",
+  "eid": "AugmentedFlames",
+  "formid": "000581E7",
+  "desc": "Огненные заклинания наносят на 25% больше урона.",
+  "lvl": 30,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000581EA",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленный мороз",
+  "eid": "AugmentedFrost",
+  "formid": "000581EA",
+  "desc": "Заклинания холода наносят на 25% больше урона.",
+  "lvl": 30,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058200",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Усиленные молнии",
+  "eid": "AugmentedShock",
+  "formid": "00058200",
+  "desc": "Заклинания электричества наносят на 25% больше урона.",
+  "lvl": 30,
+  "prereq": "DestructionNovice00",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000153D2",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Ударная волна",
+  "eid": "Impact",
+  "formid": "000153D2",
+  "desc": "Большинство заклинаний разрушения при применении с двух рук заставляют противника потерять равновесие.",
+  "lvl": 40,
+  "prereq": "DestructionDualCasting",
+  "ranks": 1,
+  "tags": [
+   "парное",
+   "магия"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F32",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Мастер рун",
+  "eid": "RuneMaster",
+  "formid": "00105F32",
+  "desc": "Вы можете ставить руны на впятеро большее расстояние.",
+  "lvl": 40,
+  "prereq": "DestructionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000C44C0",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Адепт школы разрушения",
+  "eid": "DestructionAdept50",
+  "formid": "000C44C0",
+  "desc": "Заклинания школы разрушения уровня адепта расходуют вдвое меньше магии.",
+  "lvl": 50,
+  "prereq": "DestructionApprentice25",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F392E",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Жаркое пламя",
+  "eid": "IntenseFlames",
+  "formid": "000F392E",
+  "desc": "Урон от огня обращает противника в бегство, если его уровень здоровья низок.",
+  "lvl": 50,
+  "prereq": "AugmentedFlames",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 5,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "fire"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000F3933",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Глубокая заморозка",
+  "eid": "DeepFreeze",
+  "formid": "000F3933",
+  "desc": "Урон от холода парализует противника, если его уровень здоровья низок.",
+  "lvl": 60,
+  "prereq": "AugmentedFrost",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "control",
+  "mechanics": [],
+  "element": [
+   "frost"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F3F0E",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Дезинтеграция",
+  "eid": "Disintegrate",
+  "formid": "000F3F0E",
+  "desc": "Урон от электричества дезинтегрирует противника, если его уровень здоровья низок.",
+  "lvl": 70,
+  "prereq": "AugmentedShock",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [],
+  "element": [
+   "shock"
+  ],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C1",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Эксперт школы разрушения",
+  "eid": "DestructionExpert75",
+  "formid": "000C44C1",
+  "desc": "Заклинания школы разрушения уровня эксперта расходуют вдвое меньше магии.",
+  "lvl": 75,
+  "prereq": "DestructionAdept50",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000C44C2",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Мастер школы разрушения",
+  "eid": "DestructionMaster100",
+  "formid": "000C44C2",
+  "desc": "Заклинания школы разрушения уровня мастера расходуют вдвое меньше магии.",
+  "lvl": 100,
+  "prereq": "DestructionExpert75",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 1,
+  "y": 3,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000F2CA8",
+  "mod": "Vanilla",
+  "branch": "Разрушение",
+  "branch_id": "destruction",
+  "name": "Новичок школы разрушения",
+  "eid": "DestructionNovice00",
+  "formid": "000F2CA8",
+  "desc": "Заклинания школы разрушения уровня новичка расходуют вдвое меньше магии.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "магия"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "USSEP",
+  "role": "passive",
+  "mechanics": [
+   "cost"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058210",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Удар в спину",
+  "eid": "Backstab",
+  "formid": "00058210",
+  "desc": "Скрытные атаки одноручным оружием наносят вшестеро больше урона.",
+  "lvl": 30,
+  "prereq": "Stealth00",
+  "ranks": 1,
+  "tags": [
+   "скрытность"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "onehand"
+  ],
+  "condition": [
+   "sneak",
+   "behind"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058213",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Приглушенные шаги",
+  "eid": "MuffledMovement",
+  "formid": "00058213",
+  "desc": "Броня издает на 50% меньше шума.",
+  "lvl": 30,
+  "prereq": "Stealth00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "001036F0",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Верный прицел",
+  "eid": "DeadlyAim",
+  "formid": "001036F0",
+  "desc": "Скрытные стрелковые атаки наносят втрое больше урона.",
+  "lvl": 40,
+  "prereq": "Backstab",
+  "ranks": 1,
+  "tags": [
+   "скрытность"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "0005820C",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Легкий шаг",
+  "eid": "LightFoot",
+  "formid": "0005820C",
+  "desc": "Нажимные пластины не срабатывают, когда вы наступаете на них.",
+  "lvl": 40,
+  "prereq": "MuffledMovement",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 4,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058211",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Клинок ассасина",
+  "eid": "AssassinsBlade",
+  "formid": "00058211",
+  "desc": "Скрытные атаки кинжалами наносят пятнадцатикратный урон.",
+  "lvl": 50,
+  "prereq": "DeadlyAim",
+  "ranks": 1,
+  "tags": [
+   "кинжал",
+   "скрытность"
+  ],
+  "x": 2,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "sword",
+   "dagger"
+  ],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00105F23",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Тихий кувырок",
+  "eid": "SilentRoll",
+  "formid": "00105F23",
+  "desc": "При спринте в режиме скрытности происходит бесшумный кувырок вперед.",
+  "lvl": 50,
+  "prereq": "LightFoot",
+  "ranks": 1,
+  "tags": [
+   "скрытность"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak",
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00105F24",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Тишина",
+  "eid": "Silence",
+  "formid": "00105F24",
+  "desc": "Ходьба и бег не влияют на обнаружение.",
+  "lvl": 70,
+  "prereq": "SilentRoll",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [
+   "alteration"
+  ],
+  "weapon_type": [],
+  "condition": [
+   "moving"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058214",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Воин тени",
+  "eid": "ShadowWarrior",
+  "formid": "00058214",
+  "desc": "Присев, вы на мгновение останавливаете бой, а противники на расстоянии теряют вас из виду.",
+  "lvl": 100,
+  "prereq": "Silence",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "standing"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "000BE126",
+  "mod": "Vanilla",
+  "branch": "Скрытность",
+  "branch_id": "sneak",
+  "name": "Скрытность",
+  "eid": "Stealth00",
+  "formid": "000BE126",
+  "desc": "Вас на 20% труднее обнаружить, когда вы крадетесь.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 5,
+  "tags": [
+   "скрытность"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "stealth",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [
+   "sneak"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00105F1C",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Критический выстрел",
+  "eid": "CriticalShot30",
+  "formid": "00105F1C",
+  "desc": "10% вероятность критического попадания, при котором наносится больше урона.",
+  "lvl": 30,
+  "prereq": "Overdraw00",
+  "ranks": 1,
+  "tags": [
+   "крит"
+  ],
+  "x": 0,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "attack",
+  "mechanics": [
+   "crit"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [
+   "crit"
+  ],
+  "trigger": []
+ },
+ {
+  "id": "00058F61",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Орлиный взор",
+  "eid": "EagleEye30",
+  "formid": "00058F61",
+  "desc": "Если нажать клавишу блока при прицеливании, вы приблизите вид цели.",
+  "lvl": 30,
+  "prereq": "Overdraw00",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "shield"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00103ADA",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Твердая рука",
+  "eid": "SteadyHand40",
+  "formid": "00103ADA",
+  "desc": "При прицеливании с приближением вида время замедляется на 25%.",
+  "lvl": 40,
+  "prereq": "EagleEye30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00051B12",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Бережливый охотник",
+  "eid": "HuntersDiscipline",
+  "formid": "00051B12",
+  "desc": "На трупах вы находите вдвое больше стрел.",
+  "lvl": 50,
+  "prereq": "CriticalShot30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F62",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Мощный выстрел",
+  "eid": "PowerShot",
+  "formid": "00058F62",
+  "desc": "Стрелы с 50% вероятностью заставляют пошатнуться всех противников, кроме самых крупных.",
+  "lvl": 50,
+  "prereq": "EagleEye30",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "passive",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F63",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Егерь",
+  "eid": "Ranger",
+  "formid": "00058F63",
+  "desc": "Вы можете быстрее двигаться с натянутой тетивой.",
+  "lvl": 60,
+  "prereq": "HuntersDiscipline",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F19",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Быстрая стрельба",
+  "eid": "QuickShot",
+  "formid": "00105F19",
+  "desc": "Вы натягиваете тетиву на 30% быстрее.",
+  "lvl": 70,
+  "prereq": "PowerShot",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 3,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "utility",
+  "mechanics": [
+   "speed"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F64",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Снайпер",
+  "eid": "Bullseye",
+  "formid": "00058F64",
+  "desc": "15% вероятность парализовать противника на несколько секунд.",
+  "lvl": 100,
+  "prereq": "Ranger; QuickShot",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 2,
+  "y": 4,
+  "build": false,
+  "source": "USSEP",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BABED",
+  "mod": "Vanilla",
+  "branch": "Стрельба",
+  "branch_id": "archery",
+  "name": "Избыточное натяжение",
+  "eid": "Overdraw00",
+  "formid": "000BABED",
+  "desc": "Луки наносят на 20% больше урона.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "лук"
+  ],
+  "x": 0,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "bow"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F6E",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Стальные кулаки",
+  "eid": "FistsOfSteel",
+  "formid": "00058F6E",
+  "desc": "При бое без оружия тяжелые перчатки наносят дополнительный урон, равный их классу брони.",
+  "lvl": 30,
+  "prereq": "Juggernaut00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 5,
+  "y": 1,
+  "build": false,
+  "source": "USSEP",
+  "role": "defense",
+  "mechanics": [
+   "dmg"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F6F",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Хорошая экипировка",
+  "eid": "WellFitted",
+  "formid": "00058F6F",
+  "desc": "Класс брони увеличивается на 25% при ношении полного комплекта тяжелых доспехов: шлем, кираса, перчатки, сапоги.",
+  "lvl": 30,
+  "prereq": "Juggernaut00",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 2,
+  "y": 1,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BCD2B",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Мягкая подбивка",
+  "eid": "Cushioned",
+  "formid": "000BCD2B",
+  "desc": "Вы получаете половину урона от падения, если носите полный комплект тяжелых доспехов: шлем, кираса, перчатки, сапоги.",
+  "lvl": 50,
+  "prereq": "FistsOfSteel",
+  "ranks": 1,
+  "tags": [
+   "core"
+  ],
+  "x": 6,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "attack",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F6C",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Центр тяжести",
+  "eid": "TowerOfStrength",
+  "formid": "00058F6C",
+  "desc": "При ношении только тяжелой брони вы теряете равновесие на 50% реже.",
+  "lvl": 50,
+  "prereq": "WellFitted",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 1,
+  "y": 2,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00058F6D",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Упорная тренировка",
+  "eid": "Conditioning",
+  "formid": "00058F6D",
+  "desc": "Надетая тяжелая броня ничего не весит и не замедляет ваши движения.",
+  "lvl": 70,
+  "prereq": "Cushioned",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 6,
+  "y": 3,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "control",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00107832",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Полный комплект",
+  "eid": "MatchingSetHeavy",
+  "formid": "00107832",
+  "desc": "Дополнительный бонус 25% к классу брони при ношении полного комплекта однотипной тяжелой брони.",
+  "lvl": 70,
+  "prereq": "TowerOfStrength",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 0,
+  "y": 3,
+  "build": false,
+  "source": "Update.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "00105F33",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Отражение ударов",
+  "eid": "ReflectBlows",
+  "formid": "00105F33",
+  "desc": "10% шанс отразить рукопашный урон врагу при ношении полного комплекта тяжелой брони: шлем, кираса, перчатки, сапоги.",
+  "lvl": 100,
+  "prereq": "MatchingSetHeavy",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 0,
+  "y": 4,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [
+   "block"
+  ],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [
+   "unarmed"
+  ],
+  "condition": [],
+  "trigger": []
+ },
+ {
+  "id": "000BCD2A",
+  "mod": "Vanilla",
+  "branch": "Тяжёлая броня",
+  "branch_id": "heavy-armor",
+  "name": "Джаггернаут",
+  "eid": "Juggernaut00",
+  "formid": "000BCD2A",
+  "desc": "Класс тяжелой брони увеличивается на 20%.",
+  "lvl": -1,
+  "prereq": "",
+  "ranks": 1,
+  "tags": [
+   "броня"
+  ],
+  "x": 3,
+  "y": 0,
+  "build": false,
+  "source": "Skyrim.esm",
+  "role": "defense",
+  "mechanics": [],
+  "element": [],
+  "magictype": [],
+  "weapon_type": [],
+  "condition": [],
+  "trigger": []
+ }
+]
