@@ -34,16 +34,7 @@ perk-table/           # веб-приложение
     mods.json         # список модов
     branches.json     # 20 веток навыков
     perks/<Мод>.json  # перки каждого мода отдельным файлом
-    backups/          # автобэкапы при записи
-
-# Сборщики (корень):
-scan_mod.py           # универсальный сканер ESP -> JSON (перки + классификация)
-build_vanilla.py      # Vanilla (Skyrim + DLC + USSEP + USMP)
-build_mod.py          # обычные моды (ESP с AVIF-деревьями)
-build_skyre.py        # SkyRE (двухфайловый: Core.esm + Main.esp)
-build_perma.py        # Perkus Maximus (4 модуля)
-build_csf.py          # CSF-моды старого формата (config.txt)
-build_csf_json.py     # CSF-моды нового формата (JSON: Firmament, Constellations)
+    backups/          # автобэкапы при записи (в git не попадают)
 ```
 
 ## Моды в базе
@@ -88,23 +79,7 @@ build_csf_json.py     # CSF-моды нового формата (JSON: Firmamen
 
 ## Как добавить новый мод
 
-1. Мод должен лежать в `C:\MO2 Daminikov\mods\<Имя мода>`
-2. Обычный мод (ESP с перк-деревьями AVIF):
-   ```
-   python scan_mod.py "C:\MO2 Daminikov\mods\<Мод>\<файл>.esp" "Имя Версия" "perk-table/data/perks/Имя Версия.json"
-   ```
-3. CSF-мод старого формата (NetScriptFramework config.txt):
-   ```
-   python build_csf.py "C:\MO2 Daminikov\mods\<Мод>" "Имя Версия" "perk-table/data/perks/Имя Версия.json"
-   ```
-4. CSF-мод нового формата (SKSE/Plugins/CustomSkills/*.json):
-   ```
-   python build_csf_json.py "C:\MO2 Daminikov\mods\<Мод>" "Имя Версия" "perk-table/data/perks/Имя Версия.json"
-   ```
-5. Добавить имя в `perk-table/data/mods.json`
-6. Для CSF-мода — также добавить имя в `CSF_MODS` в `perk-table/index.html` (попадёт в группу «Моды CSF»)
-
-Сканер автоматически классифицирует перки (роль, механика, стихия, оружие, условие, триггер) и показывает обнаруженные новые категории.
+Данные собираются из ESP/ESM модов отдельными скриптами (не входят в репозиторий). Готовый результат — JSON в `perk-table/data/perks/` + строка в `mods.json`.
 
 ## Поля перка
 
